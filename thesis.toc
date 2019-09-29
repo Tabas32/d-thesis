@@ -1,0 +1,42 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {slovak}{}
+\babel@toc {english}{}
+\babel@toc {slovak}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\IeC {\'U}vod}{1}{chapter*.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Ciele prace (Formulacia ulohy)}{3}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Matematicke zaklady kvantovych systemov}{4}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Matice}{4}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Komlexne cisla}{4}{section.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Vektory}{4}{section.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Teoreticke zaklady kvantovych systemov}{5}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Zakladne definicie}{5}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Hilbertov priestor ... atd}{5}{subsection.3.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}System s jednym kvantovym bitom}{5}{subsection.3.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}System s viacerymi kvantovymi bitmy}{5}{subsection.3.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.4}Princip merania}{5}{subsection.3.1.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Kvantovy system}{6}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}IBM QX}{6}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Stavy a ich zapis}{6}{subsection.4.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Operacie kvantovych hradiel}{6}{subsection.4.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Celkove zhodnotenie vysledkov (Vyhodnotenie)}{7}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Z\IeC {\'a}ver}{8}{chapter.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literat\IeC {\'u}ra}{9}{section*.3}% 
