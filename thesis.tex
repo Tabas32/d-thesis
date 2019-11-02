@@ -19,7 +19,15 @@
 % Additional packages
 \usepackage[english,slovak]{babel}
 \usepackage{blindtext}  % lorem ipsum
+\usepackage{amssymb}
+\usepackage{tikz}
 %\usepackage{minted}
+
+\newcommand*{\field}[1]{\mathbb{#1}}%
+\usetikzlibrary{calc}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{braket}
 
 % Variables
 %\thesisspec{figures/thesisspec.png} 
@@ -92,6 +100,8 @@
 \include{chapters/matZaklady}
 \include{chapters/teorZaklady}
 \include{chapters/kvantSystem}
+
+\include{chapters/vyprac}
 
 \include{chapters/vyhodnotenie}
 \include{chapters/zaver}

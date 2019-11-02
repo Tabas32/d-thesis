@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 3.0 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -19,445 +19,77 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{text2speech}{misc}{}
+    \entry{Ste18}{book}{}
       \name{author}{1}{}{%
-        {{hash=ac6056dd9379b8901598c58d55171e5b}{%
-           family={Dutoit},
-           familyi={D\bibinitperiod},
-           given={Thierry},
-           giveni={T\bibinitperiod}}}%
+        {{hash=9e2319a5ab99c290fe8eb9226c2598da}{%
+           family={Stephen\bibnamedelima Boyd},
+           familyi={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Lieven\bibnamedelima Vandenberghe},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
-      \strng{namehash}{ac6056dd9379b8901598c58d55171e5b}
-      \strng{fullhash}{ac6056dd9379b8901598c58d55171e5b}
-      \strng{bibnamehash}{ac6056dd9379b8901598c58d55171e5b}
-      \strng{authorbibnamehash}{ac6056dd9379b8901598c58d55171e5b}
-      \strng{authornamehash}{ac6056dd9379b8901598c58d55171e5b}
-      \strng{authorfullhash}{ac6056dd9379b8901598c58d55171e5b}
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{fullhash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{bibnamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authorbibnamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authornamehash}{9e2319a5ab99c290fe8eb9226c2598da}
+      \strng{authorfullhash}{9e2319a5ab99c290fe8eb9226c2598da}
       \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{Online}
-      \field{month}{12}
-      \field{title}{A Short Introduction to Text-to-Speech Synthesis}
-      \field{year}{1999}
-      \verb{urlraw}
-      \verb http://tcts.fpms.ac.be/synthesis/introtts_old.html
-      \endverb
-      \verb{url}
-      \verb http://tcts.fpms.ac.be/synthesis/introtts_old.html
-      \endverb
+      \field{title}{Introduction to Applied Linear Algebra}
+      \field{year}{2018}
     \endentry
-    \entry{speechRecognition}{misc}{}
+    \entry{Gra81}{book}{}
       \name{author}{1}{}{%
-        {{hash=93ec86ce97f8a2ec4140516d66cef8b3}{%
-           family={Comporation},
-           familyi={C\bibinitperiod},
-           given={Fifth\bibnamedelimb Generation\bibnamedelima Computer},
-           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a299073e155bc87e85f408bc72281175}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{93ec86ce97f8a2ec4140516d66cef8b3}
-      \strng{fullhash}{93ec86ce97f8a2ec4140516d66cef8b3}
-      \strng{bibnamehash}{93ec86ce97f8a2ec4140516d66cef8b3}
-      \strng{authorbibnamehash}{93ec86ce97f8a2ec4140516d66cef8b3}
-      \strng{authornamehash}{93ec86ce97f8a2ec4140516d66cef8b3}
-      \strng{authorfullhash}{93ec86ce97f8a2ec4140516d66cef8b3}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Online}
-      \field{title}{Speaker independent connected speech recognition}
-      \verb{urlraw}
-      \verb http://www.fifthgen.com/speaker-independent-connected-s-r.htm
-      \endverb
-      \verb{url}
-      \verb http://www.fifthgen.com/speaker-independent-connected-s-r.htm
-      \endverb
-    \endentry
-    \entry{tensorFlow}{manual}{}
-      \list{organization}{1}{%
-        {TensorFlow}%
+      \list{publisher}{1}{%
+        {Ellis Horwood limited}%
       }
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labeltitlesource}{title}
-      \field{month}{11}
-      \field{title}{Image Recognition}
-      \field{year}{2017}
-      \verb{urlraw}
-      \verb https://www.tensorflow.org/tutorials/image_recognition
-      \endverb
-      \verb{url}
-      \verb https://www.tensorflow.org/tutorials/image_recognition
-      \endverb
-    \endentry
-    \entry{googleCloud}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=173a0de7c377f81c685e7691f636f2d8}{%
-           family={Platform},
-           familyi={P\bibinitperiod},
-           given={Google\bibnamedelima Cloud},
-           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \strng{namehash}{173a0de7c377f81c685e7691f636f2d8}
-      \strng{fullhash}{173a0de7c377f81c685e7691f636f2d8}
-      \strng{bibnamehash}{173a0de7c377f81c685e7691f636f2d8}
-      \strng{authorbibnamehash}{173a0de7c377f81c685e7691f636f2d8}
-      \strng{authornamehash}{173a0de7c377f81c685e7691f636f2d8}
-      \strng{authorfullhash}{173a0de7c377f81c685e7691f636f2d8}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Online}
-      \field{title}{Cloud vision API}
-      \verb{urlraw}
-      \verb https://cloud.google.com/vision/
-      \endverb
-      \verb{url}
-      \verb https://cloud.google.com/vision/
-      \endverb
-    \endentry
-    \entry{imageCaption}{report}{}
-      \name{author}{1}{}{%
-        {{hash=c228b54315d1a139994dc8d8432fd2cf}{%
-           family={Kelvin\bibnamedelima Xu},
-           familyi={K\bibinitperiod\bibinitdelim X\bibinitperiod},
-           given={Ryan\bibnamedelima Kiros},
-           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
-           suffix={Jimmy\bibnamedelimb Lei\bibnamedelima Ba},
-           suffixi={J\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Universite de Montréal, University of Toronto}%
-      }
-      \strng{namehash}{c228b54315d1a139994dc8d8432fd2cf}
-      \strng{fullhash}{c228b54315d1a139994dc8d8432fd2cf}
-      \strng{bibnamehash}{c228b54315d1a139994dc8d8432fd2cf}
-      \strng{authorbibnamehash}{c228b54315d1a139994dc8d8432fd2cf}
-      \strng{authornamehash}{c228b54315d1a139994dc8d8432fd2cf}
-      \strng{authorfullhash}{c228b54315d1a139994dc8d8432fd2cf}
+      \strng{namehash}{a299073e155bc87e85f408bc72281175}
+      \strng{fullhash}{a299073e155bc87e85f408bc72281175}
+      \strng{bibnamehash}{a299073e155bc87e85f408bc72281175}
+      \strng{authorbibnamehash}{a299073e155bc87e85f408bc72281175}
+      \strng{authornamehash}{a299073e155bc87e85f408bc72281175}
+      \strng{authorfullhash}{a299073e155bc87e85f408bc72281175}
       \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{4}
-      \field{title}{Show, Attend and Tell: Neural Image Caption Generation with Visual Attention}
-      \field{type}{techreport}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/1502.03044.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/1502.03044.pdf
-      \endverb
+      \field{title}{Kronecker Products and Matrix Calculus with Applications}
+      \field{year}{1981}
     \endentry
-    \entry{facebook}{article}{}
+    \entry{Tit06}{book}{}
       \name{author}{1}{}{%
-        {{hash=f4f16aecc2140b91d90e444255f2be55}{%
-           family={Field},
-           familyi={F\bibinitperiod},
-           given={Matthew},
-           giveni={M\bibinitperiod}}}%
+        {{hash=a063f501de2a78c42446dc2acd0cea13}{%
+           family={Titu\bibnamedelima Andreescu},
+           familyi={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Dorin\bibnamedelima Andrica},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
-      \strng{namehash}{f4f16aecc2140b91d90e444255f2be55}
-      \strng{fullhash}{f4f16aecc2140b91d90e444255f2be55}
-      \strng{bibnamehash}{f4f16aecc2140b91d90e444255f2be55}
-      \strng{authorbibnamehash}{f4f16aecc2140b91d90e444255f2be55}
-      \strng{authornamehash}{f4f16aecc2140b91d90e444255f2be55}
-      \strng{authorfullhash}{f4f16aecc2140b91d90e444255f2be55}
+      \list{publisher}{1}{%
+        {Birkhäuser}%
+      }
+      \strng{namehash}{a063f501de2a78c42446dc2acd0cea13}
+      \strng{fullhash}{a063f501de2a78c42446dc2acd0cea13}
+      \strng{bibnamehash}{a063f501de2a78c42446dc2acd0cea13}
+      \strng{authorbibnamehash}{a063f501de2a78c42446dc2acd0cea13}
+      \strng{authornamehash}{a063f501de2a78c42446dc2acd0cea13}
+      \strng{authorfullhash}{a063f501de2a78c42446dc2acd0cea13}
       \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{The Telegraph}
-      \field{month}{10}
-      \field{title}{Facebook tests face recognition technology}
-      \field{year}{2017}
-      \verb{urlraw}
-      \verb http://www.telegraph.co.uk/technology/2017/10/02/forgot-password-facebook-tests-face-recognition-technology-unlock/
-      \endverb
-      \verb{url}
-      \verb http://www.telegraph.co.uk/technology/2017/10/02/forgot-password-facebook-tests-face-recognition-technology-unlock/
-      \endverb
-    \endentry
-    \entry{text2image}{report}{}
-      \name{author}{1}{}{%
-        {{hash=5e2e9694e4dfc4b35923ffa29a269d6d}{%
-           family={Scott\bibnamedelima Reed},
-           familyi={S\bibinitperiod\bibinitdelim R\bibinitperiod},
-           given={Xinchen\bibnamedelima Yan},
-           giveni={X\bibinitperiod\bibinitdelim Y\bibinitperiod},
-           suffix={Zeynep\bibnamedelima Akata},
-           suffixi={Z\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {University of Michigan, Ann Arbor, MI, USA}%
-      }
-      \strng{namehash}{5e2e9694e4dfc4b35923ffa29a269d6d}
-      \strng{fullhash}{5e2e9694e4dfc4b35923ffa29a269d6d}
-      \strng{bibnamehash}{5e2e9694e4dfc4b35923ffa29a269d6d}
-      \strng{authorbibnamehash}{5e2e9694e4dfc4b35923ffa29a269d6d}
-      \strng{authornamehash}{5e2e9694e4dfc4b35923ffa29a269d6d}
-      \strng{authorfullhash}{5e2e9694e4dfc4b35923ffa29a269d6d}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{6}
-      \field{title}{Generative Adversarial Text to Image Synthesis}
-      \field{type}{techreport}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/1605.05396.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/1605.05396.pdf
-      \endverb
-    \endentry
-    \entry{DCGAN}{report}{}
-      \name{author}{1}{}{%
-        {{hash=44b5f5f8f5d33767a705a9479d7d5155}{%
-           family={Alec\bibnamedelima Radford},
-           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
-           given={Soumith\bibnamedelima Chintala},
-           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
-           suffix={Luke\bibnamedelima Metz},
-           suffixi={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {indico Research, Facebook AI Research}%
-      }
-      \strng{namehash}{44b5f5f8f5d33767a705a9479d7d5155}
-      \strng{fullhash}{44b5f5f8f5d33767a705a9479d7d5155}
-      \strng{bibnamehash}{44b5f5f8f5d33767a705a9479d7d5155}
-      \strng{authorbibnamehash}{44b5f5f8f5d33767a705a9479d7d5155}
-      \strng{authornamehash}{44b5f5f8f5d33767a705a9479d7d5155}
-      \strng{authorfullhash}{44b5f5f8f5d33767a705a9479d7d5155}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{1}
-      \field{title}{Unsupervised Representation Learning With Deep Convolutional Generative Adversarial Networks}
-      \field{type}{techreport}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/1511.06434.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/1511.06434.pdf
-      \endverb
-    \endentry
-    \entry{emotionExtraction}{book}{}
-      \name{author}{1}{}{%
-        {{hash=ee24c493ad5c466df5c02441c9fd0d0d}{%
-           family={Yi-Hsan\bibnamedelima Yang},
-           familyi={Y\bibinithyphendelim H\bibinitperiod\bibinitdelim Y\bibinitperiod},
-           given={Homer\bibnamedelimb H.\bibnamedelimi Chen},
-           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Boca Raton: CRC Press}%
-      }
-      \strng{namehash}{ee24c493ad5c466df5c02441c9fd0d0d}
-      \strng{fullhash}{ee24c493ad5c466df5c02441c9fd0d0d}
-      \strng{bibnamehash}{ee24c493ad5c466df5c02441c9fd0d0d}
-      \strng{authorbibnamehash}{ee24c493ad5c466df5c02441c9fd0d0d}
-      \strng{authornamehash}{ee24c493ad5c466df5c02441c9fd0d0d}
-      \strng{authorfullhash}{ee24c493ad5c466df5c02441c9fd0d0d}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-1-4398-5046-6}
-      \field{title}{Music Emotion Reckognition}
-      \field{year}{2011}
-    \endentry
-    \entry{musicMining}{book}{}
-      \name{author}{1}{}{%
-        {{hash=9b465980da6324f288f96101ecc0e069}{%
-           family={Tao},
-           familyi={T\bibinitperiod},
-           given={George\bibnamedelima Tzanetakis},
-           giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod},
-           suffix={Mitsunori\bibnamedelima Ogihara},
-           suffixi={M\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Boca Raton: CRC Press}%
-      }
-      \strng{namehash}{9b465980da6324f288f96101ecc0e069}
-      \strng{fullhash}{9b465980da6324f288f96101ecc0e069}
-      \strng{bibnamehash}{9b465980da6324f288f96101ecc0e069}
-      \strng{authorbibnamehash}{9b465980da6324f288f96101ecc0e069}
-      \strng{authornamehash}{9b465980da6324f288f96101ecc0e069}
-      \strng{authorfullhash}{9b465980da6324f288f96101ecc0e069}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-1-4398-3552-4}
-      \field{title}{Music data mining}
-      \field{year}{2012}
-    \endentry
-    \entry{NNKvasnicka}{book}{}
-      \name{author}{1}{}{%
-        {{hash=cf9196a9823708af0f14f3f5ba31f9fa}{%
-           family={Vladimír\bibnamedelima Kvasnička},
-           familyi={V\bibinitperiod\bibinitdelim K\bibinitperiod},
-           given={Jiří\bibnamedelima Pospíchal},
-           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
-           suffix={Ľubica\bibnamedelima Beňušková},
-           suffixi={Ľ\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Iris}%
-      }
-      \strng{namehash}{cf9196a9823708af0f14f3f5ba31f9fa}
-      \strng{fullhash}{cf9196a9823708af0f14f3f5ba31f9fa}
-      \strng{bibnamehash}{cf9196a9823708af0f14f3f5ba31f9fa}
-      \strng{authorbibnamehash}{cf9196a9823708af0f14f3f5ba31f9fa}
-      \strng{authornamehash}{cf9196a9823708af0f14f3f5ba31f9fa}
-      \strng{authorfullhash}{cf9196a9823708af0f14f3f5ba31f9fa}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{8088778301}
-      \field{title}{Úvod do teórie neurónových sietí}
-      \field{year}{1997}
-    \endentry
-    \entry{VAE}{report}{}
-      \name{author}{1}{}{%
-        {{hash=96b67cea31d7dd5c10af974faba91947}{%
-           family={Doersch},
-           familyi={D\bibinitperiod},
-           given={Carl},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Carnegie Mellon / UC Berkeley}%
-      }
-      \strng{namehash}{96b67cea31d7dd5c10af974faba91947}
-      \strng{fullhash}{96b67cea31d7dd5c10af974faba91947}
-      \strng{bibnamehash}{96b67cea31d7dd5c10af974faba91947}
-      \strng{authorbibnamehash}{96b67cea31d7dd5c10af974faba91947}
-      \strng{authornamehash}{96b67cea31d7dd5c10af974faba91947}
-      \strng{authorfullhash}{96b67cea31d7dd5c10af974faba91947}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{8}
-      \field{title}{Tutorial on Variational Autoencoders}
-      \field{type}{techreport}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/1606.05908.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/1606.05908.pdf
-      \endverb
-    \endentry
-    \entry{GAN}{report}{}
-      \name{author}{1}{}{%
-        {{hash=38e091dda986e946e612ab39fc768fd7}{%
-           family={Ian\bibnamedelimb J.\bibnamedelimi Goodfellow},
-           familyi={I\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim G\bibinitperiod},
-           given={Jean\bibnamedelima Pouget-Abadie},
-           giveni={J\bibinitperiod\bibinitdelim P\bibinithyphendelim A\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Departement d’informatique et de recherche opérationnellé Universite de Montréal}%
-      }
-      \strng{namehash}{38e091dda986e946e612ab39fc768fd7}
-      \strng{fullhash}{38e091dda986e946e612ab39fc768fd7}
-      \strng{bibnamehash}{38e091dda986e946e612ab39fc768fd7}
-      \strng{authorbibnamehash}{38e091dda986e946e612ab39fc768fd7}
-      \strng{authornamehash}{38e091dda986e946e612ab39fc768fd7}
-      \strng{authorfullhash}{38e091dda986e946e612ab39fc768fd7}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{6}
-      \field{title}{Generative Adversarial Nets}
-      \field{type}{techreport}
-      \field{year}{2014}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/1406.2661.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/1406.2661.pdf
-      \endverb
-    \endentry
-    \entry{stackGAN}{report}{}
-      \name{author}{1}{}{%
-        {{hash=9f5a0096214c90ddcbf3eb888b9bcab9}{%
-           family={Han\bibnamedelima Zhang},
-           familyi={H\bibinitperiod\bibinitdelim Z\bibinitperiod},
-           given={Hongsheng\bibnamedelima Li},
-           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
-           suffix={Tao\bibnamedelima Xu},
-           suffixi={T\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Rutgers University, Lehigh University, The Chinese University of Hong Kong}%
-      }
-      \strng{namehash}{9f5a0096214c90ddcbf3eb888b9bcab9}
-      \strng{fullhash}{9f5a0096214c90ddcbf3eb888b9bcab9}
-      \strng{bibnamehash}{9f5a0096214c90ddcbf3eb888b9bcab9}
-      \strng{authorbibnamehash}{9f5a0096214c90ddcbf3eb888b9bcab9}
-      \strng{authornamehash}{9f5a0096214c90ddcbf3eb888b9bcab9}
-      \strng{authorfullhash}{9f5a0096214c90ddcbf3eb888b9bcab9}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{8}
-      \field{title}{StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks}
-      \field{type}{techreport}
-      \field{year}{2017}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/1612.03242.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/1612.03242.pdf
-      \endverb
-    \endentry
-    \entry{conGAN}{report}{}
-      \name{author}{1}{}{%
-        {{hash=1926d5e9497f96cccd79c82e9a802669}{%
-           family={Mehdi\bibnamedelima Mirza},
-           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Simon\bibnamedelima Osindero},
-           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Departement d’informatique et de recherche opérationnellé Universite de Montréal, Flickr / Yahoo Inc. San Francisco}%
-      }
-      \strng{namehash}{1926d5e9497f96cccd79c82e9a802669}
-      \strng{fullhash}{1926d5e9497f96cccd79c82e9a802669}
-      \strng{bibnamehash}{1926d5e9497f96cccd79c82e9a802669}
-      \strng{authorbibnamehash}{1926d5e9497f96cccd79c82e9a802669}
-      \strng{authornamehash}{1926d5e9497f96cccd79c82e9a802669}
-      \strng{authorfullhash}{1926d5e9497f96cccd79c82e9a802669}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{11}
-      \field{title}{Conditional Generative Adversarial Nets}
-      \field{type}{techreport}
-      \field{year}{2014}
-      \verb{urlraw}
-      \verb https://arxiv.org/pdf/1411.1784.pdf
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/pdf/1411.1784.pdf
-      \endverb
+      \field{title}{Complex Numbers from A to...Z}
+      \field{year}{2006}
     \endentry
   \enddatalist
 \endrefsection

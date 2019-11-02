@@ -1,7 +1,190 @@
 % !TEX root = ../thesis.tex
 
-\chapter{Matematicke zaklady kvantovych systemov}
+\chapter{Matematické základy kvantových systémov}
+
+Na pochopenie problematiky kvantových počítačov je nutná znalosť aspoň základnej lineárnej algebry.
+V tejto kapitole je opýsaný matematický aparát využívaný ako teoretický základ celej práce.
 
 \section{Matice}
-\section{Komlexne cisla}
+
+Maticou typu \(m \times n\) je nazývaná sústava prvkov zapísaných do schémy s \(m\) riadkami a \(n\) stľpcami, kde \(n,m \in \field{N}\) \cite{Ste18}.
+Teda:
+\[
+A = \begin{bmatrix}
+		a_{11} & a_{12} & \dots & a_{1n} \\
+		a_{21} & a_{22} & \dots & a_{2n} \\
+		{...}							\\
+		a_{m1} & a_{m2} & \dots & a_{mn}
+     \end{bmatrix}
+\]
+
+\subsection{Násobenie matice skalárom}
+Toto násobenie je vykonané násobením každého prvku matice danou skalárnou hodnotou \cite{Ste18}.
+Majme maticu \(A\) typu \(2 \times 2\) a skalárnu hodnotu \(k\), potom platí
+\[
+kA = k \begin{bmatrix}
+		 a_{11} & a_{12} \\
+		 a_{21} & a_{22}
+       \end{bmatrix}
+= \begin{bmatrix}
+	ka_{11} & ka_{12} \\
+	ka_{21} & ka_{22}
+  \end{bmatrix}
+\]
+Operácia násobenia matice skalárnou hodnotou je komutatívna, čiže na poradí operandov nezáleží.
+Nech \(B\) je matica a \(\alpha, \beta\) sú skalárne hodnoty, potom
+\[(\alpha + \beta)B = \alpha B + \beta B,\] \[(\alpha \beta)B = \alpha(\beta B)\]
+
+\subsection{Násobenie matíc}
+Nech je daná matica \(A\) typu \(m \times n\) a matica \(B\) typu \(n \times p\), potom výsledná matica \(C = AB\) je typu \(m \times p\) a pre jej prvky platí
+\[c_{ij} = \sum_{k=1}^{n} A_{ik}B_{kj} = A_{i1}B_{ij} + \dots + A_{in}B_{nj},\]
+kde \(i = 1, \dots ,m\), a \(j = 1, \dots , p\) \cite{Ste18}.
+Pre túto operáciu neplatí komutatívnosť.
+
+\subsection{Transpozícia matice}
+Ak \(A\) je matica typu \(m \times n\), potom jej transponovaná matica \(A^{T}\) je typu \(n \times m\) a platí \cite{Ste18} \[(A^{T})_{ij} = A_{ji}\]
+
+\subsection{Tenzorový súčin matíc}
+Nech \(A\) je matica typu \(m \times n\) a \(B\) je typu \(r \times s\).
+Tenzorový súčin alebo Kroneckerov súčin, označený ako \(A \otimes B\) je definovaný ako \cite{Gra81}
+ \[
+A \otimes B = \begin{bmatrix}
+		a_{11}B & a_{12}B & \dots & a_{1n}B \\
+		a_{21}B & a_{22}B & \dots & a_{2n}B \\
+		{...}							\\
+		a_{m1}B & a_{m2}B & \dots & a_{mn}B
+     \end{bmatrix}
+\]
+Nakoľko je \(a_{ij}B\) submatica typu \(r \times s\), je zjavné, že výsladná matica je typu \(mr \times ns\).
+
+\section{Komplexné čísla}
+Množinou komplexných čísel \(\field{C}\) je nazývaná množina \(\field{R}^2\) spolu s operáciami sčítania a násobenia. Ľubovoľný prvok \(z = (a, b) \in \field{C}\) je nazývaný komplexné číslo \cite{Tit06}.
+Komplexné čísla možno reprezentovať nie len ako usporiadanú dvojicu, ale aj pomocou:
+\begin{enumerate}
+\item Algebraickej formy \[z = a + bi\], kde \(a,b \in \field{R}\) a \(i^{2} = -1\),
+\item Polárnych súradníc \(\rho\) a \(\varphi\), \\
+kde \(\rho,\varphi \in \field{R}\) a \(\rho > 0\).
+V geometrickej reprezenácii (Obr. \ref{fig:kn}) je \(\rho\) veľkosť vektora \(\vec{Oz}\), kde \(O\) je počiatok súradnicovej sústavy, a \(\varphi\) je uhol medzi osou \(x\) a daným vektorom.
+\end{enumerate}
+Je zrejme, že pre vyjadrenie pomocou polárnych súradníc platí \(a = \rho \cos \varphi\) a \(b = \rho \sin \varphi\) \cite{Tit06}.
+Potom je možné zapísať \[z = \rho e^{i \varphi}\] ,kde \(z \in \field{C}\), \(\rho , \varphi \in \field{R}\) a \(\rho > 1\).
+\(e^{i \varphi}\) je komplexná jednotka, inak povedané jej absolútna hodnota je rová 1.
+\[|e^{i \varphi}| = 1\]
+A z Eulerovho vzťahu platí
+\[e^{i \varphi} = \cos \varphi + i\sin \varphi\]
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=2]
+\coordinate (O) at (0,0);
+\coordinate (A) at ($({1/sqrt(2)},0)$);
+\coordinate (B) at ($({1/sqrt(2)},{1/sqrt(2)})$);
+
+\draw [-latex] (-2,0) -- (2,0) node[below left]{x};
+\draw [-latex] (-2,0) -- (2,0) node[above left]{Re$\,z$};
+\draw [-latex] (0,-1.5) -- (0,1.5) node[below right]{y};
+\draw [-latex] (0,-1.5) -- (0,1.5) node[below left]{Im$\,z$};
+\draw (O)--(A)--(B)--cycle;
+\draw (O) circle(1);
+
+\tkzLabelSegment[below](O,A){\(a\)}
+\tkzLabelSegment[left](A,B){\(b\)}
+\tkzLabelSegment[above](O,B){\(\rho\)}
+
+\tkzMarkAngle[size=.4](A,O,B)
+\tkzLabelAngle[pos=.3](A,O,B){\(\varphi\)}
+
+\end{tikzpicture}
+\caption{Zobrazenie komplexného čísla z: x - reálna os, y - imagináran os}
+\label{fig:kn}
+\end{figure}
+
+\subsection{Operácie na množine komplexých čísel}
+\textbf{Súčet komplexných čísel}
+\begin{itemize}
+\item \((a + bi) + (c + di) = (a + c) + (b + d)i\)
+\item \(\rho_{1}e^{i \varphi_{1}} + \rho_{2}e^{i \varphi_{2}} = \rho_{1}(\cos \varphi_{1} + i\sin \varphi_{1}) + \rho_{2}(\cos \varphi_{2} + i\sin \varphi_{2}) =  (\rho_{1}\cos \varphi_{1} + \rho_{2}\cos \varphi_{2}) + i(\rho_{1}\sin \varphi_{1} + \rho_{2}\sin \varphi_{2})\)
+\end{itemize}
+
+\textbf{Násobenie komplexných čísel}
+\begin{itemize}
+\item \((a + bi)(c + di) = ac + adi + bci - bd = (ac - bd) + (ad + bd)i\)
+\item \(\rho_{1}e^{i \varphi_{1}} . \rho_{2}e^{i \varphi_{2}} = \rho_{1} \rho_{2}e^{i(\varphi_{1} \varphi_{2})}\)
+\end{itemize}
+
+Operácie rozdielu a podielu sú ľahko odvoditeľné obnomným spôsobom.
+
+\subsection{Základné charakteristiky komplexných čísel}
+Nech \(\alpha\) je komplexné číslo \(\alpha = a + bi, \alpha \in \field{C}\).
+Potom hovoríme, že \(a,b\) sú zložky komplexného čísla \(\alpha\), pričom \(a\) je reálna a \(b\) je imaginárna zložka.
+Pri reprezenácií pomocou polárnych súradníc \(\alpha = \rho e^{i\varphi}\) je \(\rho\) nazývané amplitúda (veľkosť, norma) komplexného čísla a \(\varphi\) je fáza komplexného čísla. \\
+
+Pre komplexné číslo \(\alpha \in \field{C}\) je číslo \(\alpha^{\dag}\) (\(\overline{\alpha}\) alebo \(\alpha^{*}\)) nazývané združeným komplexným číslom (angl. conjugate of complex number) \cite{Tit06}, pričom ak \(\alpha = a + bi\), potom 
+\[\alpha^{\dag} = a - bi,\] 
+\[\alpha^{\dag} = \rho e^{-i\varphi}.\]
+Z geometrickej reprezentácie komplexného čísla na Obr. \ref{fig:kn} je zrejmé, že \(\rho = \sqrt{a^2 + b^2}\).
+Bolo už spomenuté, že \(\rho\) sa nazýva aj norma komplexného čísla.
+Normu komplexného čísla \(\alpha\) možno označiť aj ako \(|\alpha|\) a platí
+\[|\alpha| = \sqrt{\alpha^{\dag}\alpha}.\]
+Dôkaz:
+\[|\alpha| = \sqrt{\alpha^{\dag}\alpha} = \sqrt{\rho e^{-i\varphi}.\rho e^{i\varphi}} = \sqrt{\rho^{2}} = \rho\]
+
 \section{Vektory}
+
+Vektor rozmeru \(n\) je usporiadaný súbor prvkov.
+Vo všeobecnosti je možné vektor \(A\) označiť ako 
+\[A = \begin{pmatrix}
+		a_{1} \\
+		a_{2}\\
+		\dots \\
+		a_{n}
+     \end{pmatrix}\]
+No je žiadúce označovať vektory pomocou Diracovho (Bra-ket) zápisu.
+Čiže vektory \(u = \binom{\alpha}{\beta}\) a \(v = \binom{\gamma}{\delta}\) je lepšie označiť ako 
+\[\Ket{\psi_1} = \binom{\alpha_1}{\beta_1}\]
+\[\Ket{\psi_2} = \binom{\alpha_2}{\beta_2}\]
+Toto označenie popisuje vektory v Hilbertovom priesotre (viac v kapitole \ref{hil_space}), pričom platí nasledovné:
+
+Ak \(\Ket{\psi} = \binom{\alpha}{\beta}\) je ket-vektor, potom 
+\[\Bra{\psi} = {\binom{\alpha}{\beta}}^{\dag} = (\alpha^{\dag} \beta^{\dag})\]
+je  bra-vektor, kde \( ( \alpha, \beta, \alpha^{\dag}, \beta^{\dag} \in \field{C} ) \) a \(\alpha^{\dag}, \beta^{\dag}\) sú združené komplexné čísla ku \(\alpha\) a \(\beta\).
+\(\Bra{\psi}\) je teda združenou transpozíciou (angl. transposed conjugate), a platí
+\[\Bra{\psi^{\dag}} = \Ket{\psi}\]
+\[\Ket{\psi^{\dag}} = \Bra{\psi}\]
+
+
+\section{Pojmi a definície}
+Vektor je \textbf{normalizovaný}, ak jeho norma (veľkosť) je rovná 1.
+\[\left\Vert \binom{\alpha}{\beta} \right\Vert = \sqrt{|\alpha|^2 + |\beta|^2}= 1\]
+
+Vektory \(\psi_1\) a \(\psi_2\) sú navzájom \textbf{ortogonálne}, ak ich skalárny súčin je rovný 0. Ortogonálnosť (angl. orthogonality) je v tomto ponímaní teda možné zameniť s kolmosťou.
+
+Dva vektory sú \textbf{ortonormálne}, ak sú zároveň ortogonálne a normalizované.
+
+Pre príklad nech \(\Ket{0} = \binom{1}{0}\) a \(\Ket{1} = \binom{0}{1}\), \( (\Ket{0}, \Ket{1} \in \field{C}^2) \).
+Tieto vektory sú ortonormálne, pretože platí 
+\begin{enumerate}
+\item \(\Braket{0|1} = \Bra{0} . \Ket{1} = \Ket{0^{\dag}} . \Ket{1} = (1 0) . \binom{0}{1} = 0,\)
+\item \(\Vert \Ket{0} \Vert^2 = \Braket{0|0} = (1 0) . \binom{1}{0} = 1\) \\
+\(\Vert \Ket{1} \Vert^2 = \Braket{1|1} = (0 1) . \binom{0}{1} = 1\).
+\end{enumerate}
+
+Pre \textbf{skalárny súčin} dvoch vektorov platí
+\[\Braket{\psi_1|\psi_2} = \Bra{\psi_1} . \Ket{\psi_2} = (\alpha_1^{\dag}\beta_1^{\dag}) . \binom{\alpha_2}{\beta_2} = \alpha_1^{\dag}\alpha_2 + \beta_1^{\dag}\beta_2.\]
+
+\textbf{Normu} vektora \(\Ket{\psi}\) pomocou skalárneho súčinu je možné vypočítať ako
+\[\Vert \Ket{\psi} \Vert = \sqrt{\Braket{\psi|\psi}},\]
+pretože platí \(\Braket{\psi|\psi} = \alpha^{\dag}\alpha + \beta^{\dag}\beta = |\alpha|^2 + |\beta|^2 = \Vert \Ket{\psi} \Vert^2\).
+
+Operácia \textbf{tenzorového súčinu} dvoch vektorov je definovaná ako
+\[
+\Ket{\psi_1} \otimes \Ket{\psi_2} = \Ket{\psi_1} . \Bra{\psi_2} = \binom{\alpha_1}{\beta_1} . (\alpha_2\beta_2) = 
+\begin{pmatrix}
+	\alpha_1(\alpha_2\beta_2) \\ 
+	\beta_1(\alpha_2\beta_2)
+\end{pmatrix} = 
+\begin{pmatrix}
+	\alpha_1\alpha_2 \quad \alpha_1\beta_2 \\
+	\beta_1\alpha_2 \quad \beta_1\beta_2
+\end{pmatrix}
+\]

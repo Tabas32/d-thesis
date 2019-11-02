@@ -1,10 +1,33 @@
 % !TEX root = ../thesis.tex
 
-\chapter{Teoreticke zaklady kvantovych systemov}
+\chapter{Teoretické základy kvantových systémov}
 
 \section{Zakladne definicie}
 
 \subsection{Hilbertov priestor ... atd}
-\subsection{System s jednym kvantovym bitom}
+\label{hil_space}
+Hilbertov priestor (angl. Hilbert space) je úplný vektorový priestor s operáciou skalárneho súčinu \(<u|v>\), \(u,v\) sú \(N\)-rozmerné vektory s komplexnými zložkami.
+Pre takto definovaný priestor platí, že existuje Cauchyho postupnosť, ktorou je dosiahnuteľný ľubovoľný stav, charakterizovateľný \(N\)-rozmerným vektorom \(\phi \in \field{C}^{N}\), ktorý je normalizovaý.
+
+Unitárne zobrazenie (angl. Unitary map) je rotáciou - teda zmenou ortonormálnej bázy.
+
+Kvantový bit je vektor v dvojrozmernom Hilberovom priesotre \(\field{C}^{2}\).
+Vo všeobecnosti môžeme vektor \(u = \binom{\alpha}{\beta}\), \(\alpha, \beta \in \field{C}\) a \(u \in \field{C}^{2}\) vyjadriť superpozíciou, teda lineárnou kombináciou základných stavov \(|0>, |1>\), ktoré zodpovedajé klasickým bitom \(0,1\).
+Teda \[u = \binom{\alpha}{\beta} = \alpha \binom{1}{0} + \beta \binom{0}{1} = \alpha|0> + \beta|1>,\]
+kde monožina \(\{|0>, |1>\} = \{\binom{1}{0}, \binom{0}{1}\}\) je základná množina.
+Bázy \(\{|+>, |->\}\) a \(\{|qL>, |qR>\}\) sú ďalšie významné bázy v Hilbertovom priesotre, ktoré sú dosiahnuteľné zo základnej bázy unitárnymi transformáciami.
+
+Stav \(|\phi>\), \(|\phi> \in \field{C}^{2}\) je superpozíciou stavov základnej bázy \(\{|0>, |1>\}\), teda lineárnou kombináciou týchto vektorov.
+Superpozícia je daná vzťahom \(|\phi> = \alpha|0> + \beta|1>\), \(\alpha, \beta \in \field{C}, |\alpha|^{2} + |\beta|^{2} = 1\).
+
+\subsection{Systém s jedným kvantovým bitom}
+\[\Ket{\psi} = \binom{\alpha}{\beta} = \binom{\alpha}{0} + \binom{0}{\beta} = \alpha \binom{1}{0} + \beta \binom{0}{1} = \alpha \Ket{0} + \beta \Ket{1}, \]
+kde \(\alpha, \beta \in \field{C}\) a \(\Ket{\psi} \in \field{C}^{2}\).
+Čiže stav kvantového systému \(\Ket{\psi}\) je superpozíciou stavov \(\Ket{0}\) a \(\Ket{1}\).
+\[\Ket{\psi} = \binom{\alpha}{\beta}\]
+\[\Bra{\psi} = (\alpha^{\dag}\beta^{\dag})\]
+\[\Braket{\psi|\psi} = (\alpha^{\dag}\beta^{\dag})\binom{\alpha}{\beta} = \alpha^{\dag}\alpha + \beta^{\dag}\beta = |\alpha|^{2} + |\beta|^{2} = ||\Ket{\psi}||^{2}\]
+
+
 \subsection{System s viacerymi kvantovymi bitmy}
 \subsection{Princip merania}
