@@ -91,6 +91,56 @@
       \field{title}{Complex Numbers from A to...Z}
       \field{year}{2006}
     \endentry
+    \entry{Nie10}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a1b36ee271f3d7b01e25331617fc336f}{%
+           family={Michael\bibnamedelimb A.\bibnamedelimi Nielsen},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Issac\bibnamedelimb L.\bibnamedelimi Chuang},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{a1b36ee271f3d7b01e25331617fc336f}
+      \strng{fullhash}{a1b36ee271f3d7b01e25331617fc336f}
+      \strng{bibnamehash}{a1b36ee271f3d7b01e25331617fc336f}
+      \strng{authorbibnamehash}{a1b36ee271f3d7b01e25331617fc336f}
+      \strng{authornamehash}{a1b36ee271f3d7b01e25331617fc336f}
+      \strng{authorfullhash}{a1b36ee271f3d7b01e25331617fc336f}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Computation and Quantum Information}
+      \field{year}{2010}
+    \endentry
+    \entry{Kay07}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6947262f242a6ce5de6d198c0b9c62ad}{%
+           family={Phillip\bibnamedelima Kaye},
+           familyi={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Michele\bibnamedelima Mosca},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           suffix={Raymond\bibnamedelima LaFlamme},
+           suffixi={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{6947262f242a6ce5de6d198c0b9c62ad}
+      \strng{fullhash}{6947262f242a6ce5de6d198c0b9c62ad}
+      \strng{bibnamehash}{6947262f242a6ce5de6d198c0b9c62ad}
+      \strng{authorbibnamehash}{6947262f242a6ce5de6d198c0b9c62ad}
+      \strng{authornamehash}{6947262f242a6ce5de6d198c0b9c62ad}
+      \strng{authorfullhash}{6947262f242a6ce5de6d198c0b9c62ad}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Introduction to Quantum Computing}
+      \field{year}{2007}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

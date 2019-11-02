@@ -2003,6 +2003,8 @@
     <bcf:citekey order="6">Tit06</bcf:citekey>
     <bcf:citekey order="7">Tit06</bcf:citekey>
     <bcf:citekey order="8">Tit06</bcf:citekey>
+    <bcf:citekey order="9">Nie10</bcf:citekey>
+    <bcf:citekey order="10">Kay07</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

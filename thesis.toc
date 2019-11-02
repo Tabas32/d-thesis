@@ -32,28 +32,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Teoretick\IeC {\'e} z\IeC {\'a}klady kvantov\IeC {\'y}ch syst\IeC {\'e}mov}{9}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Zakladne definicie}{9}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Z\IeC {\'a}kladn\IeC {\'e} defin\IeC {\'\i }cie}{9}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Hilbertov priestor ... atd}{9}{subsection.3.1.1}% 
+\contentsline {section}{\numberline {3.2}Syst\IeC {\'e}m s jedn\IeC {\'y}m kvantov\IeC {\'y}m bitom}{10}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Syst\IeC {\'e}m s jedn\IeC {\'y}m kvantov\IeC {\'y}m bitom}{10}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.3}System s viacerymi kvantovymi bitmy}{11}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}System s viacerymi kvantovymi bitmy}{10}{subsection.3.1.3}% 
+\contentsline {section}{\numberline {3.4}Princip merania}{11}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Princip merania}{10}{subsection.3.1.4}% 
+\contentsline {chapter}{\numberline {4}Kvantovy system}{12}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Kvantovy system}{11}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}IBM QX}{12}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}IBM QX}{11}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Stavy a ich zapis}{12}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Stavy a ich zapis}{11}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Operacie kvantovych hradiel}{12}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Operacie kvantovych hradiel}{11}{subsection.4.1.2}% 
+\contentsline {chapter}{\numberline {5}Meranie jednoduch\IeC {\'e}ho kvantov\IeC {\'e}ho obvodu}{13}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Meranie jednoduch\IeC {\'e}ho kvantov\IeC {\'e}ho obvodu}{12}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Celkove zhodnotenie vysledkov (Vyhodnotenie)}{15}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Celkove zhodnotenie vysledkov (Vyhodnotenie)}{14}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Z\IeC {\'a}ver}{16}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Z\IeC {\'a}ver}{15}{chapter.7}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literat\IeC {\'u}ra}{16}{section*.5}% 
+\contentsline {chapter}{Literat\IeC {\'u}ra}{17}{section*.5}% 
