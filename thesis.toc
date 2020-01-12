@@ -70,10 +70,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Definícia vstupu}{17}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Kvantová teleportácia}{19}{chapter.8}% 
+\contentsline {section}{\numberline {7.2}Pravdepodobnostný model}{18}{section.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{20}{chapter.9}% 
+\contentsline {chapter}{\numberline {8}Kvantová teleportácia}{21}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Záver}{21}{chapter.10}% 
+\contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{22}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatúra}{22}{section*.7}% 
+\contentsline {chapter}{\numberline {10}Záver}{23}{chapter.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatúra}{24}{section*.9}% 

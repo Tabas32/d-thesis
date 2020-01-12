@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{let} \PYG{n}{l1} \PYG{o}{=} \PYG{n}{Level} \PYG{p}{[}\PYG{n}{E}\PYG{p}{,} \PYG{n}{E}\PYG{p}{]} \PYG{k+kc}{True}
+    \PYG{n}{l2} \PYG{o}{=} \PYG{n}{Level} \PYG{p}{[}\PYG{n}{H}\PYG{p}{,} \PYG{n}{E}\PYG{p}{]} \PYG{k+kc}{True}
+    \PYG{n}{l3} \PYG{o}{=} \PYG{n}{Level} \PYG{p}{[}\PYG{n}{Cc}\PYG{p}{,} \PYG{n}{Ct}\PYG{p}{]} \PYG{k+kc}{True}
+    \PYG{n}{c} \PYG{o}{=} \PYG{p}{[}\PYG{n}{l1}\PYG{p}{,} \PYG{n}{l2}\PYG{p}{,} \PYG{n}{l3}\PYG{p}{]}
+    \PYG{n}{st} \PYG{o}{=} \PYG{n}{StateTree} \PYG{l+m+mi}{1} \PYG{p}{[}\PYG{n}{q0}\PYG{p}{,} \PYG{n}{q0}\PYG{p}{]} \PYG{p}{[]}
+    \PYG{n}{rt} \PYG{o}{=} \PYG{n}{RT} \PYG{n}{st} \PYG{p}{[]}
+\end{Verbatim}

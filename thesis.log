@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.17)  11 JAN 2020 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.17)  12 JAN 2020 22:39
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -1258,7 +1258,115 @@ File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
 File: tikzlibrarytopaths.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-)))
+))) (/usr/share/texmf/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texmf/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2019/10/22
+
+Style option: `fancyvrb' v3.3 <2019/10/22> (tvz)
+\FV@CodeLineNo=\count382
+\FV@InFile=\read3
+\FV@TabBox=\box48
+\c@FancyVerbLine=\count383
+\FV@StepNumber=\count384
+\FV@OutFile=\write7
+)
+(/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count385
+\output=\toks49
+\linenoprevgraf=\count386
+\linenumbersep=\dimen261
+\linenumberwidth=\dimen262
+\c@linenumber=\count387
+\c@pagewiselinenumber=\count388
+\c@LN@truepage=\count389
+\c@internallinenumber=\count390
+\c@internallinenumbers=\count391
+\quotelinenumbersep=\dimen263
+\bframerule=\dimen264
+\bframesep=\dimen265
+\bframebox=\box49
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count392
+\c@FV@TrueTabCounter=\count393
+\FV@TabBox@Group=\box50
+\FV@TmpLength=\skip96
+\c@FV@HighlightLinesStart=\count394
+\c@FV@HighlightLinesStop=\count395
+\FV@LoopCount=\count396
+\FV@NCharsBox=\box51
+\FV@BreakIndent=\dimen266
+\FV@BreakIndentNChars=\count397
+\FV@BreakSymbolSepLeft=\dimen267
+\FV@BreakSymbolSepLeftNChars=\count398
+\FV@BreakSymbolSepRight=\dimen268
+\FV@BreakSymbolSepRightNChars=\count399
+\FV@BreakSymbolIndentLeft=\dimen269
+\FV@BreakSymbolIndentLeftNChars=\count400
+\FV@BreakSymbolIndentRight=\dimen270
+\FV@BreakSymbolIndentRightNChars=\count401
+\c@FancyVerbLineBreakLast=\count402
+\FV@LineBox=\box52
+\FV@LineIndentBox=\box53
+\FV@LineWidth=\dimen271
+)
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02b unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 70.
+)
+(/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+)
+runsystem(uname -s > "thesis.w18")...executed.
+
+ (./thesis.w18)
+runsystem(rm -- "thesis.w18")...executed.
+
+)
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count403
+\decimalpart=\count404
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip97
+\fb@frw=\dimen272
+\fb@frh=\dimen273
+\FrameRule=\dimen274
+\FrameSep=\dimen275
+)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count405
+\float@exts=\toks50
+\float@box=\box54
+\@float@everytoks=\toks51
+\@floatcapt=\box55
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box56
+\minted@code=\write8
+\c@minted@FancyVerbLineTemp=\count406
+\c@minted@pygmentizecounter=\count407
+\@float@every@listing=\toks52
+\c@listing=\count408
+)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 calc.code.tex
 File: tikzlibrarycalc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
@@ -1274,7 +1382,7 @@ File: tikzlibraryarrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\arrowsize=\dimen261
+\arrowsize=\dimen276
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 plotmarks.code.tex
@@ -1298,16 +1406,16 @@ File: pgflibraryshapes.misc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 decorations.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen262
-\pgfdecoratedremainingdistance=\dimen263
-\pgfdecoratedinputsegmentcompleteddistance=\dimen264
-\pgfdecoratedinputsegmentremainingdistance=\dimen265
-\pgf@decorate@distancetomove=\dimen266
-\pgf@decorate@repeatstate=\count382
-\pgfdecorationsegmentamplitude=\dimen267
-\pgfdecorationsegmentlength=\dimen268
+\pgfdecoratedcompleteddistance=\dimen277
+\pgfdecoratedremainingdistance=\dimen278
+\pgfdecoratedinputsegmentcompleteddistance=\dimen279
+\pgfdecoratedinputsegmentremainingdistance=\dimen280
+\pgf@decorate@distancetomove=\dimen281
+\pgf@decorate@repeatstate=\count409
+\pgfdecorationsegmentamplitude=\dimen282
+\pgfdecorationsegmentlength=\dimen283
 )
-\tikz@lib@dec@box=\box48
+\tikz@lib@dec@box=\box57
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 decorations.markings.code.tex
@@ -1329,44 +1437,44 @@ Package: numprint 2012/08/20 v1.39 Print numbers (HH)
 
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen269
-\ar@mcellbox=\box49
-\extrarowheight=\dimen270
-\NC@list=\toks49
-\extratabsurround=\skip96
-\backup@length=\skip97
-\ar@cellbox=\box50
+\col@sep=\dimen284
+\ar@mcellbox=\box58
+\extrarowheight=\dimen285
+\NC@list=\toks53
+\extratabsurround=\skip98
+\backup@length=\skip99
+\ar@cellbox=\box59
 )
-\c@nprt@mantissa@digitsbefore=\count383
-\c@nprt@mantissa@digitsafter=\count384
-\c@nprt@exponent@digitsbefore=\count385
-\c@nprt@exponent@digitsafter=\count386
-\nprt@digitwidth=\skip98
-\nprt@sepwidth=\skip99
-\nprt@decimalwidth=\skip100
-\nprt@blockwidth=\skip101
-\nprt@digittoks=\toks50
-\nprt@pretoks=\toks51
-\nprt@posttoks=\toks52
-\nprt@thisdigit=\count387
-\nprt@curpos=\count388
-\nprt@rndpos=\count389
-\c@nprt@digitsfirstblock=\count390
-\c@nprt@blockcnt=\count391
-\c@nprt@cntprint=\count392
+\c@nprt@mantissa@digitsbefore=\count410
+\c@nprt@mantissa@digitsafter=\count411
+\c@nprt@exponent@digitsbefore=\count412
+\c@nprt@exponent@digitsafter=\count413
+\nprt@digitwidth=\skip100
+\nprt@sepwidth=\skip101
+\nprt@decimalwidth=\skip102
+\nprt@blockwidth=\skip103
+\nprt@digittoks=\toks54
+\nprt@pretoks=\toks55
+\nprt@posttoks=\toks56
+\nprt@thisdigit=\count414
+\nprt@curpos=\count415
+\nprt@rndpos=\count416
+\c@nprt@digitsfirstblock=\count417
+\c@nprt@blockcnt=\count418
+\c@nprt@cntprint=\count419
 
 No configuration file `numprint.cfg' found.)
-\tkzRadius=\dimen271
-\tkzLength=\dimen272
-\tkz@radi=\dimen273
-\tkz@ax=\dimen274
-\tkz@ay=\dimen275
-\tkz@bx=\dimen276
-\tkz@by=\dimen277
-\tkz@cx=\dimen278
-\tkz@cy=\dimen279
-\tkz@dx=\dimen280
-\tkz@dy=\dimen281
+\tkzRadius=\dimen286
+\tkzLength=\dimen287
+\tkz@radi=\dimen288
+\tkz@ax=\dimen289
+\tkz@ay=\dimen290
+\tkz@bx=\dimen291
+\tkz@by=\dimen292
+\tkz@cx=\dimen293
+\tkz@cy=\dimen294
+\tkz@dx=\dimen295
+\tkz@dy=\dimen296
 
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-tools-utilities.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-tools-arith.tex
@@ -1378,7 +1486,7 @@ File: tkz-tool-arith.tex tkz-tool-arith 1.161 d
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-obj-points.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-obj-segments.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-obj-marks.tex
-\tkz@cntmk=\count393
+\tkz@cntmk=\count420
 ))
 (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-tools-intersections.tex)
 (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-tools-transformations.tex)
@@ -1409,54 +1517,61 @@ File: english.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count394
-\@quotereset=\count395
+\@quotelevel=\count421
+\@quotereset=\count422
+runsystem(which pygmentize && touch thesis.aex)...executed.
+
+runsystem(rm thesis.aex)...executed.
+
 (./thesis.aux (./chapters/uvod.aux) (./chapters/formulacia.aux)
 (./chapters/matZaklady.aux) (./chapters/teorZaklady.aux)
 (./chapters/kvantSystem.aux) (./chapters/pravAnal.aux) (./chapters/meranie.aux)
-(./chapters/pravModel.aux) (./chapters/kvanTel.aux)
-(./chapters/vyhodnotenie.aux) (./chapters/zaver.aux))
+(./chapters/pravModel.aux
+
+LaTeX Warning: Label `obvod' multiply defined.
+
+) (./chapters/kvanTel.aux) (./chapters/vyhodnotenie.aux) (./chapters/zaver.aux)
+)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
-7.
-
-(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+8.
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 87.
-\AtBeginShipoutBox=\box51
+LaTeX Font Info:    ... okay on input line 88.
+\AtBeginShipoutBox=\box60
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count396
-\scratchdimen=\dimen282
-\scratchbox=\box52
-\nofMPsegments=\count397
-\nofMParguments=\count398
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count399
-\MPscratchDim=\dimen283
-\MPnumerator=\count400
-\makeMPintoPDFobject=\count401
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count423
+\scratchdimen=\dimen297
+\scratchbox=\box61
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count426
+\MPscratchDim=\dimen298
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks58
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1524,25 +1639,26 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 87.
-Package biblatex Info: Reference segment=0 on input line 87.
-Package hyperref Info: Link coloring OFF on input line 87.
+Package biblatex Info: Reference section=0 on input line 88.
+Package biblatex Info: Reference segment=0 on input line 88.
+Package hyperref Info: Link coloring OFF on input line 88.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count402
+\c@section@level=\count429
 )
-LaTeX Info: Redefining \ref on input line 87.
-LaTeX Info: Redefining \pageref on input line 87.
-LaTeX Info: Redefining \nameref on input line 87.
+LaTeX Info: Redefining \ref on input line 88.
+LaTeX Info: Redefining \pageref on input line 88.
+LaTeX Info: Redefining \nameref on input line 88.
  (./thesis.out) (./thesis.out)
-\@outlinefile=\write7
-\openout7 = `thesis.out'.
+\@outlinefile=\write9
+\openout9 = `thesis.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
  (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
@@ -1555,19 +1671,19 @@ ABD: EveryShipout initializing macros [1
 \openout4 = `thesis.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
 
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2] [3] [4]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
+0.
 
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1575,13 +1691,13 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 [8
 
 ])
-\tf@toc=\write8
-\openout8 = `thesis.toc'.
+\tf@toc=\write10
+\openout10 = `thesis.toc'.
 
 
 
 LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
-(Font)              Font shape `T1/qpl/m/it' tried instead on input line 89.
+(Font)              Font shape `T1/qpl/m/it' tried instead on input line 90.
 
 [9] (./thesis.lof
 Overfull \hbox (9.8035pt too wide) in paragraph at lines 19--19
@@ -1590,8 +1706,8 @@ u-an-tum Expe-
  []
 
 )
-\tf@lof=\write9
-\openout9 = `thesis.lof'.
+\tf@lof=\write11
+\openout11 = `thesis.lof'.
 
  [10
 
@@ -1668,10 +1784,10 @@ Kapitola 4.
 
  (./chapters/pravAnal.tex
 Kapitola 5.
-<figures/simpleCircuit2.png, id=332, 177.66376pt x 116.435pt>
+<figures/simpleCircuit2.png, id=341, 177.66376pt x 116.435pt>
 File: figures/simpleCircuit2.png Graphic file (type png)
 <use figures/simpleCircuit2.png>
-Package pdftex.def Info: figures/simpleCircuit2.png  used on input line 17.
+Package pdftex.def Info: figures/simpleCircuit2.png  used on input line 18.
 (pdftex.def)             Requested size: 170.71393pt x 111.88469pt.
 [13
 
@@ -1696,7 +1812,7 @@ Overfull \hbox (1.91231pt too wide) in paragraph at lines 3--3
 |[]\T1/qpl/b/n/24.88 Pravdepodobnostný mo-del kvan-to-
  []
 
-<figures/navrh.png, id=356, 181.67876pt x 241.90375pt>
+<figures/navrh.png, id=365, 181.67876pt x 241.90375pt>
 File: figures/navrh.png Graphic file (type png)
 <use figures/navrh.png>
 Package pdftex.def Info: figures/navrh.png  used on input line 11.
@@ -1707,16 +1823,59 @@ Overfull \hbox (5.65819pt too wide) in paragraph at lines 24--28
 -kov alebo le-ve-lov. Kaºdý
  []
 
-) [17
+[17
 
 
 
- <./figures/navrh.png>] [18]
+ <./figures/navrh.png>]
+<figures/circuit3.png, id=372, 208.78pt x 111.41624pt>
+File: figures/circuit3.png Graphic file (type png)
+<use figures/circuit3.png>
+Package pdftex.def Info: figures/circuit3.png  used on input line 38.
+(pdftex.def)             Requested size: 170.71393pt x 91.10689pt.
+
+Overfull \hbox (1.84091pt too wide) in paragraph at lines 53--60
+[]\T1/qpl/m/n/12 Pravdepodbnostný mo-del si ucho-váva stavy v²et-kých kvan-to-v
+ých bi-tova v stro-
+ []
+
+\openout7 = `thesis.pyg'.
+
+runsystem(pygmentize -S default -f latex -P commandprefix=PYG > thesis.out.pyg)
+...executed.
+
+(./thesis.out.pyg)
+runsystem(pygmentize -S default -f latex -P commandprefix=PYGdefault > thesis.o
+ut.pyg)...executed.
+
+ (./thesis.out.pyg)
+runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
+thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg
+
+LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
+(Font)              using `T1/cmtt/m/n' instead on input line 2.
+
+[18 <./figures/circuit3.png>])
+\openout7 = `thesis.pyg'.
+
+runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
+thesis.out.pyg thesis.pyg)...executed.
+
+ (./thesis.out.pyg)
+<figures/ST.png, id=380, 310.15875pt x 292.09125pt>
+File: figures/ST.png Graphic file (type png)
+<use figures/ST.png>
+Package pdftex.def Info: figures/ST.png  used on input line 99.
+(pdftex.def)             Requested size: 170.71393pt x 160.76654pt.
+ [19 <./figures/ST.png>])
+[20]
 \openout2 = `chapters/kvanTel.aux'.
 
  (./chapters/kvanTel.tex
 Kapitola 8.
-) [19
+) [21
 
 
 
@@ -1725,7 +1884,7 @@ Kapitola 8.
 
  (./chapters/vyhodnotenie.tex
 Kapitola 9.
-) [20
+) [22
 
 
 
@@ -1734,37 +1893,48 @@ Kapitola 9.
 
  (./chapters/zaver.tex
 Kapitola 10.
-) [21
+) [23
 
 
 
-] (./thesis.acr) [22
+] (./thesis.acr) [24
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (./thesis.aux (./chapters/uvod.aux)
 (./chapters/formulacia.aux) (./chapters/matZaklady.aux)
 (./chapters/teorZaklady.aux) (./chapters/kvantSystem.aux)
 (./chapters/pravAnal.aux) (./chapters/meranie.aux) (./chapters/pravModel.aux)
 (./chapters/kvanTel.aux) (./chapters/vyhodnotenie.aux) (./chapters/zaver.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7EB2CF19EA7E485C5445463052CF8EB8;7312.
+(rerunfilecheck)             Checksum: 99675041CF6A52FAF37FADCDEC355EA5;7511.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+runsystem(rm thesis.pyg)...executed.
+
+runsystem(rm thesis.out.pyg)...executed.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38703 strings out of 492167
- 699158 string characters out of 6131557
- 1263653 words of memory out of 5000000
- 42214 multiletter control sequences out of 15000+600000
- 47323 words of font info for 48 fonts, out of 8000000 for 9000
+ 41498 strings out of 492167
+ 757810 string characters out of 6131557
+ 1367871 words of memory out of 5000000
+ 44945 multiletter control sequences out of 15000+600000
+ 50286 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,81p,2022b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,81p,2022b,1988s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf-d
 ist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm
 -super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
@@ -1779,10 +1949,10 @@ ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/
 public/tex-gyre/qplb.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qpl
 r.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (32 pages, 339121 bytes).
+Output written on thesis.pdf (34 pages, 369915 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 400 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 482 PDF objects out of 1000 (max. 8388607)
+ 419 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

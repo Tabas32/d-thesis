@@ -21,7 +21,8 @@
 \usepackage{blindtext}  % lorem ipsum
 \usepackage{amssymb}
 \usepackage{tikz}
-%\usepackage{minted}
+\usepackage[cache=false]{minted}
+\newenvironment{code}{\VerbatimEnvironment\begin{minted}{haskell}}{\end{minted}}
 
 \newcommand*{\field}[1]{\mathbb{#1}}%
 \usetikzlibrary{calc}
