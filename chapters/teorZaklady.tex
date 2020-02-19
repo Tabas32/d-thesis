@@ -51,13 +51,48 @@ Pretože previazané bity sú charakteristické rovnakými vektormi, a to počas
 \end{itemize}
 
 \section{Systém s jedným kvantovým bitom}
+Majme kvantový systém, ktorý obsahuje jediný kvantový bit. Označme ho \(\psi\)
+a platí
 \[\Ket{\psi} = \binom{\alpha}{\beta} = \binom{\alpha}{0} + \binom{0}{\beta} = \alpha \binom{1}{0} + \beta \binom{0}{1} = \alpha \Ket{0} + \beta \Ket{1}, \]
 kde \(\alpha, \beta \in \field{C}\) a \(\Ket{\psi} \in \field{C}^{2}\).
 Čiže stav kvantového systému \(\Ket{\psi}\) je superpozíciou stavov \(\Ket{0}\) a \(\Ket{1}\).
+
+Používame Bra-ket zápis, ktorý bol vysvetlený v časti Vektory \ref{vektory}. 
+Čiže platí to isté ako pre vektory
 \[\Ket{\psi} = \binom{\alpha}{\beta}\]
 \[\Bra{\psi} = (\alpha^{\dag}\beta^{\dag})\]
+a teda normu tohto kvantového bit možno odvodiť zo
 \[\Braket{\psi|\psi} = (\alpha^{\dag}\beta^{\dag})\binom{\alpha}{\beta} = \alpha^{\dag}\alpha + \beta^{\dag}\beta = |\alpha|^{2} + |\beta|^{2} = ||\Ket{\psi}||^{2}\]
 
+a samozreme platí
+\[|\alpha|^{2} + |\beta|^{2} < 1\]
 
-\section{System s viacerymi kvantovymi bitmy}
-\section{Princip merania}
+\section{Systém s viacerými kvantovými bitmi}
+Majme kvantový systém, ktorý je zložený z troch nepreviazaných kvantových bitov.
+Označme ich \(\psi_1\), \(\psi_2\) a \(\psi_3\) . Platí
+\[\psi_1 = = \alpha_1 \Ket{0} + \beta_1 \Ket{1}\]
+\[\psi_2 = = \alpha_2 \Ket{0} + \beta_2 \Ket{1}\]
+\[\psi_3 = = \alpha_3 \Ket{0} + \beta_3 \Ket{1}\]
+
+Stav tohto systém možno odvodiť ako
+\[\psi = \Ket{\psi_1 \psi_2 \psi_3} = \binom{\alpha_1}{\beta_1} \otimes \binom{\alpha_2}{\beta_2} \otimes \binom{\alpha_3}{\beta_3}\]
+, a to sa rovná
+\[TU DAJ MATICU\]
+
+\section{Princíp merania}
+Pre príklad nám poslúži jednoduchý obvod s tromi nepreviazanými kvantovými 
+bitmi \(\psi_1, \psi_2\) a \(\psi_3\). Každý s týchto bitov môže kolabovať do
+jedného z dvoch stavov. A to \(\Ket{0}\) a \(\Ket{1}\) (\(\binom{1}{0}\) a
+\(\binom{1}{0}\)). Platí
+\[|\alpha_1\alpha_2\alpha_3|^2 + |\alpha_1\alpha_2\beta_3|^2 + \dots + |\beta_1\beta_2\beta_3|^2 = 1\]
+Povedzme, že bit \(\psi_1\) skolabuje. Pravdepodobnosť s akou skolabuje do
+stavu \(\binom{1}{0}\) vypočítame ako \(|\alpha_1|^2\). Pravdepodobnosť s akou 
+skolabuje do stavu \(\binom{0}{1}\) vypočítame ako \(|\beta_1|^2\). Bez ohľadu
+na to, aký stav tento kvantový bit nadobudne, pre kvantový systém bude platiť
+\[|\alpha_2\alpha_3|^2 + |\alpha_2\beta_2|^2 + |\beta_2\alpha_3|^2 + |\beta_2\beta_3|^2 = 1\]
+
+Ak bit \(\psi_1\) kolabuje do \(\Ket{0}\) tak sa systém bude nachádzať v tomto
+stave
+\[TU DAJ MATICU\]
+obdobne, ak naodbudne druhý stav
+\[TU DAJ MATICU\]
