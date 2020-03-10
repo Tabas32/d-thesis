@@ -107,19 +107,19 @@ Ak bit \(\psi_1\) kolabuje do \(\Ket{0}\) tak sa systém bude nachádzať v tomt
 stave
 \[
 \begin{pmatrix}
-    \alpha_2 \alpha_3 &
-    \alpha_2 \beta_3&
-    \beta_2 \alpha_3&
-    \beta_2 \beta_3&
-    0&
-    0&
-    0&
+    \alpha_2 \alpha_3 \\
+    \alpha_2 \beta_3\\
+    \beta_2 \alpha_3\\
+    \beta_2 \beta_3\\
     0\\
- \end{pmatrix}^T
+    0\\
+    0\\
+    0\\
+ \end{pmatrix}
 \]
 obdobne, ak naodbudne druhý stav
 \[
 \begin{pmatrix}
     0 & 0 & 0 & 0  & \alpha_2 \alpha_3 & \alpha_2 \beta_3 & \beta_2 \alpha_3 & \beta_2 \beta_3 \\
- \end{pmatrix}^T
+ \end{pmatrix}
 \]

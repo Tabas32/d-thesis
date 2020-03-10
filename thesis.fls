@@ -540,6 +540,9 @@ INPUT chapters/teorZaklady.tex
 OUTPUT chapters/kvantSystem.aux
 INPUT chapters/kvantSystem.tex
 INPUT chapters/kvantSystem.tex
+INPUT figures/ibm_qx_composer.png
+INPUT ./figures/ibm_qx_composer.png
+INPUT ./figures/ibm_qx_composer.png
 OUTPUT chapters/pravAnal.aux
 INPUT chapters/pravAnal.tex
 INPUT chapters/pravAnal.tex
