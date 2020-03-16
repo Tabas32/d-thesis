@@ -100,7 +100,7 @@ hradiel, ktoré možno používať v kvantových systémoch. Aplikovaním hardie
 na rôznych stavoch dosiahneme rôznu zmenu. Prehľad aplikácií základných 
 hradiel je v tabuľke \ref{hradla_vysl}.
 
-\begin{center}
+\begin{table}
 \begin{tabular}{|c|c||c|c|c|c|c|c|}
 \hline
  & & \(\Ket{0}\) & \(\Ket{1}\) & \(\Ket{+}\) & \(\Ket{-}\) & \(\Ket{\circlearrowright}\) & \(\Ket{\circlearrowleft}\) \\
@@ -137,9 +137,28 @@ i & 0\\
 0 & i\\
 \end{pmatrix} \) & \(\binom{1}{0}\) & \(\binom{0}{i}\) & \(\frac{1}{\sqrt{2}} \binom{1}{i}\) & \(\frac{1}{\sqrt{2}} \binom{1}{-i}\) & \(\frac{1}{\sqrt{2}} \binom{1}{-1}\) & \(\frac{1}{\sqrt{2}} \binom{1}{1}\) \\
 \hline
+
+\(S^{\dag}\)  &  \(\begin{pmatrix}
+1 & 0\\
+0 & -i\\
+\end{pmatrix} \) & \(\binom{1}{0}\) & \(\binom{0}{-i}\) & \(\frac{1}{\sqrt{2}} \binom{1}{-i}\) & \(\frac{1}{\sqrt{2}} \binom{1}{i}\) & \(\frac{1}{\sqrt{2}} \binom{1}{1}\) & \(\frac{1}{\sqrt{2}} \binom{1}{-1}\) \\
+\hline
+
+\(T\)  &  \(\begin{pmatrix}
+1 & 0\\
+0 & \frac{1+i}{\sqrt{2}}\\
+\end{pmatrix} \) & \(\binom{1}{0}\) & \(\binom{0}{\frac{1+i}{\sqrt{2}}}\) & \(\frac{1}{\sqrt{2}} \binom{1}{\frac{1+i}{\sqrt{2}}}\) & \(\frac{1}{\sqrt{2}} \binom{1}{\frac{-1-i}{\sqrt{2}}}\) & \(\frac{1}{\sqrt{2}} \binom{1}{\frac{-1+i}{\sqrt{2}}}\) & \(\frac{1}{\sqrt{2}} \binom{1}{\frac{1-i}{\sqrt{2}}}\) \\
+\hline
+
+\(T^{\dag}\)  &  \(\begin{pmatrix}
+1 & 0\\
+0 & \frac{1-i}{\sqrt{2}}\\
+\end{pmatrix} \) & \(\binom{1}{0}\) & \(\binom{0}{\frac{1-i}{\sqrt{2}}}\) & \(\frac{1}{\sqrt{2}} \binom{1}{\frac{1-i}{\sqrt{2}}}\) & \(\frac{1}{\sqrt{2}} \binom{1}{\frac{-1+i}{\sqrt{2}}}\) & \(\frac{1}{\sqrt{2}} \binom{1}{\frac{1+i}{\sqrt{2}}}\) & \(\frac{1}{\sqrt{2}} \binom{1}{\frac{-1-i}{\sqrt{2}}}\) \\
+\hline
 \end{tabular}
 
-\label{hradla_vysl}
-\end{center}
+\caption{\label{hradla_vysl} Tabuľka stavov kvantových bitov a výsledky 
+aplikácií hradiel na tieto stavy.}
+\end{table}
 
-\subsection{Operacie kvantovych hradiel}
+%\subsection{Operacie kvantovych hradiel}

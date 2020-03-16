@@ -521,6 +521,9 @@ OUTPUT thesis.toc
 INPUT thesis.lof
 INPUT thesis.lof
 OUTPUT thesis.lof
+INPUT thesis.lot
+INPUT thesis.lot
+OUTPUT thesis.lot
 OUTPUT chapters/uvod.aux
 INPUT chapters/uvod.tex
 INPUT chapters/uvod.tex
@@ -566,6 +569,10 @@ INPUT chapters/pravAnal.tex
 INPUT figures/simpleCircuit2.png
 INPUT ./figures/simpleCircuit2.png
 INPUT ./figures/simpleCircuit2.png
+OUTPUT thesis.pyg
+INPUT thesis.out.pyg
+INPUT thesis.out.pyg
+INPUT thesis.out.pyg
 OUTPUT chapters/meranie.aux
 INPUT chapters/meranie.tex
 INPUT chapters/meranie.tex

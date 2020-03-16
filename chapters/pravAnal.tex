@@ -9,7 +9,10 @@ Je možné zostrojiť nekonečné množstvo rôznych kvantových obvodov,
 a preto v tejto kapitole priblížime spôsob tohto merania.
 Vo všeobecnosti môžme rozdeliť kvantové obvody na dva druhy, v ktorých 
 meranie má iný charakter. Sú to obvody s nepreviazanými bitmi a obvody s 
-previazanými kvantovými bitmi.
+previazanými kvantovými bitmi. Totižto pri nepreviazaných bitoch,
+ako už výchádza z názvu, nedochádza k ovplivňovaniu stavu bitu inými 
+kvantovými bitmi. A naopak ak sú jednotlivé bity previazané, ich stav silno
+závisí od stavu ostatných bitov.
 
 \section{Analýza nepreviazaných stavov}
 
@@ -21,13 +24,24 @@ previazanými kvantovými bitmi.
 \end{figure}
 
 Na obrázku \ref{obvod} je vygenerovaný jednoduchý kvantový obvod pomocou
-nástroja IBM Quantum Experience. Označili sme dva časové úseky 
-\(t_1\) a \(t_2\). V tomto obvode sú dva kvantové bity, ktoré prechádzajú 
-hradlom CNOT. Pre 
-zachovanie notácie budeme ďalej označovať tieto bity ako 
-\(\psi_0\) a \(\psi_1\). Z kvantového obvodu je zrejmé, že v čase \(t_1\) 
+nástroja IBM Quantum Experience. V jazyku OpenQASM je možné definovať tento
+obvod ako:
+\begin{code}
+qreg q[2];
+creg c[2];
+
+cx q[0],q[1];
+\end{code}
+
+V tomto obvode sú dva kvantové bity, ktoré prechádzajú 
+hradlom CNOT. Pre zachovanie notácie budeme ďalej označovať tieto bity ako 
+\(\psi_0\) a \(\psi_1\). Označili sme dva časové úseky \(t_1\) a \(t_2\).
+\(t_1\) označuje čas na začiatku programu a \(t_2\) je časový okamich, v ktorom
+prebehla aktivácia hradla CNOT.
+ Z kvantového obvodu je zrejmé, že v čase \(t_1\) 
 sú oba kvantové bity v stave
-\(\ket{0}\), to ale nebudeme brať v úvahu. Zaujíma nás pravdepodobnosť 
+\(\ket{0}\). Tento fakt ale nie je pre nás zaujímavý. Pozrieme sa na meranie 
+pravdepodobnosti dosiahnutia  
 namerania stavov \(\ket{00}, \ket{01}, \ket{10}\) a \(\ket{11}\).
 
 Vieme, že platí \(\ket{\psi_0} = \binom{\alpha_0}{\beta_0}\) a  
@@ -99,7 +113,30 @@ stav \(\ket{\psi_1}\) nadobúda hodnotu:
     \item \(\ket{\psi_1}\) s pravdepodobnosťou \(|\alpha_0|^2\),
     \item \(X\ket{\psi_1}\) s pravdepodobnosťou \(|\beta_0|^2\).
 \end{itemize}
-Berme v úvahu to, že v príklade sme využili hradlo CNOT. Pri pohľade na 
-viacbitový systém s využitím haradla CCNOT, kde máme viacero kontrólnych bitov,
-zisťujeme, že odvodzovanie je netriviálne a tento problém je nutné riešiť
+
+A teda s pravdepodobnosťou \(|\alpha_0|^2\) systém skončí v stave
+\[\Ket{\psi} =  \Ket{\psi_0} \otimes \Ket{\psi_1} = 
+(\alpha_0\ket{0} + \beta_0\ket{1}) \otimes  (\alpha_1\ket{0} + \beta_1\ket{1})
+\]
+a s pravdepodobnosťou \(|\beta_0|^2\) dosiahne stav
+\[\Ket{\psi} =  \Ket{\psi_0} \otimes X\Ket{\psi_1} = 
+(\alpha_0\ket{0} + \beta_0\ket{1}) \otimes  (\beta_1\ket{0} + \alpha_1\ket{1})
+\]
+
+Po zarátaní oboch možností dostávame, že celkový stav \(\ket{\psi}\) v čase 
+\(t_2\) nadobúda hodnoty 
+\begin{itemize}
+    \item[] \(\ket{00}\) s pravdepodobnosťou \((|\alpha_0\alpha_1|^2 \times |\alpha_0|^2) + (|\alpha_0\beta_1|^2 \times |\beta_0|^2)\)
+    \item[] \(\ket{01}\) s pravdepodobnosťou \((|\alpha_0\beta_1|^2 \times |\alpha_0|^2) + (|\alpha_0\alpha_1|^2 \times |\beta_0|^2)\)
+    \item[] \(\ket{10}\) s pravdepodobnosťou \((|\beta_0\alpha_1|^2 \times |\alpha_0|^2) + (|\beta_0\beta_1|^2 \times |\beta_0|^2)\)
+    \item[] \(\ket{11}\) s pravdepodobnosťou \((|\beta_0\beta_1|^2 \times |\alpha_0|^2) + (|\beta_0\alpha_1|^2 \times |\beta_0|^2)\)
+\end{itemize}
+
+
+Berme v úvahu to, že v príklade sme využili hradlo \(CNOT\). Je samozrejmé, že
+v obvode môže dôjsť k previazaniu viacerých bitov na rôznych miestach.
+Takisto je možné vo viacbitovom systéme využiť haradl \(CCNOT\) resp. 
+\(C^{n}NOT\), kde máme viacero kontrólnych bitov a cieľový bit sa preklápa
+za predpokladu, že všetky kontrólne bity majú stav \(\ket{1}\).
+Zisťujeme, že odvodzovanie je netriviálne a tento problém je nutné riešiť
 pomocou pravdepodobnostného rozhodovacieho stromu (o tom v ďalších kapitolách).
