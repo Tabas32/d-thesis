@@ -576,6 +576,13 @@ INPUT thesis.out.pyg
 OUTPUT chapters/meranie.aux
 INPUT chapters/meranie.tex
 INPUT chapters/meranie.tex
+OUTPUT thesis.pyg
+INPUT thesis.out.pyg
+INPUT thesis.out.pyg
+INPUT thesis.out.pyg
+INPUT figures/expr1_circuit.png
+INPUT ./figures/expr1_circuit.png
+INPUT ./figures/expr1_circuit.png
 OUTPUT chapters/pravModel.aux
 INPUT chapters/pravModel.tex
 INPUT chapters/pravModel.tex
