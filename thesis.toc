@@ -76,4 +76,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {10}Záver}{34}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatúra}{35}{section*.16}% 
+\contentsline {chapter}{Literatúra}{35}{section*.17}% 

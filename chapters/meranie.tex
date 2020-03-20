@@ -220,5 +220,25 @@ Každá bunka potom obsahuje možný stav systému v daný časový úsek, kde h
 číslo je pravdepodobnosť dosiahnutia tohto stavu v rozmedzí \(0\) až \(1\) a 
 spodná hodnota určuje daný stav v tvare \(\psi_0\psi_1\).
 
+\begin{figure} 
+	\centering 
+	\includegraphics[width=.8\textwidth]{figures/expr1_qx_results.png} 
+	\caption{Výsledky experimentu 1 z Quantum Experience so zvýraznenými 
+údajmi.}
+
+    \label{expr1_qx_results}
+\end{figure}
+
+Porovnajme naše výsledky so symulátorom IBM Quantum Experience. V IBM QX
+bolo nutné vykonať štyri experimenty s rôznim časom merania, nakoľko tento
+symulátor nepodporuje fiktívne meranie. Dosiahnuté výsledky sú na obrázku
+\ref{expr1_qx_results}. Pripomeňme, že notácia dosiahnutých stavov v IBM QX
+je \(\psi_1\psi_0\), teda v opačnom poradí ako zápis v našej tabuľke. V 
+prvích dvoch merania sú výsledky totožné. Rozdiel nastáva pri prechode hradlom
+\(CNOT\). Pravdepodobnostný model, ktorý využívame, funguje na istom 
+matematickom aparáte. IBM QX je ale symulátor kantového počítača a teda môže 
+brať do úvahy iné fyzikálne vlastnosti kvatových bitov, ktoré môžu vysvetľovať
+rozdiel v našich výsledkoch.
+
 \subsection{Experiment 2}
 \subsection{Experiment 3}
