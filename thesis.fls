@@ -604,6 +604,13 @@ INPUT thesis.out.pyg
 INPUT figures/expr1_qx_results.png
 INPUT ./figures/expr1_qx_results.png
 INPUT ./figures/expr1_qx_results.png
+INPUT figures/expr2_circuit.png
+INPUT ./figures/expr2_circuit.png
+INPUT ./figures/expr2_circuit.png
+OUTPUT thesis.pyg
+INPUT thesis.out.pyg
+INPUT thesis.out.pyg
+INPUT thesis.out.pyg
 OUTPUT chapters/pravModel.aux
 INPUT chapters/pravModel.tex
 INPUT chapters/pravModel.tex

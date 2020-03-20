@@ -241,4 +241,36 @@ brať do úvahy iné fyzikálne vlastnosti kvatových bitov, ktoré môžu vysve
 rozdiel v našich výsledkoch.
 
 \subsection{Experiment 2}
+\begin{figure} 
+	\centering 
+	\includegraphics[width=.5\textwidth]{figures/expr2_circuit.png} 
+	\caption{Obvod experimentu 2 s označenými časovými úsekmi meraní.}
+
+    \label{expr2_circuit}
+\end{figure}
+
+Definujme kvantový obvod tak ako je na obrázku \ref{expr2_circuit}. Majme 
+tri kvantové bity, ktoré označíme ako \(\psi_0\), \(\psi_1\) a \(\psi_2\).
+Na prvých dvoch bitoch aktivujeme Hadamardové hradlá a potom tieto bity 
+využijeme ako kontrólne bity v Tuffliho hradle. Nakoniec aplikujeme hradlo 
+\(X\) a \(Z\).
+
+V OpenQASM je tento obvod zostrojený ako
+\begin{code}
+qreg q[3];
+creg c[3];
+
+h q[0];
+h q[1];
+ccx q[0],q[1],q[2];
+x q[0];
+z q[1];
+\end{code}
+
+\subsection*{Teoretická analýza}
+TU BUDU VSETKY VYPOCTY
+
+\subsection*{Výpočet pravdepodobností pomocou pravdepodobnostného modelu}
+TU BUDU VSETKY VYSLEDKY
+
 \subsection{Experiment 3}
