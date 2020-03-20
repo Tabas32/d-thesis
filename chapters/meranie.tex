@@ -268,7 +268,165 @@ z q[1];
 \end{code}
 
 \subsection*{Teoretická analýza}
-TU BUDU VSETKY VYPOCTY
+Stále platí, že
+\[\ket{\psi_0} = \alpha_0\ket{0} + \beta_0\ket{1}\]
+\[\ket{\psi_1} = \alpha_1\ket{0} + \beta_1\ket{1}\]
+\[\ket{\psi_2} = \alpha_2\ket{0} + \beta_2\ket{1}\]
+Zistiť stav systému v čase \(t_1\) je preto priamočiare
+\[\ket{\psi} = \ket{\psi_0} \otimes \ket{\psi_1} \otimes \ket{\psi_2}\]
+
+V čase \(t_2\) nastala aktivácia hradla \(H\) a preto sa zmení stav kvantových
+bitov na 
+\[\ket{\psi_0} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{1}\]
+\[\ket{\psi_1} = \frac{\alpha_1 + \beta_1}{\sqrt{2}}\ket{0} + \frac{\alpha_1 - \beta_1}{\sqrt{2}}\ket{1}\]
+\[\ket{\psi_2} = \alpha_2\ket{0} + \beta_2\ket{1}\]
+Vyjadrenie pravdepodobností dosiahnutia stavov z meraní \(1\) a \(2\) sú 
+zaznamenané v tabuľke \ref{expr2_tanal12}
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Stav} & \multicolumn{2}{c|}{\textbf{Pravdepodobnosti}} \\
+ & \(t_1\) & \(t_2\) \\
+\hline
+\(\ket{000}\) & \(|\alpha_0\alpha_1\alpha_2|^2\) & 
+\(|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2\) \\
+
+\(\ket{001}\) & \(|\alpha_0\alpha_1\beta_2|^2\) & 
+\(|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2\)  \\
+%\hline
+
+\(\ket{010}\) & \(|\alpha_0\beta_1\alpha_2|^2\) & 
+\(|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \alpha_2|^2\)   \\
+%\hline
+
+\(\ket{011}\) & \(|\alpha_0\beta_1\beta_2|^2\) &
+\(|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \beta_2|^2\)  \\
+%\hline
+
+\(\ket{100}\) & \(|\beta_0\alpha_1\alpha_2|^2\) &
+\(|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2\)   \\
+%\hline
+
+\(\ket{101}\) & \(|\beta_0\alpha_1\beta_2|^2\) &
+\(|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2\)   \\
+%\hline
+
+\(\ket{110}\) & \(|\beta_0\beta_1\alpha_2|^2\) & 
+ \(|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \alpha_2|^2\)  \\
+%\hline
+
+\(\ket{111}\) & \(|\beta_0\beta_1\beta_2|^2\) & 
+\(|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \beta_2|^2\)   \\
+\hline
+
+\end{tabular}
+
+\caption{\label{expr2_tanal12} Vyjadrenie meraní pravdepodobnosti v čase 
+\(t_1\) a \(t_2\) experimentu 2.}
+\end{table}
+
+
+Časový okamih \(t_3\) predstavuje stav po prechode Tuffliho hradlom. Ak obe 
+kontrólne bity \(\ket{\psi_0}\) a \(\ket{\psi_1}\) skolabujú do stavu 
+\(\ket{1}\), tak cieľový bit \(\ket{\psi_2}\) bude preklopený hradlom \(X\).
+Čiže v tomto momente \(\ket{\psi_0}\) kolabuje do \(\ket{1}\) s 
+pravdepodbnosťou \(|\frac{\alpha_0 - \beta_0}{\sqrt{2}}|^2\) a podobne 
+\(\ket{\psi_1}\) s pravdepodobnosťou \(|\frac{\alpha_1 - \beta_1}{\sqrt{2}}|^2\)
+. Z toho vyplíva, že preklopenie bitu \(\ket{\psi_2}\) nastane
+s pravdepodobnosťou  \(|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \times \frac{\alpha_1 - \beta_1}{\sqrt{2}}|^2 = \frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\)
+\[\ket{\psi_2} = \beta_2\ket{0} + \alpha_2\ket{1}\]
+Naopak s pravdepodobnosťou \(1 - \frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\)
+nenastane žiadna zmena
+\[\ket{\psi_2} = \alpha_2\ket{0} + \beta_2\ket{1}\]
+
+Toto rozdvojenie možných výsledkov sa nesie aj do merania \(t_4\), no zmena
+nastáva len v prvých dvoch kvantových bitoch a tie sú v oboch prípadoch 
+totožné. Nový stav týchto bitov teda je 
+\[\ket{\psi_0} = \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{1}\]
+\[\ket{\psi_1} = \frac{\alpha_1 + \beta_1}{\sqrt{2}}\ket{0} - \frac{\alpha_1 - \beta_1}{\sqrt{2}}\ket{1}\]
+
+Merania \(t_3\) a \(t_4\) sú zaznamenané v tabuľke \ref{expr2_tanal34}.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Stav} & \textbf{Pravdepodobnosti} \\
+ & \(t_3\) \\
+\hline
+\(\ket{000}\) &
+\((|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{001}\) & 
+\((|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{010}\) & 
+\((|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{011}\) & 
+\((|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{100}\) & 
+\((|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{101}\) & 
+\((|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{110}\) & 
+\((|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{111}\) & 
+\((|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 - \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_2)\)  \\
+\hline
+
+ & \(t_4\) \\
+\hline
+\(\ket{000}\) &
+\((|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{001}\) & 
+\((|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{010}\) &
+\((|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\beta_1 - \alpha_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\beta_1 - \alpha_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{011}\) &
+\((|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\beta_1 - \alpha_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \frac{\beta_1 - \alpha_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{100}\) &
+\((|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{101}\) &
+\((|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\alpha_1 + \beta_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{110}\) &
+\((|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\beta_1 - \alpha_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\beta_1 - \alpha_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_2)\)  \\
+%\hline
+
+\(\ket{111}\) &
+\((|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\beta_1 - \alpha_1}{\sqrt{2}} \alpha_2|^2 \times P^{t3}_1) + (|\frac{\alpha_0 + \beta_0}{\sqrt{2}} \frac{\beta_1 - \alpha_1}{\sqrt{2}} \beta_2|^2 \times P^{t3}_2)\)  \\
+\hline
+
+\end{tabular}
+
+\caption{\label{expr2_tanal34} Vyjadrenie meraní pravdepodobnosti v čase 
+\(t_3\) a \(t_4\) experimentu 2, kde \(P^{t3}_1 = \frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\) a \(P^{t3}_2 = 1 - \frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\).}
+\end{table}
 
 \subsection*{Výpočet pravdepodobností pomocou pravdepodobnostného modelu}
 TU BUDU VSETKY VYSLEDKY
