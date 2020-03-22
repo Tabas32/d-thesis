@@ -46,34 +46,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}Stavy a ich zápis}{16}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Pravdepodobnostná analýza kvantových obvodov}{18}{chapter.5}% 
+\contentsline {subsection}{\numberline {4.1.2}Operácie kvantových hradiel}{16}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Analýza nepreviazaných stavov}{18}{section.5.1}% 
+\contentsline {chapter}{\numberline {5}Pravdepodobnostná analýza kvantových obvodov}{19}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Analýza previazaných stavov}{20}{section.5.2}% 
+\contentsline {section}{\numberline {5.1}Analýza nepreviazaných stavov}{19}{section.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Meranie kvantových obvodov}{22}{chapter.6}% 
+\contentsline {section}{\numberline {5.2}Analýza previazaných stavov}{21}{section.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Princíp merania kvantových obvodov}{22}{section.6.1}% 
+\contentsline {chapter}{\numberline {6}Meranie kvantových obvodov}{23}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fiktívne meranie}{22}{section.6.2}% 
+\contentsline {section}{\numberline {6.1}Princíp merania kvantových obvodov}{23}{section.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Experiment 1}{22}{subsection.6.2.1}% 
+\contentsline {section}{\numberline {6.2}Fiktívne meranie}{23}{section.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Experiment 2}{27}{subsection.6.2.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Experiment 1}{23}{subsection.6.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Experiment 3}{31}{subsection.6.2.3}% 
+\contentsline {subsection}{\numberline {6.2.2}Experiment 2}{28}{subsection.6.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Pravdepodobnostný model kvantového výpočtu - návrh a realizácia}{32}{chapter.7}% 
+\contentsline {subsection}{\numberline {6.2.3}Experiment 3}{33}{subsection.6.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Definícia vstupu}{32}{section.7.1}% 
+\contentsline {chapter}{\numberline {7}Pravdepodobnostný model kvantového výpočtu - návrh a realizácia}{34}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Pravdepodobnostný model}{33}{section.7.2}% 
+\contentsline {section}{\numberline {7.1}Definícia vstupu}{34}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Kvantová teleportácia}{36}{chapter.8}% 
+\contentsline {section}{\numberline {7.2}Pravdepodobnostný model}{35}{section.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{37}{chapter.9}% 
+\contentsline {chapter}{\numberline {8}Kvantová teleportácia}{38}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Záver}{38}{chapter.10}% 
+\contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{39}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatúra}{39}{section*.20}% 
+\contentsline {chapter}{\numberline {10}Záver}{40}{chapter.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatúra}{41}{section*.22}% 

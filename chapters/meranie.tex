@@ -429,6 +429,87 @@ Merania \(t_3\) a \(t_4\) sú zaznamenané v tabuľke \ref{expr2_tanal34}.
 \end{table}
 
 \subsection*{Výpočet pravdepodobností pomocou pravdepodobnostného modelu}
-TU BUDU VSETKY VYSLEDKY
+Je nutné vyjadriť kvantový obvod v jazyku Haskell. Obvod obsahuje tri 
+vertikálne levely. Pre meranie štyroch časových úsekov, ale definujeme 
+štyri levely a štrukúry na ukaldanie medzivýsledkov
+\begin{code}
+let l1 = Level [E, E, E] True
+    l2 = Level [H, H, E] True
+    l3 = Level [Cc, Cc, Ct] True
+    l4 = Level [X, Z, E] True
+    c = [l1, l2, l3, l4]
+    st = StateTree 1 [q0, q0, q0] []
+    rt = RT st []
+\end{code}
+
+Po spustení modelu sme dosiahli výsledky, ktoré sú zaznamenané v tabuľke
+\ref{expr2_results}
+
+\begin{table}
+\centering
+\begin{tabular}{|c|}
+\hline
+1.0 \\ 
+000 \\ 
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+0.25 & 0.25 & 0.25 & 0.249 \\ 
+000 & 010 & 100 & 110 \\ 
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+6.25e-2 & 6.249e-2 & 6.249e-2 & 6.249e-2 & 0.1875 & 0.1875 & 0.1875 & 0.18749 \\ 
+001 & 011 & 101 & 111 & 000 & 010 & 100 & 110 \\ 
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+6.25e-2 & 6.249e-2 & 6.249e-2 & 6.249e-2 & 0.1875 & 0.1875 & 0.1875 & 0.18749 \\ 
+001 & 011 & 101 & 111 & 000 & 010 & 100 & 110 \\ 
+\hline
+\end{tabular}
+
+\caption{\label{expr2_results} Výsledky merania experimentu 2 pomocou
+pravdepodobnostného modelu. Ohraničené riadky vymedzujú výsledky v jednotlivých
+ časoch merania. Každá bunka obsahuje pravdepodobnosť dosiahnutia stavu a 
+daný stav systému.}
+\end{table}
+
+Nakoľko na vstupe do systému sú kvantové bity v stave \(\ket{0}\) je jasné, že
+meranie v čase \(t_1\) môže dosiahnť len jediný výsledok a to  \(000\).
+V čase \(t_2\) sa vďaka Hadamardovemu hradu bity \(\ket{\psi_0}\) a 
+\(\ket{\psi_1}\) dostanú do stavu \(\ket{+}\) a teda obe môžu s \(50\%\)-tnou
+šancou kolabovať do \(\ket{1}\) alebo \(\ket{0}\). Čomu naznačujú aj výsledky.
+Pri prechode Tuffliho hradlom systém môže zmeniť stav len ak prvé dva bity sú 
+v stave \(\ket{1}\), a to môže nastať s \(25\%\)-tnou pravdepodobnosťou. Teda
+aj výsledky zohľadňujú to, že je oveľa nižšia šanca že bit \(\ket{\psi_2}\)
+je v preklopenom stave \(\ket{1}\). Pri poslednom meraní sa pravdepodobnosti
+nemenia nakoľko aplikáciou hradla \(X\) na stav \(\ket{+}\) nenastane žiadna
+zmena a aplikáciou \(Z\) sa stav zmení na \(\ket{-}\), čo nemá vpliv na
+výsledok.
+
+\begin{figure} 
+	\centering 
+	\includegraphics[width=.8\textwidth]{figures/expr2_qx_results.png} 
+	\caption{Výsledky experimentu 2 z Quantum Experience so zvýraznenými 
+údajmi.}
+
+    \label{expr2_qx_results}
+\end{figure}
+
+Taktiež sme vykonali štyri merania v IBM QX, ktorých hodnoty sú zaznamenané
+na obrázku \ref{expr2_qx_results}. Pripomeňme, že stav merania je zobrazovaný
+v opačnom poradí ako v tabuľke \ref{expr2_results}. Teda kým u nás stav je 
+v tvare \(c_0c_1c_2\), IBM QX využíva tvar \(c_2c_1c_0\) Ako sme očakávali, 
+prvé dve merania skončili s výsledkom totožným s našim. Meranie v časoch 
+\(t_3\) a \(t_4\) sa líšia. Predpokladom, pre rozdiel môže byť, že IBM QX 
+využíva pri symulácií fyzikálny model nejakej častice, no náš pravdepodobnostný
+model vychádza z matematickej reprezentácie kvantového bitu.
 
 \subsection{Experiment 3}

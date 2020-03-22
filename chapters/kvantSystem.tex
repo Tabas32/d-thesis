@@ -161,4 +161,56 @@ i & 0\\
 aplikácií hradiel na tieto stavy.}
 \end{table}
 
-%\subsection{Operacie kvantovych hradiel}
+\subsection{Operácie kvantových hradiel}
+Existuje veľké množstvo hradiel. No v našom pravdepodobnostnom modeli budeme
+využívať osem základných hradiel, ktoré sú najviac využívané. V tejto časti
+ukážeme ako hradlá \(X, Y, Z, H, S, S^{\dag}, T\) a \(T^{\dag}\) menia stav
+kvantového bitu. Definujme bit \(\ket{\psi} = \binom{\alpha}{\beta}\), na 
+ktorom aktivujeme dané hradlá.
+\[X\ket{\psi} = 
+\begin{pmatrix}
+0 & 1 \\
+1 & 0 \\
+\end{pmatrix}\binom{\alpha}{\beta} = \binom{\beta}{\alpha} = \beta\ket{0} + \alpha\ket{1}\]
+
+\[Y\ket{\psi} = 
+\begin{pmatrix}
+0 & -i \\
+i & 0 \\
+\end{pmatrix}\binom{\alpha}{\beta} = \binom{-i\beta}{i\alpha} = -i\beta\ket{0} + i\alpha\ket{1}\]
+
+\[Z\ket{\psi} = 
+\begin{pmatrix}
+1 & 0 \\
+0 & -1 \\
+\end{pmatrix}\binom{\alpha}{\beta} = \binom{\alpha}{-\beta} = \alpha\ket{0} - \beta\ket{1}\]
+
+\[H\ket{\psi} = \frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1 & 1 \\
+1 & -1 \\
+\end{pmatrix}\binom{\alpha}{\beta} = \frac{1}{\sqrt{2}}\binom{\alpha + \beta}{\alpha - \beta} = \frac{\alpha + \beta}{\sqrt{2}}\ket{0} + \frac{\alpha - \beta}{\sqrt{2}}\ket{1}\]
+
+\[S\ket{\psi} = 
+\begin{pmatrix}
+1 & 0 \\
+0 & i \\
+\end{pmatrix}\binom{\alpha}{\beta} = \binom{\alpha}{i\beta} = \alpha\ket{0} + i\beta\ket{1}\]
+
+\[S^{\dag}\ket{\psi} = 
+\begin{pmatrix}
+1 & 0 \\
+0 & -i \\
+\end{pmatrix}\binom{\alpha}{\beta} = \binom{\alpha}{-i\beta} = \alpha\ket{0} - i\beta\ket{1}\]
+
+\[T\ket{\psi} = 
+\begin{pmatrix}
+1 & 0 \\
+0 & \frac{1 + i}{\sqrt{2}} \\
+\end{pmatrix}\binom{\alpha}{\beta} = \binom{\alpha}{\frac{1 + i}{\sqrt{2}}\beta} = \alpha\ket{0} + \frac{1 + i}{\sqrt{2}}\beta\ket{1}\]
+
+\[T^{\dag}\ket{\psi} = 
+\begin{pmatrix}
+1 & 0 \\
+0 & \frac{1 - i}{\sqrt{2}} \\
+\end{pmatrix}\binom{\alpha}{\beta} = \binom{\alpha}{\frac{1 - i}{\sqrt{2}}\beta} = \alpha\ket{0} + \frac{1 - i}{\sqrt{2}}\beta\ket{1}\]
