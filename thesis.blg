@@ -1,16 +1,16 @@
 [0] Config.pm:304> INFO - This is Biber 2.13
 [1] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[38] biber:315> INFO - === St mar 18, 2020, 14:12:39
-[54] Biber.pm:375> INFO - Reading 'thesis.bcf'
-[138] Biber.pm:905> INFO - Found 5 citekeys in bib section 0
-[174] Biber.pm:4196> INFO - Processing section 0
+[34] biber:315> INFO - === Po mar 30, 2020, 11:12:24
+[51] Biber.pm:375> INFO - Reading 'thesis.bcf'
+[135] Biber.pm:905> INFO - Found 5 citekeys in bib section 0
+[175] Biber.pm:4196> INFO - Processing section 0
 [175] Utils.pm:75> INFO - Globbing data source 'chapters/bibliography.bib'
-[175] Utils.pm:91> INFO - Globbed data source 'chapters/bibliography.bib' to chapters/bibliography.bib
-[192] Biber.pm:4373> INFO - Looking for bibtex format file 'chapters/bibliography.bib' for section 0
-[212] bibtex.pm:1462> INFO - LaTeX decoding ...
-[292] bibtex.pm:1281> INFO - Found BibTeX data source 'chapters/bibliography.bib'
-[336] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[336] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[337] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sk-SK'
-[341] bbl.pm:648> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[343] bbl.pm:751> INFO - Output to thesis.bbl
+[176] Utils.pm:91> INFO - Globbed data source 'chapters/bibliography.bib' to chapters/bibliography.bib
+[218] Biber.pm:4373> INFO - Looking for bibtex format file 'chapters/bibliography.bib' for section 0
+[238] bibtex.pm:1462> INFO - LaTeX decoding ...
+[314] bibtex.pm:1281> INFO - Found BibTeX data source 'chapters/bibliography.bib'
+[357] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[357] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[357] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sk-SK'
+[361] bbl.pm:648> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[364] bbl.pm:751> INFO - Output to thesis.bbl

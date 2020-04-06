@@ -16,7 +16,7 @@ Experience tento model môže realizovať unitárne operácie aj paralelne.
 
 Pri pohľade na jednoduchý konceptuálny model (obrázok \ref{navrh}) je zrejmé
 čo cheme dosiahnuť. Na vstupe je očakávaný kvantový obvod. Samotný program
-prebehne tímnto obvodom ako interpreter a zároveň pomerá stavy na daných
+prebehne tímto obvodom ako interpreter a zároveň pomerá stavy na daných
 miestach v obvode. Nakoniec vypíše výstup v zrozumiteľnej podobe.
 
 \section{Definícia vstupu}
@@ -25,11 +25,33 @@ Celý kvantový obvod je možné rozdeliť do vertikálnych blokov alebo levelov
 Každý level obsahuje hradlá, ktorých počet je maximálne rovný počtu 
 kvantových bitov, s ktorými daný obvod pracuje. Ak v danom levely nechceme
 aplikovať žiadnu operáciu nad bitom, môžme definovať prázdny element.
+V obvode bude možné vyžiť osem základných hradiel, ktroré boli definované
+v časti \ref{op_kvan_hradiel} Operácie kvantových hradiel, a hrado 
+C\textsuperscript{n}NOT.
+
+\begin{code}
+data Element = X
+    | Y
+    | Z
+    | H
+    | S
+    | Sd
+    | T
+    | Td
+    | Ct
+    | Cc
+    | E
+\end{code}
 
 Čiže kvantový obvod môžeme definovať ako list levelov, pričom level je datová
 štruktúra, ktorá obsahuje list hradiel. Okrem hradiel každý level bude
-obsahovať prepínač, ktorý siganlizuje či má nastať meranie po aktivácií 
-hradiel v leveli.
+obsahovať prepínač, ktorý siganlizuje či má nastať fiktívne meranie po 
+aktivácií hradiel v leveli.
+
+\begin{code}
+type LevelGates = [Element]
+data Level = Level LevelGates Bool
+\end{code}
 
 \section{Pravdepodobnostný model}
 
@@ -51,7 +73,16 @@ preklopený hradom \(X\). V inom prípade nenastane zmena v stavoch.
 
 
 Pravdepodbnostný model si uchováva stavy všetkých kvantových bitova 
-v stromovej štruktúre. Pri prechode levelom si uloží nové stavy do listov
+v stromovej štruktúre. 
+\begin{code}
+type QBit = [[Complex Double]]
+type States = [QBit]
+type SubTrees = [StateTree]
+
+data StateTree = StateTree Double States SubTrees
+\end{code}
+
+Pri prechode levelom si uloží nové stavy do listov
 tohto stromu. Ak sa v leveli nachádzajú len običajné hradlá, vzniká len
 jediný nový list. Rozdiel nastáva pri prechode hradlom CNOT. Je zrejmé, že 
 toto hradlo musí rozvetvovať stromovú štruktúru na dva podstromi. Každý z 
@@ -59,7 +90,15 @@ podstromov je označený pradvdepodobnosťou, s akou môže nastať daná zmena
 stavov. 
 
 Pri meraní (fiktívnom meraní) sa spočítajú pravdepodobnosti všetkých listov
-stromu a výsledky sa uložia do listu. Pre lepšie pochopenie funkčnosti 
+stromu a výsledky sa uložia do tabuľky. 
+\begin{code}
+data R = R Double [Int]
+type T = [R]
+type Ts = [T]
+\end{code}
+Dátová štruktúra R popisuje pravdepodobnosť dostiahnutia stavu, ktorý je 
+reprezentovaný ako list celých čísel \(c_0c_1 \dots c_n\).
+Pre lepšie pochopenie funkčnosti 
 programu opíšeme príklad. Majme kvantový obvod, ktorý je definovaný na 
 obrázku \ref{obvod}. Na vstupe máme dva kvantové bity v stavoch \(\ket{0}\).
 Definujme všetky potrebné datové štruktúry v jazyku Haskell. 
@@ -94,10 +133,16 @@ dostaneme výslednú tabuľku typu RT.
 processRT = processCircuit c rt
 \end{code}
 
+Pričom štruktúra RT je definovaná ako
+\begin{code}
+data RT = RT StateTree Ts
+\end{code}
+
 \begin{figure}
 	\centering 
 	\includegraphics[width=.4\textwidth]{figures/ST.png} 
-	\caption{Strom stavov (StateTree) po vykonaní kvantového obvodu.}
+	\caption{Strom stavov (StateTree) po vykonaní kvantového obvodu,
+kde hrany stromu sú označené pravdepodobnosťou dosiahnutia daného podstromu.}
     \label{stateTree}
 \end{figure}
 

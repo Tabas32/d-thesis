@@ -513,3 +513,226 @@ využíva pri symulácií fyzikálny model nejakej častice, no náš pravdepodo
 model vychádza z matematickej reprezentácie kvantového bitu.
 
 \subsection{Experiment 3}
+
+\begin{figure} 
+	\centering 
+	\includegraphics[width=.6\textwidth]{figures/expr3_circuit.png} 
+	\caption{Obvod experimentu 3 s označenými časovými úsekmi meraní.}
+    \label{expr3_circuit}
+\end{figure}
+
+V treťom meraní použijeme ako hradlo \(CNOT\) aj \(CCNOT\). Na obrázku 
+\ref{expr3_circuit} je zobrazený tento obvod. Nakoľko je známy stav systému
+úplne na začiatku obvodu, tak tento časový úsek vynecháme a vykonáme opäť
+štyri merania. Tento obvod je možné v IBM QX definovať pomocou OpenQASM 
+nasledovne.
+\begin{code}
+qreg q[3];
+creg c[3];
+
+h q[0];
+cx q[0],q[1];
+h q[1];
+ccx q[0],q[1],q[2];
+\end{code}
+
+
+\subsection*{Teoretická analýza}
+Z obvodu je jasné, že v čase \(t_1\) zmena stavu nastane len pre bit 
+\(\ket{\psi_0}\). A teda stavy budú nasledovné
+
+\[\ket{\psi_0} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{1}\]
+\[\ket{\psi_1} = \alpha_1\ket{0} + \beta_1\ket{1}\]
+\[\ket{\psi_2} = \alpha_2\ket{0} + \beta_2\ket{1}\]
+
+Odvodenie pravdepodobností je pomom triviálne, 
+\(\ket{\psi} = \ket{\psi_0} \otimes \ket{\psi_1} \otimes \ket{\psi_2}\).
+
+Hradlo \(CNOT\) v čase \(t_2\) spôsobí vetvenie možných výsledkov. Čiže s 
+pravdepodobnosťou \(P^{t2}_1 = \frac{(\alpha_0 + \beta_0)^2}{2}\) nadobudne
+bit \(\ket{\psi_0}\) stav \(\ket{0}\), čo znamená že \(\ket{\psi_1}\) ostane
+nezmenené. Naopak s pravdepodobnosťou 
+\(P^{t2}_2 = \frac{(\alpha_0 - \beta_0)^2}{2}\) nadobudne \(\ket{\psi_0}\) 
+stav \(\ket{1}\), čo vedie k preklopeniu kvantového bitu \(\ket{\psi_1}\) na
+\(X\ket{\psi_1}\).
+
+Toto vetvenie sa takisto prenesie aj na meranie v čase \(t_3\). Takže 
+aplikáciou Hadamardovho hradla na \(\ket{\psi_1}\) dostaneme
+\begin{itemize}
+    \item[] \(\ket{\psi_1} = \frac{\alpha_1 + \beta_1}{\sqrt{2}}\ket{0} + \frac{\alpha_1 - \beta_1}{\sqrt{2}}\ket{1}\) s pravdepodobnosťou  \(P^{t2}_1 = \frac{(\alpha_0 + \beta_0)^2}{2}\)
+
+    \item[] \(\ket{\psi_1} = \frac{\beta_1 + \alpha_1}{\sqrt{2}}\ket{0} + \frac{\beta_1 - \alpha_1}{\sqrt{2}}\ket{1}\) s pravdepodobnosťou  \(P^{t2}_2 = \frac{(\alpha_0 - \beta_0)^2}{2}\)
+\end{itemize} 
+
+Znovupreviazaním kvantových bitov v obvode narastá počet počet možných stavov
+geometricky. A teda v čase \(t_4\) už dostávame štyri možné výsledky s 
+pravdepodobnosťami:
+\begin{itemize}
+    \item[] \(P^{t4}_1 = |\frac{\alpha_0 - \beta_0}{\sqrt{2}} \times \frac{\alpha_1 - \beta_1}{\sqrt{2}}|^2 \times P^{t2}_1 = \frac{(\alpha_0 - \beta_0)^2(\alpha_1-\beta_1)^2(\alpha_0+\beta_0)^2}{8}\)
+
+    \item[] \(P^{t4}_2 = (1-|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \times \frac{\alpha_1 - \beta_1}{\sqrt{2}}|^2) \times P^{t2}_1 = (1-\frac{(\alpha_0 - \beta_0)^2(\alpha_1-\beta_1)^2}{4}) \times \frac{(\alpha_0+\beta_0)^2}{2}\)
+
+    \item[] \(P^{t4}_3 = |\frac{\alpha_0 - \beta_0}{\sqrt{2}} \times \frac{\beta_1 - \alpha_1}{\sqrt{2}}|^2 \times P^{t2}_2 = \frac{(\alpha_0 - \beta_0)^2(\beta_1-\alpha_1)^2(\alpha_0-\beta_0)^2}{8}\)
+
+    \item[] \(P^{t4}_4 = (1-|\frac{\alpha_0 - \beta_0}{\sqrt{2}} \times \frac{\beta_1 - \alpha_1}{\sqrt{2}}|^2) \times P^{t2}_2 = (1-\frac{(\alpha_0 - \beta_0)^2(\beta_1-\alpha_1)^2}{4}) \times \frac{(\alpha_0-\beta_0)^2}{2}\)
+\end{itemize}
+
+Dajme do pozornosti, že \((\alpha_1 - \beta_1)^2 = (\beta_1 - \alpha_1)^2\),
+teda ak označíme \(P_x = \frac{(\alpha_0 - \beta_0)^2(\alpha_1-\beta_1)^2}{4}\)
+môžme pre tento experiment zapísať, že platí
+
+\begin{itemize}
+    \item[] \(P^{t4}_1 = P_x \times P^{t2}_1\)
+
+    \item[] \(P^{t4}_2 = (1-P_x) \times P^{t2}_1\)
+
+    \item[] \(P^{t4}_3 = P_x \times P^{t2}_2\)  
+
+    \item[] \(P^{t4}_4 = (1-P_x) \times P^{t2}_2\)
+\end{itemize}
+
+V tabuľke \ref{expr3_t4_states} sú zapísané stavy kvantových bitov v čase
+\(t_4\), pre všetky možné výsledky. Pre výpočet výsledných pravdepodobností
+použijeme pre každú možnosť
+\[\ket{\psi} = \ket{\psi_0} \otimes \ket{\psi_1} \otimes \ket{\psi_2}\]
+Označme vyjadrenie pravdepodobnosti dosiahnutia nejakého celkového stavu 
+ako \(P_{sn}\), kde \(1 \leq n \leq 4\) a \(s\) je stav. Potom platí
+\[s = (P_{s1} \times P^{t4}_1) + (P_{s2} \times P^{t4}_2) + (P_{s3} \times P^{t4}_3) + (P_{s4} \times P^{t4}_4)\]
+
+Čo vieme pomocou známich \(P^{t4}_n\) upraviť na 
+\[s = (P_x \times P^{t2}_1)(P_{s1} - P_{s2} \times P^{t2}_1) + (P_x \times P^{t2}_2)(P_{s3} - P_{s4} \times P^{t2}_2) = \]
+\[= (\frac{(\alpha^2_0 - \beta^2_0)(\alpha_1 - \beta_1)}{8})(P_{s1} - P_{s2} \times P^{t2}_1) + (\frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_2)^2}{8})(P_{s3} - P_{s4} \times P^{t2}_2) = \]
+\[= \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(P_{s1} - P_{s2} \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(P_{s3} - P_{s4} \times \frac{(\alpha_0 - \beta_0)^2}{2}))\]
+
+Potom pre jednotlivé stavy sú dosiahnuteľné s pravdepodobnosťou
+\begin{itemize}
+\item[] \(\ket{000} = \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(\frac{(\alpha_0 + \beta_0)^2(\alpha_1 + \beta_1)^2}{4}\beta^2_2 - \frac{(\alpha_0 + \beta_0)^2(\alpha_1 + \beta_1)^2}{4}\alpha^2_2 \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(\frac{(\alpha_0 + \beta_0)^2(\beta_1 + \alpha_1)^2}{4}\beta^2_2 - \frac{(\alpha_0 + \beta_0)^2(\beta_1 + \alpha_1)^2}{4}\alpha^2_2 \times \frac{(\alpha_0 - \beta_0)^2}{2}))\)
+
+\item[] \(\ket{001} = \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(\frac{(\alpha_0 + \beta_0)^2(\alpha_1 + \beta_1)^2}{4}\alpha^2_2 - \frac{(\alpha_0 + \beta_0)^2(\alpha_1 + \beta_1)^2}{4}\beta^2_2 \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(\frac{(\alpha_0 + \beta_0)^2(\beta_1 + \alpha_1)^2}{4}\alpha^2_2 - \frac{(\alpha_0 + \beta_0)^2(\beta_1 + \alpha_1)^2}{4}\beta^2_2 \times \frac{(\alpha_0 - \beta_0)^2}{2}))\) 
+
+\item[] \(\ket{010} = \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(\frac{(\alpha_0 + \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\beta^2_2 - \frac{(\alpha_0 + \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\alpha^2_2 \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(\frac{(\alpha_0 + \beta_0)^2(\beta_1 - \alpha_1)^2}{4}\beta^2_2 - \frac{(\alpha_0 + \beta_0)^2(\beta_1 - \alpha_1)^2}{4}\alpha^2_2 \times \frac{(\alpha_0 - \beta_0)^2}{2}))\)
+
+\item[] \(\ket{011} = \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(\frac{(\alpha_0 + \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\alpha^2_2 - \frac{(\alpha_0 + \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\beta^2_2 \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(\frac{(\alpha_0 + \beta_0)^2(\beta_1 - \alpha_1)^2}{4}\alpha^2_2 - \frac{(\alpha_0 + \beta_0)^2(\beta_1 - \alpha_1)^2}{4}\beta^2_2 \times \frac{(\alpha_0 - \beta_0)^2}{2}))\)
+
+\item[] \(\ket{100} = \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(\frac{(\alpha_0 - \beta_0)^2(\alpha_1 + \beta_1)^2}{4}\beta^2_2 - \frac{(\alpha_0 - \beta_0)^2(\alpha_1 + \beta_1)^2}{4}\alpha^2_2 \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(\frac{(\alpha_0 - \beta_0)^2(\beta_1 + \alpha_1)^2}{4}\beta^2_2 - \frac{(\alpha_0 - \beta_0)^2(\beta_1 + \alpha_1)^2}{4}\alpha^2_2 \times \frac{(\alpha_0 - \beta_0)^2}{2}))\)
+
+\item[] \(\ket{101} = \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(\frac{(\alpha_0 - \beta_0)^2(\alpha_1 + \beta_1)^2}{4}\alpha^2_2 - \frac{(\alpha_0 - \beta_0)^2(\alpha_1 + \beta_1)^2}{4}\beta^2_2 \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(\frac{(\alpha_0 - \beta_0)^2(\beta_1 + \alpha_1)^2}{4}\alpha^2_2 - \frac{(\alpha_0 - \beta_0)^2(\beta_1 + \alpha_1)^2}{4}\beta^2_2 \times \frac{(\alpha_0 - \beta_0)^2}{2}))\)
+
+\item[] \(\ket{110} = \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(\frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\beta^2_2 - \frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\alpha^2_2 \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(\frac{(\alpha_0 - \beta_0)^2(\beta_1 - \alpha_1)^2}{4}\beta^2_2 - \frac{(\alpha_0 - \beta_0)^2(\beta_1 - \alpha_1)^2}{4}\alpha^2_2 \times \frac{(\alpha_0 - \beta_0)^2}{2}))\) 
+
+\item[] \(\ket{111} = \frac{(\alpha_1 - \beta_1)^2}{8}((\alpha^2_0 - \beta^2_0)(\frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\alpha^2_2 - \frac{(\alpha_0 - \beta_0)^2(\alpha_1 - \beta_1)^2}{4}\beta^2_2 \times \frac{(\alpha_0 + \beta_0)^2}{2})) + ((\alpha_0 - \beta_0)^2(\frac{(\alpha_0 - \beta_0)^2(\beta_1 - \alpha_1)^2}{4}\alpha^2_2 - \frac{(\alpha_0 - \beta_0)^2(\beta_1 - \alpha_1)^2}{4}\beta^2_2 \times \frac{(\alpha_0 - \beta_0)^2}{2}))\) 
+
+\end{itemize}
+
+\begin{table}
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Pravdepodobnosť} & \textbf{Stavy \(\ket{\psi_0}\), \(\ket{\psi_1}\) a \(\ket{\psi_2}\)} \\
+\hline
+\(P^{t4}_1 = P_x \times P^{t2}_1\) & 
+\(\ket{\psi_0} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{1}\) \\
+& \(\ket{\psi_1} = \frac{\alpha_1 + \beta_1}{\sqrt{2}}\ket{0} + \frac{\alpha_1 - \beta_1}{\sqrt{2}}\ket{1}\) \\
+& \(\ket{\psi_2} = \beta_2\ket{0} + \alpha_2\ket{1}\) \\
+\hline
+
+\(P^{t4}_2 = (1-P_x) \times P^{t2}_1\) & 
+\(\ket{\psi_0} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{1}\) \\
+& \(\ket{\psi_1} = \frac{\alpha_1 + \beta_1}{\sqrt{2}}\ket{0} + \frac{\alpha_1 - \beta_1}{\sqrt{2}}\ket{1}\) \\
+& \(\ket{\psi_2} = \alpha_2\ket{0} + \beta_2\ket{1}\) \\
+\hline
+
+\(P^{t4}_3 = P_x \times P^{t2}_2\) & 
+\(\ket{\psi_0} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{1}\) \\
+& \(\ket{\psi_1} = \frac{\beta_1 + \alpha_1}{\sqrt{2}}\ket{0} + \frac{\beta_1 - \alpha_1}{\sqrt{2}}\ket{1}\) \\
+& \(\ket{\psi_2} = \beta_2\ket{0} + \alpha_2\ket{1}\) \\
+\hline
+
+\(P^{t4}_4 = (1-P_x) \times P^{t2}_2\) & 
+\(\ket{\psi_0} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{1}\) \\
+& \(\ket{\psi_1} = \frac{\beta_1 + \alpha_1}{\sqrt{2}}\ket{0} + \frac{\beta_1 - \alpha_1}{\sqrt{2}}\ket{1}\) \\
+& \(\ket{\psi_2} = \alpha_2\ket{0} + \beta_2\ket{1}\) \\
+\hline
+\end{tabular}
+
+\caption{\label{expr3_t4_states} Tabuľka stavov kvantových bitov a pravedpodobností
+nastatia týchto stavov v čase \(t_4\) experimentu 3.}
+\end{table}
+
+\subsection*{Výpočet pravdepodobností pomocou pravdepodobnostného modelu}
+Definujme kvantový obvod pre pravdepodobnostný model.
+
+\begin{code}
+let l1 = Level [H, E, E] True
+    l2 = Level [Cc, Ct, E] True
+    l3 = Level [E, H, E] True
+    l4 = Level [Cc, Cc, Ct] True
+    c = [l1, l2, l3, l4]
+    st = StateTree 1 [q0, q0, q0] []
+    rt = RT st []
+\end{code}
+
+Za povšimnutie stojí fakt, že hradlá \(CNOT\) a \(CCNOT\) sú inplementované
+pomocou jednej funkcie. Takže aj v definícií obvodu nie je nutná špeciálna 
+štruktúra pre zabezpečenie týchto hradiel, ale kontrólne bity sú jednoducho
+označené ako \(Cc\) a cieľový bit ako \(Ct\).
+
+Po spustení pravdepodobnostného modelu dostávame tabuľku s výsledkami 
+\ref{expr3_results}
+
+\begin{table}
+\centering
+
+\begin{tabular}{|c|c|}
+\hline
+0.50 & 0.49 \\ 
+000 & 100 \\ 
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+0.25 & 0.249 & 0.250 & 0.25 \\ 
+010 & 110 & 000 & 100 \\ 
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+0.125 & 0.1249 & 0.1249 & 0.1249 & 0.125 & 0.125 & 0.125 & 0.1249 \\ 
+000 & 010 & 100 & 110 & 000 & 010 & 100 & 110 \\ 
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+3.1249e-2 & 3.1249e-2 & 3.1249e-2 & 3.1249e-2 & 9.375e-2 & 9.3749e-2 & 9.3749e-2 & 9.3749e-2  \\ 
+001 & 011 & 101 & 111 & 000 & 010 & 100 & 110  \\ 
+
+& & & & & & & \\
+
+3.1251e-2 & 3.1249e-2 & 3.1249e-2 & 3.1249e-2 & 9.375e-2 & 9.3754e-2 & 9.3754e-2 & 9.375e-2 \\
+001 & 011 & 101 & 111 & 000 & 010 & 100 & 110 \\
+\hline
+\end{tabular}
+
+\caption{\label{expr3_results} Výsledky merania experimentu 3 pomocou
+pravdepodobnostného modelu. Ohraničené riadky vymedzujú výsledky v jednotlivých
+ časoch merania. Každá bunka obsahuje pravdepodobnosť dosiahnutia stavu a 
+daný stav systému.}
+\end{table}
+
+Náš pravdepodobnostný model nesčítava pravdepodobnosti pri výskyte rovnakých 
+stavov a automaticky sa meranie formátuje do jedného riadku. Z toho dôvodu sme 
+naformátovali tabuľku tak aby boli všetky výsledky zobrazené.
+
+Výsledky z IBM Quantum Experience sú zobrazené na obrázku \ref{expr3_qx_results}
+
+\begin{figure} 
+	\centering 
+	\includegraphics[width=.8\textwidth]{figures/expr3_qx_results.png} 
+	\caption{Výsledky experimentu 3 z Quantum Experience so zvýraznenými 
+údajmi.}
+
+    \label{expr3_qx_results}
+\end{figure}
