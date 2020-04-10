@@ -6,7 +6,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Úvod}{1}{chapter*.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Ciele prace (Formulacia ulohy)}{3}{chapter.1}% 
+\contentsline {chapter}{\numberline {1}Ciele prace (Formulácia úlohy)}{3}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Matematické základy kvantových systémov}{4}{chapter.2}% 
 \defcounter {refsection}{0}\relax 
@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Komplexné čísla}{5}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Operácie na množine komplexých čísel}{6}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.1}Operácie na množine komplexných čísel}{6}{subsection.2.2.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Základné charakteristiky komplexných čísel}{7}{subsection.2.2.2}% 
 \defcounter {refsection}{0}\relax 
@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Princíp merania}{13}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Kvantovy system}{14}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Kvantový systém}{14}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}IBM Quantum Experience}{14}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
@@ -74,8 +74,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Kvantová teleportácia}{44}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{46}{chapter.9}% 
+\contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{47}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Záver}{47}{chapter.10}% 
+\contentsline {chapter}{\numberline {10}Záver}{48}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatúra}{48}{section*.28}% 
+\contentsline {chapter}{Literatúra}{49}{section*.28}% 

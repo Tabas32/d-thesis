@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.17)  4 APR 2020 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.17)  9 APR 2020 11:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1700,9 +1700,9 @@ LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
 (Font)              Font shape `T1/qpl/m/it' tried instead on input line 90.
 
 [9] (./thesis.lof
-Overfull \hbox (9.8035pt too wide) in paragraph at lines 23--23
- [][] [][]\T1/qpl/m/n/12 Jednotduchý kvan-tový ob-vod (na-mo-de-lo-vaný v IBM Q
-u-an-tum Expe- 
+Overfull \hbox (6.0715pt too wide) in paragraph at lines 23--23
+ [][] [][]\T1/qpl/m/n/12 Jednoduchý kvan-tový ob-vod (na-mo-de-lo-vaný v IBM Qu
+-an-tum Expe- 
  []
 
 
@@ -1718,14 +1718,14 @@ Overfull \hbox (9.51735pt too wide) in paragraph at lines 45--45
  [10
 
 ] (./thesis.lot
-Overfull \hbox (4.94437pt too wide) in paragraph at lines 21--21
- [][] [][]\T1/qpl/m/n/12 Tabu©ka sta-vov kvan-to-vých bi-tov a pra-ved-po-dob-n
+Overfull \hbox (5.42436pt too wide) in paragraph at lines 21--21
+ [][] [][]\T1/qpl/m/n/12 Tabu©ka sta-vov kvan-to-vých bi-tov a prav-de-po-dob-n
 ostí na-sta-tia týchto 
  []
 
 
-Overfull \hbox (4.94437pt too wide) in paragraph at lines 31--31
- [][] [][]\T1/qpl/m/n/12 Tabu©ka sta-vov kvan-to-vých bi-tov a pra-ved-po-dob-n
+Overfull \hbox (5.42436pt too wide) in paragraph at lines 31--31
+ [][] [][]\T1/qpl/m/n/12 Tabu©ka sta-vov kvan-to-vých bi-tov a prav-de-po-dob-n
 ostí na-sta-tia týchto 
  []
 
@@ -1750,6 +1750,12 @@ Kapitola 1.
 Overfull \hbox (5.03302pt too wide) in paragraph at lines 11--15
 []\T1/qpl/m/n/12 Hlavným grom práce bude tvo-ri´ ná-vrh a im-ple-men-tá-cia zje
 d-no-du-²e-ného kvan-
+ []
+
+
+Overfull \hbox (1.74506pt too wide) in paragraph at lines 16--19
+[]\T1/qpl/m/n/12 Podstatnou fun-kci-ona-li-tou vý-sled-ného prog-ramu bude gra-
+fické zo-bra-ze-nie vy-
  []
 
 ) [3
@@ -1908,12 +1914,12 @@ thesis.out.pyg thesis.pyg)...executed.
 <figures/expr1_qx_results.png, id=488, 1371.1225pt x 770.88pt>
 File: figures/expr1_qx_results.png Graphic file (type png)
 <use figures/expr1_qx_results.png>
-Package pdftex.def Info: figures/expr1_qx_results.png  used on input line 225.
+Package pdftex.def Info: figures/expr1_qx_results.png  used on input line 226.
 (pdftex.def)             Requested size: 341.43436pt x 191.95496pt.
 <figures/expr2_circuit.png, id=490, 201.75375pt x 150.5625pt>
 File: figures/expr2_circuit.png Graphic file (type png)
 <use figures/expr2_circuit.png>
-Package pdftex.def Info: figures/expr2_circuit.png  used on input line 246.
+Package pdftex.def Info: figures/expr2_circuit.png  used on input line 247.
 (pdftex.def)             Requested size: 213.39566pt x 159.25085pt.
 \openout7 = `thesis.pyg'.
 
@@ -1932,12 +1938,12 @@ thesis.out.pyg thesis.pyg)...executed.
 <figures/expr2_qx_results.png, id=519, 1371.1225pt x 770.88pt>
 File: figures/expr2_qx_results.png Graphic file (type png)
 <use figures/expr2_qx_results.png>
-Package pdftex.def Info: figures/expr2_qx_results.png  used on input line 499.
+Package pdftex.def Info: figures/expr2_qx_results.png  used on input line 500.
 (pdftex.def)             Requested size: 341.43436pt x 191.95496pt.
 <figures/expr3_circuit.png, id=522, 271.0125pt x 155.58125pt>
 File: figures/expr3_circuit.png Graphic file (type png)
 <use figures/expr3_circuit.png>
-Package pdftex.def Info: figures/expr3_circuit.png  used on input line 519.
+Package pdftex.def Info: figures/expr3_circuit.png  used on input line 520.
 (pdftex.def)             Requested size: 256.0774pt x 147.01317pt.
 \openout7 = `thesis.pyg'.
 
@@ -1946,7 +1952,7 @@ thesis.out.pyg thesis.pyg)...executed.
 
  (./thesis.out.pyg [33 <./figures/expr2_qx_results.png>]) [34 <./figures/expr3_
 circuit.png>]
-Overfull \hbox (1.46431pt too wide) in paragraph at lines 597--600
+Overfull \hbox (1.46431pt too wide) in paragraph at lines 598--601
 \T1/qpl/m/n/12 Ozna£me vy-jad-re-nie prav-de-po-dob-nosti do-sia-hnu-tia ne-ja-
 kého cel-ko-vého stavu ako
  []
@@ -1958,14 +1964,14 @@ runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o
 thesis.out.pyg thesis.pyg)...executed.
 
  (./thesis.out.pyg) [36]
-Overfull \hbox (56.76064pt too wide) in paragraph at lines 707--718
+Overfull \hbox (56.76064pt too wide) in paragraph at lines 709--720
  [][] 
  []
 
 <figures/expr3_qx_results.png, id=545, 1371.1225pt x 770.88pt>
 File: figures/expr3_qx_results.png Graphic file (type png)
 <use figures/expr3_qx_results.png>
-Package pdftex.def Info: figures/expr3_qx_results.png  used on input line 733.
+Package pdftex.def Info: figures/expr3_qx_results.png  used on input line 735.
 (pdftex.def)             Requested size: 341.43436pt x 191.95496pt.
 ) [37] [38 <./figures/expr3_qx_results.png>]
 \openout2 = `chapters/pravModel.aux'.
@@ -2015,13 +2021,7 @@ Package pdftex.def Info: figures/circuit3.png  used on input line 60.
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
 thesis.out.pyg thesis.pyg)...executed.
 
- (./thesis.out.pyg
-Overfull \hbox (1.84091pt too wide) in paragraph at lines 75--1
-[]\T1/qpl/m/n/12 Pravdepodbnostný mo-del si ucho-váva stavy v²et-kých kvan-to-v
-ých bi-tova v stro-
- []
-
-)
+ (./thesis.out.pyg)
 \openout7 = `thesis.pyg'.
 
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
@@ -2033,7 +2033,8 @@ thesis.out.pyg thesis.pyg)...executed.
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
 thesis.out.pyg thesis.pyg)...executed.
 
- (./thesis.out.pyg) [41]
+ (./thesis.out.pyg)
+[41]
 \openout7 = `thesis.pyg'.
 
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
@@ -2045,8 +2046,7 @@ thesis.out.pyg thesis.pyg)...executed.
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
 thesis.out.pyg thesis.pyg)...executed.
 
-
-(./thesis.out.pyg)
+ (./thesis.out.pyg)
 <figures/ST.png, id=577, 310.15875pt x 292.09125pt>
 File: figures/ST.png Graphic file (type png)
 <use figures/ST.png>
@@ -2055,7 +2055,8 @@ Package pdftex.def Info: figures/ST.png  used on input line 143.
  [42 <./figures/ST.png>]) [43]
 \openout2 = `chapters/kvanTel.aux'.
 
- (./chapters/kvanTel.tex
+
+(./chapters/kvanTel.tex
 Kapitola 8.
 <figures/tel_c1.png, id=589, 242.9075pt x 170.6375pt>
 File: figures/tel_c1.png Graphic file (type png)
@@ -2067,17 +2068,17 @@ File: figures/tel_c2.png Graphic file (type png)
 <use figures/tel_c2.png>
 Package pdftex.def Info: figures/tel_c2.png  used on input line 45.
 (pdftex.def)             Requested size: 213.39566pt x 121.8426pt.
-) [44
+[44
 
 
 
-] [45 <./figures/tel_c1.png> <./figures/tel_c2.png>]
+] [45 <./figures/tel_c1.png> <./figures/tel_c2.png>]) [46]
 \openout2 = `chapters/vyhodnotenie.aux'.
 
 
 (./chapters/vyhodnotenie.tex
 Kapitola 9.
-) [46
+) [47
 
 
 
@@ -2086,11 +2087,11 @@ Kapitola 9.
 
  (./chapters/zaver.tex
 Kapitola 10.
-) [47
+) [48
 
 
 
-] (./thesis.acr) [48
+] (./thesis.acr) [49
 
 
 ]
@@ -2104,7 +2105,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 482F35E81DECFE867285D942A492DCE6;7616.
+(rerunfilecheck)             Checksum: 10343531E98BEBC46E05DF7D5AEC64CC;7633.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2121,9 +2122,9 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41676 strings out of 492167
- 761116 string characters out of 6131557
- 1391488 words of memory out of 5000000
+ 41677 strings out of 492167
+ 761123 string characters out of 6131557
+ 1391489 words of memory out of 5000000
  45034 multiletter control sequences out of 15000+600000
  51834 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2145,10 +2146,10 @@ share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
 mf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/share/texmf-dist/fonts/type1
 /public/tex-gyre/qplr.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qp
 lri.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (59 pages, 706265 bytes).
+Output written on thesis.pdf (60 pages, 706894 bytes).
 PDF statistics:
- 710 PDF objects out of 1000 (max. 8388607)
- 597 compressed objects within 6 object streams
- 136 named destinations out of 1000 (max. 500000)
+ 714 PDF objects out of 1000 (max. 8388607)
+ 600 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
  387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

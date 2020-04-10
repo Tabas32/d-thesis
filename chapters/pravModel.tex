@@ -15,8 +15,8 @@ Experience tento model môže realizovať unitárne operácie aj paralelne.
 
 
 Pri pohľade na jednoduchý konceptuálny model (obrázok \ref{navrh}) je zrejmé
-čo cheme dosiahnuť. Na vstupe je očakávaný kvantový obvod. Samotný program
-prebehne tímto obvodom ako interpreter a zároveň pomerá stavy na daných
+čo chceme dosiahnuť. Na vstupe je očakávaný kvantový obvod. Samotný program
+prebehne týmto obvodom ako interpreter a zároveň pomerá stavy na daných
 miestach v obvode. Nakoniec vypíše výstup v zrozumiteľnej podobe.
 
 \section{Definícia vstupu}
@@ -25,8 +25,8 @@ Celý kvantový obvod je možné rozdeliť do vertikálnych blokov alebo levelov
 Každý level obsahuje hradlá, ktorých počet je maximálne rovný počtu 
 kvantových bitov, s ktorými daný obvod pracuje. Ak v danom levely nechceme
 aplikovať žiadnu operáciu nad bitom, môžme definovať prázdny element.
-V obvode bude možné vyžiť osem základných hradiel, ktroré boli definované
-v časti \ref{op_kvan_hradiel} Operácie kvantových hradiel, a hrado 
+V obvode bude možné vyžiť osem základných hradiel, ktoré boli definované
+v časti \ref{op_kvan_hradiel} Operácie kvantových hradiel, a hradlo 
 C\textsuperscript{n}NOT.
 
 \begin{code}
@@ -43,9 +43,9 @@ data Element = X
     | E
 \end{code}
 
-Čiže kvantový obvod môžeme definovať ako list levelov, pričom level je datová
+Čiže kvantový obvod môžeme definovať ako list levelov, pričom level je dátová
 štruktúra, ktorá obsahuje list hradiel. Okrem hradiel každý level bude
-obsahovať prepínač, ktorý siganlizuje či má nastať fiktívne meranie po 
+obsahovať prepínač, ktorý signalizuje či má nastať fiktívne meranie po 
 aktivácií hradiel v leveli.
 
 \begin{code}
@@ -63,16 +63,16 @@ data Level = Level LevelGates Bool
 \end{figure}
 
 Pravdepodobnostný model možno vo funkčnosti prirovnať k interpreteru
-kvatového obvodu. Tak ako bolo spomenuté v Pravdepodobnostnej analýze 
+kvantového obvodu. Tak ako bolo spomenuté v Pravdepodobnostnej analýze 
 (kapitola \ref{pravAnalL}) je nutné brať v úvahu previazané a nepreviazané
 kvantové bity. Previazanie je možné dosiahnuť hradlom CNOT (respektíve
-C\textsuperscript{n}NOT). Našim cieľom nie je vytovoriť dokonalý interpreter,
+C\textsuperscript{n}NOT). Našim cieľom nie je vytvoriť dokonalý interpreter,
 z tohto dôvodu budeme využívať zjednodušené verzie týchto hradiel. Čo znamená,
 že ak kontrólne bity sú v stave \(\ket{1}\) tak cieľový kvantový bit bude 
 preklopený hradom \(X\). V inom prípade nenastane zmena v stavoch.
 
 
-Pravdepodbnostný model si uchováva stavy všetkých kvantových bitova 
+Pravdepodobnostný model si uchováva stavy všetkých kvantových bitov a 
 v stromovej štruktúre. 
 \begin{code}
 type QBit = [[Complex Double]]
@@ -83,10 +83,10 @@ data StateTree = StateTree Double States SubTrees
 \end{code}
 
 Pri prechode levelom si uloží nové stavy do listov
-tohto stromu. Ak sa v leveli nachádzajú len običajné hradlá, vzniká len
+tohto stromu. Ak sa v leveli nachádzajú len obyčajné hradlá, vzniká len
 jediný nový list. Rozdiel nastáva pri prechode hradlom CNOT. Je zrejmé, že 
-toto hradlo musí rozvetvovať stromovú štruktúru na dva podstromi. Každý z 
-podstromov je označený pradvdepodobnosťou, s akou môže nastať daná zmena 
+toto hradlo musí rozvetvovať stromovú štruktúru na dva podstromy. Každý z 
+podstromov je označený pravdepodobnosťou, s akou môže nastať daná zmena 
 stavov. 
 
 Pri meraní (fiktívnom meraní) sa spočítajú pravdepodobnosti všetkých listov
@@ -96,12 +96,12 @@ data R = R Double [Int]
 type T = [R]
 type Ts = [T]
 \end{code}
-Dátová štruktúra R popisuje pravdepodobnosť dostiahnutia stavu, ktorý je 
+Dátová štruktúra R popisuje pravdepodobnosť dosiahnutia stavu, ktorý je 
 reprezentovaný ako list celých čísel \(c_0c_1 \dots c_n\).
 Pre lepšie pochopenie funkčnosti 
 programu opíšeme príklad. Majme kvantový obvod, ktorý je definovaný na 
 obrázku \ref{obvod}. Na vstupe máme dva kvantové bity v stavoch \(\ket{0}\).
-Definujme všetky potrebné datové štruktúry v jazyku Haskell. 
+Definujme všetky potrebné dátové štruktúry v jazyku Haskell. 
 
 \begin{code}
 l1 = Level [E, E] True
@@ -125,8 +125,8 @@ sú nasledovné:
 Pre ďalšie spracovanie spojíme levely  do jedného obvodu \(c\). Na ukladanie
 stavov slúži stromová štruktúra StateTree. Jej definovaním hovoríme, že
 počiatočné stavy sú q0, čo je označenie pre stav \(\ket{0}\). Pravdepodobnosť
-dosiahnutia týchto stavov je 1 a zatiaľ neexistujú žiadne podstromi. Štruktúra
-RT slúži na ukadanie výsledkov meraní. Spustením pravdepodobnostného modelu
+dosiahnutia týchto stavov je 1 a zatiaľ neexistujú žiadne podstromy. Štruktúra
+RT slúži na ukladanie výsledkov meraní. Spustením pravdepodobnostného modelu
 dostaneme výslednú tabuľku typu RT.
 
 \begin{code}
@@ -148,10 +148,10 @@ kde hrany stromu sú označené pravdepodobnosťou dosiahnutia daného podstromu
 
 To ako sa menili stavy kvantových bitov môžeme vidieť na obrázku
 \ref{stateTree}. Je zrejmé, že využitím operácie Hadarmardovho hradla nenastane
-vetvenie stromu stavov. To isé ale už neplatí pre hradlo CNOT. Nakoľko stav
+vetvenie stromu stavov. To isté ale už neplatí pre hradlo CNOT. Nakoľko stav
 kontrólneho bitu \(\ket{+}\) má \(50\%\)-tnú šancu skolabovať do stavu 
 \(\ket{0}\) ako aj do stavu \(\ket{1}\), tak je prirodzené, že strom stavov 
-sa rozvetví a každý podstrom má pravdepodobonsť dosihuntia približne \(0.5\).
+sa rozvetví a každý podstrom má pravdepodobnosť dosiahnutia približne \(0.5\).
 
 Pri výpočte výsledkov je nutné započítať nie len pravdepodobnosti kolabovania
 výsledných stavov ale aj pravdepodobnosti dosiahnutia podstromov, v ktorých 

@@ -3,11 +3,11 @@
 \chapter{Matematické základy kvantových systémov}
 
 Na pochopenie problematiky kvantových počítačov je nutná znalosť aspoň základnej lineárnej algebry.
-V tejto kapitole je opýsaný matematický aparát využívaný ako teoretický základ celej práce.
+V tejto kapitole je opísaný matematický aparát využívaný ako teoretický základ celej práce.
 
 \section{Matice}
 
-Maticou typu \(m \times n\) je nazývaná sústava prvkov zapísaných do schémy s \(m\) riadkami a \(n\) stľpcami, kde \(n,m \in \field{N}\) \cite{Ste18}.
+Maticou typu \(m \times n\) je nazývaná sústava prvkov zapísaných do schémy s \(m\) riadkami a \(n\) stĺpcami, kde \(n,m \in \field{N}\) \cite{Ste18}.
 Teda:
 \[
 A = \begin{bmatrix}
@@ -55,7 +55,7 @@ A \otimes B = \begin{bmatrix}
 		a_{m1}B & a_{m2}B & \dots & a_{mn}B
      \end{bmatrix}
 \]
-Nakoľko je \(a_{ij}B\) submatica typu \(r \times s\), je zjavné, že výsladná matica je typu \(mr \times ns\).
+Nakoľko je \(a_{ij}B\) submatica typu \(r \times s\), je zjavné, že výsledná matica je typu \(mr \times ns\).
 
 \section{Komplexné čísla}
 Množinou komplexných čísel \(\field{C}\) je nazývaná množina \(\field{R}^2\) spolu s operáciami sčítania a násobenia. Ľubovoľný prvok \(z = (a, b) \in \field{C}\) je nazývaný komplexné číslo \cite{Tit06}.
@@ -64,7 +64,7 @@ Komplexné čísla možno reprezentovať nie len ako usporiadanú dvojicu, ale a
 \item Algebraickej formy \[z = a + bi\], kde \(a,b \in \field{R}\) a \(i^{2} = -1\),
 \item Polárnych súradníc \(\rho\) a \(\varphi\), \\
 kde \(\rho,\varphi \in \field{R}\) a \(\rho > 0\).
-V geometrickej reprezenácii (Obr. \ref{fig:kn}) je \(\rho\) veľkosť vektora \(\vec{Oz}\), kde \(O\) je počiatok súradnicovej sústavy, a \(\varphi\) je uhol medzi osou \(x\) a daným vektorom.
+V geometrickej reprezentácii (Obr. \ref{fig:kn}) je \(\rho\) veľkosť vektora \(\vec{Oz}\), kde \(O\) je počiatok súradnicovej sústavy, a \(\varphi\) je uhol medzi osou \(x\) a daným vektorom.
 \end{enumerate}
 Je zrejme, že pre vyjadrenie pomocou polárnych súradníc platí \(a = \rho \cos \varphi\) a \(b = \rho \sin \varphi\) \cite{Tit06}.
 Potom je možné zapísať \[z = \rho e^{i \varphi}\] ,kde \(z \in \field{C}\), \(\rho , \varphi \in \field{R}\) a \(\rho > 1\).
@@ -99,7 +99,7 @@ A z Eulerovho vzťahu platí
 \label{fig:kn}
 \end{figure}
 
-\subsection{Operácie na množine komplexých čísel}
+\subsection{Operácie na množine komplexných čísel}
 \textbf{Súčet komplexných čísel}
 \begin{itemize}
 \item \((a + bi) + (c + di) = (a + c) + (b + d)i\)
@@ -112,12 +112,12 @@ A z Eulerovho vzťahu platí
 \item \(\rho_{1}e^{i \varphi_{1}} . \rho_{2}e^{i \varphi_{2}} = \rho_{1} \rho_{2}e^{i(\varphi_{1} \varphi_{2})}\)
 \end{itemize}
 
-Operácie rozdielu a podielu sú ľahko odvoditeľné obnomným spôsobom.
+Operácie rozdielu a podielu sú ľahko odvoditeľné obnobným spôsobom.
 
 \subsection{Základné charakteristiky komplexných čísel}
 Nech \(\alpha\) je komplexné číslo \(\alpha = a + bi, \alpha \in \field{C}\).
 Potom hovoríme, že \(a,b\) sú zložky komplexného čísla \(\alpha\), pričom \(a\) je reálna a \(b\) je imaginárna zložka.
-Pri reprezenácií pomocou polárnych súradníc \(\alpha = \rho e^{i\varphi}\) je \(\rho\) nazývané amplitúda (veľkosť, norma) komplexného čísla a \(\varphi\) je fáza komplexného čísla. \\
+Pri reprezentácii pomocou polárnych súradníc \(\alpha = \rho e^{i\varphi}\) je \(\rho\) nazývané amplitúda (veľkosť, norma) komplexného čísla a \(\varphi\) je fáza komplexného čísla. \\
 
 Pre komplexné číslo \(\alpha \in \field{C}\) je číslo \(\alpha^{\dag}\) (\(\overline{\alpha}\) alebo \(\alpha^{*}\)) nazývané združeným komplexným číslom (angl. conjugate of complex number) \cite{Tit06}, pričom ak \(\alpha = a + bi\), potom 
 \[\alpha^{\dag} = a - bi,\] 
@@ -144,7 +144,7 @@ No je žiadúce označovať vektory pomocou Diracovho (Bra-ket) zápisu.
 Čiže vektory \(u = \binom{\alpha}{\beta}\) a \(v = \binom{\gamma}{\delta}\) je lepšie označiť ako 
 \[\Ket{\psi_1} = \binom{\alpha_1}{\beta_1}\]
 \[\Ket{\psi_2} = \binom{\alpha_2}{\beta_2}\]
-Toto označenie popisuje vektory v Hilbertovom priesotre (viac v kapitole \ref{hil_space}), pričom platí nasledovné:
+Toto označenie popisuje vektory v Hilbertovom priestore (viac v kapitole \ref{hil_space}), pričom platí nasledovné:
 
 Ak \(\Ket{\psi} = \binom{\alpha}{\beta}\) je ket-vektor, potom 
 \[\Bra{\psi} = {\binom{\alpha}{\beta}}^{\dag} = (\alpha^{\dag} \beta^{\dag})\]

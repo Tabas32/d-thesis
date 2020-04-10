@@ -11,25 +11,25 @@ V nasledujúcej kapitole sú uvedené poznatky z teórie kvantových výpočtov 
 \label{hil_space}
 Hilbertov priestor (angl. Hilber space) je úplný konečnorozmerný vektorový priestor, v ktorom je definovaná operácia skalárneho súčinu \(\Braket{u|v}\), kde \(u,v\) sú \(N\)-rozmerné vektory s komplexnými zložkami \cite{Nie10}.
 Konečnorozmerným vektorovým priestorom nazývame taký priestor, ktorého báza je množina lineárne nezávislých  vektorov, a ktorá generuje celý tento priestor.
-Pre úplný priestor platí, že existuje Cauchyho postupnosť, ktorou je dosiahnuteľný ľubovoľný stav, charakterizovateľný \(N\)-rozmerným vektorom \(\Ket{\psi} \in \field{C}^{N}\), ktorý je vždy normalizovaý.
+Pre úplný priestor platí, že existuje Cauchyho postupnosť, ktorou je dosiahnuteľný ľubovoľný stav, charakterizovateľný \(N\)-rozmerným vektorom \(\Ket{\psi} \in \field{C}^{N}\), ktorý je vždy normalizovaný.
 
 \item[] \textbf{Unitárne zobrazenie} \\
 Unitárne zobrazenie (angl. Unitary map) je rotáciou, čiže zmenou ortonormálnej bázy.
 
 \item[] \textbf{Kvantový bit} \\
 Za kvantový bit je možné považovať objekt, ktorý popisuje stav kvantového systému.
-Z matematického pohľadu je to vektor v dvojrozmernom Hilberovom priesotre \(\field{C}^{2}\).
+Z matematického pohľadu je to vektor v dvojrozmernom Hilberovom priestore \(\field{C}^{2}\).
 No v reále ide o fotón.
 Budeme sa zaoberať dvojstavovými kvantovými systémami, kde je fotón nútený skolabovať do jedného z dvoch stavov.
 A teda vektor, ktorý bude popisovať tento kvantový bit vyjadríme ako \(u = \binom{\alpha}{\beta}\), \( ( \alpha, \beta \in \field{C} ) \) a \(u \in \field{C}^{2}\) \cite{Kay07}.
-No vhodnejším sa javí vyjadrenie tohto vektora superpozíciou, teda lineárnou kombináciou základných stavov \(\Ket{0}, \Ket{1}\), ktoré zodpovedajé klasickým bitom \(0,1\).
+No vhodnejším sa javí vyjadrenie tohto vektora superpozíciou, teda lineárnou kombináciou základných stavov \(\Ket{0}, \Ket{1}\), ktoré zodpovedajú klasickým bitom \(0,1\).
 Teda \[u = \binom{\alpha}{\beta} = \alpha \binom{1}{0} + \beta \binom{0}{1} = \alpha\Ket{0} + \beta\Ket{1},\]
-kde monožina \(\{\Ket{0}, \Ket{1}\} = \{\binom{1}{0}, \binom{0}{1}\}\) je nazývaná základná báza.
+kde množina \(\{\Ket{0}, \Ket{1}\} = \{\binom{1}{0}, \binom{0}{1}\}\) je nazývaná základná báza.
 Väčšinou je využívaná základná báza \(\{\Ket{0}, \Ket{1}\}\), no je možné sa stretnúť aj s bázami \(\{\Ket{+}, \Ket{-}\}\) a \(\{\Ket{\circlearrowright}, \Ket{\circlearrowleft}\}\). Tieto bázy sú dosiahnuteľné zo základnej bázy unitárnymi transformáciami.
 
 \item[] \textbf{Superpozícia} \\
 Superpozíciou (angl. superposition) dvoch vektorov je vyjadrený stav kvantového bitu \(\Ket{\psi}\), \(\Ket{\psi} \in \field{C}^2\).
-Ide o lineárnu kombináciu a teda vo všeobecnosti tieto vektory môžu byť dva ľubovoľné, no lineárne nezávislé vektory \(u\) a \(v\). Čiže
+Ide o lineárnu kombináciu, a teda vo všeobecnosti tieto vektory môžu byť dva ľubovoľné, no lineárne nezávislé vektory \(u\) a \(v\). Čiže
 \[\Ket{\psi} = \alpha u + \beta v.\]
 Pre kvantové výpočty, ale má väčší význam využitie ortonormálnych vektorov.
 \[\Ket{\psi} = \alpha \Ket{0} + \beta \Ket{1},\]
@@ -64,7 +64,7 @@ Používame Bra-ket zápis, ktorý bol vysvetlený v časti Vektory \ref{vektory
 a teda normu tohto kvantového bit možno odvodiť zo
 \[\Braket{\psi|\psi} = (\alpha^{\dag}\beta^{\dag})\binom{\alpha}{\beta} = \alpha^{\dag}\alpha + \beta^{\dag}\beta = |\alpha|^{2} + |\beta|^{2} = ||\Ket{\psi}||^{2}\]
 
-a samozreme platí
+a samozrejme platí
 \[|\alpha|^{2} + |\beta|^{2} < 1\]
 
 \section{Systém s viacerými kvantovými bitmi}
@@ -117,7 +117,7 @@ stave
     0\\
  \end{pmatrix}^T
 \]
-obdobne, ak naodbudne druhý stav
+obdobne, ak nadobudne druhý stav
 \[
 \begin{pmatrix}
     0 & 0 & 0 & 0  & \alpha_2 \alpha_3 & \alpha_2 \beta_3 & \beta_2 \alpha_3 & \beta_2 \beta_3 \\

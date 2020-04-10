@@ -1,8 +1,8 @@
 % !TEX root = ../thesis.tex
 
-\chapter{Kvantovy system}
+\chapter{Kvantový systém}
 
-Stupeň vývoja kvantových počítačov nateraz neumožnuje priamy prístup k
+Stupeň vývoja kvantových počítačov nateraz neumožňuje priamy prístup k
 fyzickému stroju. Tieto prototypy sú veľmi veľké a prísne strážené v 
 laboratóriách. Našťastie existujú nástroje, ktorými je umožnená práca aj 
 obyčajným ľuďom. Jedným z najpoužívanejším nástrojom je IBM Quantum Experience. 
@@ -10,12 +10,12 @@ obyčajným ľuďom. Jedným z najpoužívanejším nástrojom je IBM Quantum Ex
 \section{IBM Quantum Experience}
 IBM Quantum Experience (ďalej len IBM QX) je webová aplikácia, ktorá 
 slúži na experimentovanie s kvantovým počítačom. Medzi jej funkcionality 
-možno zahrnúť vytváranie a ukladanie kvantových obvodov ako aj ich 
-vykonávanie na kvantovom počítači. Tento počítač je symulovaný virtuálny 
-stroj, no IBM QX umožnuje aj odoslanie experimentu na reálny počítač. 
-Symulátor umožnuje relatívne rýchlu prácu s kvantovým počítačom. Tento
-prístup odľachčuje skutočný systém od veľkej sieťovej premávky a takisto 
-zlepšuje používaťeľský zážitok.
+možno zahrnúť vytváranie a ukladanie kvantových obvodov, ako aj ich 
+vykonávanie na kvantovom počítači. Tento počítač je simulovaný virtuálny 
+stroj, no IBM QX umožňuje aj odoslanie experimentu na reálny počítač. 
+Simulátor umožňuje relatívne rýchlu prácu s kvantovým počítačom. Tento
+prístup odľahčuje skutočný systém od veľkej sieťovej premávky a takisto 
+zlepšuje používateľský zážitok.
 
 Vytáranie nového obvodu je veľmi intuitívne. Na obrázku \ref{ibm_qx_composer}
 je nástroj na to určený. Prednastavené hradlá je spôsobom ťahaj a pusť (angl.
@@ -31,7 +31,7 @@ je obvod spúšťaný na simulátore, tak za krátku dobu sú vrátené výsledk
 \end{figure}
 
 Obvody je možné navrhovať aj pomocou špeciálneho jazyka OpenQASM, pomocou
-editora, ktroý IBM QX obsahuje. Pri zobrazovaní výsledkov sa stav systému 
+editora, ktorý IBM QX obsahuje. Pri zobrazovaní výsledkov sa stav systému 
 označuje pomocou klasických bitov. Teda pri navrhovaní programu pomocou
 OpenQASM, je nutné definovať jednak počet kvantových a súčasne aj počet 
 klasických bitov v systéme.
@@ -62,7 +62,7 @@ measure q[0] -> c[0];
 \begin{figure} 
 	\centering 
 	\includegraphics[width=1\textwidth]{figures/ibm_qx_results.png} 
-	\caption{Výsledky exprimentu z IBM Quantum Experience.}
+	\caption{Výsledky experimentu z IBM Quantum Experience.}
     \label{ibm_qx_results}
 \end{figure}
 
@@ -96,7 +96,7 @@ Pri výpočtoch je najviac využívaných týchto šesť stavov kvantových bito
 \end{itemize}
 
 Zmena stavu kvantového bitu je možná pomocou hradiel. Existuje viacero
-hradiel, ktoré možno používať v kvantových systémoch. Aplikovaním hardiel
+hradiel, ktoré možno používať v kvantových systémoch. Aplikovaním hradiel
 na rôznych stavoch dosiahneme rôznu zmenu. Prehľad aplikácií základných 
 hradiel je v tabuľke \ref{hradla_vysl}.
 

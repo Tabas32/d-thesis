@@ -10,7 +10,7 @@ a preto v tejto kapitole priblížime spôsob tohto merania.
 Vo všeobecnosti môžme rozdeliť kvantové obvody na dva druhy, v ktorých 
 meranie má iný charakter. Sú to obvody s nepreviazanými bitmi a obvody s 
 previazanými kvantovými bitmi. Totižto pri nepreviazaných bitoch,
-ako už výchádza z názvu, nedochádza k ovplivňovaniu stavu bitu inými 
+ako už vychádza z názvu, nedochádza k ovplyvňovaniu stavu bitu inými 
 kvantovými bitmi. A naopak ak sú jednotlivé bity previazané, ich stav silno
 závisí od stavu ostatných bitov.
 
@@ -19,7 +19,7 @@ závisí od stavu ostatných bitov.
 \begin{figure} 
 	\centering 
 	\includegraphics[width=.4\textwidth]{figures/simpleCircuit2.png} 
-	\caption{Jednotduchý kvantový obvod (namodelovaný v IBM Quantum Experience)}
+	\caption{Jednoduchý kvantový obvod (namodelovaný v IBM Quantum Experience)}
     \label{obvod}
 \end{figure}
 
@@ -36,7 +36,7 @@ cx q[0],q[1];
 V tomto obvode sú dva kvantové bity, ktoré prechádzajú 
 hradlom CNOT. Pre zachovanie notácie budeme ďalej označovať tieto bity ako 
 \(\psi_0\) a \(\psi_1\). Označili sme dva časové úseky \(t_1\) a \(t_2\).
-\(t_1\) označuje čas na začiatku programu a \(t_2\) je časový okamich, v ktorom
+\(t_1\) označuje čas na začiatku programu a \(t_2\) je časový okamih, v ktorom
 prebehla aktivácia hradla CNOT.
  Z kvantového obvodu je zrejmé, že v čase \(t_1\) 
 sú oba kvantové bity v stave
@@ -70,9 +70,9 @@ Toto tvrdenie platí, pretože platí
 \(\ket{\psi_0} = \alpha_0\ket{0} + \beta_0\ket{1}\), čiže 
 \(|\alpha_0|^2 + |\beta_0|^2 = 1\), z čoho vyplíva, že 
 \begin{itemize}
-    \item[] \(\ket{\psi_0}\) nadobúda hodontu 0 s 
+    \item[] \(\ket{\psi_0}\) nadobúda hodnotu 0 s 
 pravdepodobnosťou \(|\alpha_0|^2\) a 
-    \item[] \(\ket{\psi_0}\) nadobúda hodontu 1 s 
+    \item[] \(\ket{\psi_0}\) nadobúda hodnotu 1 s 
 pravdepodobnosťou \(|\beta_0|^2\).
 \end{itemize}
 Obdobne to platí aj pre \(\ket{\psi_1}\). K rovnakému záveru sa dopracujeme
@@ -97,17 +97,17 @@ aj pomocou
 \section{Analýza previazaných stavov}
 
 Pri meraní stavov v čase \(t_2\), už nemožno dostať výsledný stav \(\psi\)
-priamim využitím tenzorového súčinu. Pri prechode hradom CNOT môžu nastať
+priamym využitím tenzorového súčinu. Pri prechode hradom CNOT môžu nastať
 dve situácie:
 \begin{enumerate}
     \item Kvantový bit \(\psi_0\), ktorý je kontrólnym bitom, je v stave 
-\(\ket{1}\) a teda nastane preklopenie bitu \(\psi_1\), čo je cieľoým bitom,
+\(\ket{1}\) a teda nastane preklopenie bitu \(\psi_1\), čo je cieľovým bitom,
 pomocou hradla X,
     \item Kvantový bit \(\psi_0\) nie je v stave \(\ket{1}\) a teda bit 
 \(\psi_1\) pokračuje bez zmeny.
 \end{enumerate}
 
-Z toho je jasné, že v kažom prípade sa stav \(\ket{\psi_0}\) nemení no
+Z toho je jasné, že v každom prípade sa stav \(\ket{\psi_0}\) nemení no
 stav \(\ket{\psi_1}\) nadobúda hodnotu:
 \begin{itemize}
     \item \(\ket{\psi_1}\) s pravdepodobnosťou \(|\alpha_0|^2\),
@@ -135,7 +135,7 @@ Po zarátaní oboch možností dostávame, že celkový stav \(\ket{\psi}\) v č
 
 Berme v úvahu to, že v príklade sme využili hradlo \(CNOT\). Je samozrejmé, že
 v obvode môže dôjsť k previazaniu viacerých bitov na rôznych miestach.
-Takisto je možné vo viacbitovom systéme využiť haradl \(CCNOT\) resp. 
+Takisto je možné vo viacbitovom systéme využiť haradlo \(CCNOT\) resp. 
 \(C^{n}NOT\), kde máme viacero kontrólnych bitov a cieľový bit sa preklápa
 za predpokladu, že všetky kontrólne bity majú stav \(\ket{1}\).
 Zisťujeme, že odvodzovanie je netriviálne a tento problém je nutné riešiť
