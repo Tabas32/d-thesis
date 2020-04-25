@@ -682,6 +682,13 @@ INPUT ./figures/tel_c1.png
 INPUT figures/tel_c2.png
 INPUT ./figures/tel_c2.png
 INPUT ./figures/tel_c2.png
+INPUT figures/tel_qx_results.png
+INPUT ./figures/tel_qx_results.png
+INPUT ./figures/tel_qx_results.png
+OUTPUT thesis.pyg
+INPUT thesis.out.pyg
+INPUT thesis.out.pyg
+INPUT thesis.out.pyg
 OUTPUT chapters/vyhodnotenie.aux
 INPUT chapters/vyhodnotenie.tex
 INPUT chapters/vyhodnotenie.tex

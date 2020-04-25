@@ -74,8 +74,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Kvantová teleportácia}{44}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{47}{chapter.9}% 
+\contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{48}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Záver}{48}{chapter.10}% 
+\contentsline {chapter}{\numberline {10}Záver}{49}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatúra}{49}{section*.28}% 
+\contentsline {chapter}{Literatúra}{50}{section*.30}% 
