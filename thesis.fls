@@ -692,6 +692,9 @@ INPUT thesis.out.pyg
 OUTPUT chapters/vyhodnotenie.aux
 INPUT chapters/vyhodnotenie.tex
 INPUT chapters/vyhodnotenie.tex
+INPUT figures/time_expr.png
+INPUT ./figures/time_expr.png
+INPUT ./figures/time_expr.png
 OUTPUT chapters/zaver.aux
 INPUT chapters/zaver.tex
 INPUT chapters/zaver.tex

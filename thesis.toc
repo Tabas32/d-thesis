@@ -76,6 +76,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {9}Celkové vyhodnotenie}{48}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Záver}{49}{chapter.10}% 
+\contentsline {chapter}{\numberline {10}Záver}{50}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatúra}{50}{section*.30}% 
+\contentsline {chapter}{Literatúra}{51}{section*.31}% 
