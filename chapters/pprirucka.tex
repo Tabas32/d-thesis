@@ -1,0 +1,86 @@
+% !TEX root = ../thesis.tex
+
+\chapter{Používateľská príručka}
+
+\section{Funkcia programu}
+
+Program slúži na meranie kvantového obvodu. Do programu je nutné vložiť 
+definíciu kvanotvého obvodu aj s označenými časmi merania. Program vygeneruje
+latexové súbory pripravené na preklad pomocou laxeového prekladača. 
+Vygenerované sú dva súbory
+\begin{enumerate}
+    \item Strom zmien stavov kvantových bitov (zn. 1),
+    \item Tabuľka výsledkov fiktívnych meraní v daných časových úsekoch (zn. 2).
+\end{enumerate}
+
+\section{Systémové požiadavky}
+
+Pre spustenie programu je nutné mať nainštalované: 
+\begin{itemize}
+    \item interpreter jazyka Haskell,
+    \item latex.
+\end{itemize}
+
+\section{Inštalácia programu}
+
+Samotný program nie je nutné nijako inštalovať. Programové skripty sú v 
+adresáry program, pripravené na spustenie. Je ale nutné si pripraviť prostredie.
+Pre inštaláciu jazyka Haskell postupujte podľa návodu na oficiálnej 
+stránke \url{www.haskell.org}. Pre operačný systém linux použite svojho
+správcu balíkov a nainštalujte haskell-platform. Príklad pre Ubuntu:
+
+\begin{code}
+sudo apt-get install haskell-platform
+\end{code}
+
+Na preklad výstupu do formátu .pdf je nutné použiť latex. Pre linux je
+inštalácia jednoduchá, pomocou správcu balíkov nainštalujte texlive. Príklad
+pre Ubuntu:
+
+\begin{code}
+sudo apt-get install texlive
+\end{code}
+
+Pre inštaláciu na Windows postupujte podľa pokynov na \url{http://www.tug.org/texlive/}. Alebo využite online nástroj Overleaf na \url{https://www.overleaf.com/}.
+
+\section{Spustenie programu}
+
+Pre definovanie kvantového obvodu je nutné upraviť súbor QWriter.hs. Vo 
+funkcii main sú zakomentované štyry definície obvodov, ktoré boli použité 
+v experimentoch diplomovej práce. Odkomentujte jeden alebo definujte nový
+obvod rovnakým spôsobom. 
+
+\begin{enumerate}
+    \item Nadefinujte vertikálne levely (odporúčanie: pomenujte ich l1..ln),
+    \item Uložte levely do listu ako premennú c,
+    \item Definujte strom stavov ako premennú st
+    \item Definujte tabuľku výsledkov ako rt.
+\end{enumerate}
+
+Definícia levelu obsahuje konštruktor Level, list hradiel v danom vertikálnom
+levely (E - emplty, X, Y, Z, H, S, Sd, T, Td, Ct - cieľový bit CNOT hradla, 
+Cc - kontrólny bit CNOT hradla) a indikátor, či má byť vykonané fiktívne
+meranie \underline{za} daným levelom. Príklad:
+
+\begin{code}
+Level [E, H, X] True
+\end{code}
+
+Definícia stromu stavov obsahuje konštruktor StateTree, počiatočnú 
+pravdepodobnosť (odporúčanie: nastaviť na 1), list počiatočných stavov
+kvantových bitov (q1, q0, qP, qM, qR, qL alebo ľubovoľný stav definovaný
+ako [[Complex Double]], príklad [[0.0 :+ 0.0],[1.0 :+ 0.0]]). 
+Veľkosť tohto listu určuje počet kvantových bitov v obvode. Posledný prvok
+definície stromu stavov je list podstromov (odporúčanie: nastaviť prázdny list).
+Príklad:
+
+\begin{code}
+StateTree 1 [q0, q1] []
+\end{code}
+
+Definícia tabuľky výsledkov obsahuje konštruktor RT, strom stavov a list 
+reprezentujúci samotnú tabuľku (odporúčanie: nastaviť prázdny list). Príklad:
+
+\begin{code}
+RT st []
+\end{code}

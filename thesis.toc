@@ -79,3 +79,15 @@
 \contentsline {chapter}{\numberline {10}Záver}{50}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Literatúra}{51}{section*.31}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Zoznam príloh}{52}{chapter*.33}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Používateľská príručka}{53}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Funkcia programu}{53}{section.A.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Systémové požiadavky}{53}{section.A.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Inštalácia programu}{53}{section.A.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Spustenie programu}{54}{section.A.4}% 
