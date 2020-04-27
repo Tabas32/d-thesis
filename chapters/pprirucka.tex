@@ -30,7 +30,7 @@ stránke \url{www.haskell.org}. Pre operačný systém linux použite svojho
 správcu balíkov a nainštalujte haskell-platform. Príklad pre Ubuntu:
 
 \begin{code}
-sudo apt-get install haskell-platform
+> sudo apt-get install haskell-platform
 \end{code}
 
 Na preklad výstupu do formátu .pdf je nutné použiť latex. Pre linux je
@@ -38,7 +38,7 @@ inštalácia jednoduchá, pomocou správcu balíkov nainštalujte texlive. Prík
 pre Ubuntu:
 
 \begin{code}
-sudo apt-get install texlive
+> sudo apt-get install texlive
 \end{code}
 
 Pre inštaláciu na Windows postupujte podľa pokynov na \url{http://www.tug.org/texlive/}. Alebo využite online nástroj Overleaf na \url{https://www.overleaf.com/}.
@@ -83,4 +83,39 @@ reprezentujúci samotnú tabuľku (odporúčanie: nastaviť prázdny list). Prí
 
 \begin{code}
 RT st []
+\end{code}
+
+Po definovaní kvantového obvodu je možné spustiť meranie. Spustite interpreter
+jazyka haskell ghci v adresáry program.
+\begin{code}
+> ghci
+\end{code}
+
+Načítajte modul QWriter.
+\begin{code}
+> :l QWriter
+\end{code}
+
+Nakoniec spustite funkciu main.
+\begin{code}
+> main
+\end{code}
+
+Program si vypýta názov súboru pre uloženie výsledkov. Odporúčame mať vytvorený
+samostatný adresár pre výsledky ale nie je to nevyhnutné. Povedzme, že chceme
+uložiť do adresára out, ktorý je v adresáry program. Zadáme názov súboru aj 
+s cestou k nemu. Prípona sa doplní samostatne.
+\begin{code}
+> out/vysledok
+\end{code}
+
+Program vytvorí dva súbory pomenované vysledok1.tex a vysledok2.tex. Súbor
+s označením 1 obsahuje vygenerovaný strom stavov pomocou latexového balíčka
+tikz. Súbor s označením 2 obsahuje tabuľku výsledkov meraní.
+
+Tieto súbory je možné preložiť pomocou latexu. Či už využitím nástroja Overleaf
+alebo napríklad pre linux:
+\begin{code}
+> latexmk -pdf vysledok1
+> latexmk -pdf vysledok2
 \end{code}

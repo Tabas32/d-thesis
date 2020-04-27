@@ -91,3 +91,7 @@
 \contentsline {section}{\numberline {A.3}Inštalácia programu}{53}{section.A.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.4}Spustenie programu}{54}{section.A.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Systémová príručka}{56}{appendix.B}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Popis algoritmu pravdepodobnostného modelu}{56}{section.B.1}% 
