@@ -1,16 +1,18 @@
 [0] Config.pm:304> INFO - This is Biber 2.13
 [1] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[34] biber:315> INFO - === Po mar 30, 2020, 11:12:24
-[51] Biber.pm:375> INFO - Reading 'thesis.bcf'
-[135] Biber.pm:905> INFO - Found 5 citekeys in bib section 0
-[175] Biber.pm:4196> INFO - Processing section 0
-[175] Utils.pm:75> INFO - Globbing data source 'chapters/bibliography.bib'
-[176] Utils.pm:91> INFO - Globbed data source 'chapters/bibliography.bib' to chapters/bibliography.bib
-[218] Biber.pm:4373> INFO - Looking for bibtex format file 'chapters/bibliography.bib' for section 0
-[238] bibtex.pm:1462> INFO - LaTeX decoding ...
-[314] bibtex.pm:1281> INFO - Found BibTeX data source 'chapters/bibliography.bib'
-[357] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[357] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[357] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sk-SK'
-[361] bbl.pm:648> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[364] bbl.pm:751> INFO - Output to thesis.bbl
+[34] biber:315> INFO - === Ut apr 28, 2020, 20:26:33
+[49] Biber.pm:375> INFO - Reading 'thesis.bcf'
+[132] Biber.pm:905> INFO - Found 16 citekeys in bib section 0
+[150] Biber.pm:4196> INFO - Processing section 0
+[150] Utils.pm:75> INFO - Globbing data source 'chapters/bibliography.bib'
+[150] Utils.pm:91> INFO - Globbed data source 'chapters/bibliography.bib' to chapters/bibliography.bib
+[164] Biber.pm:4373> INFO - Looking for bibtex format file 'chapters/bibliography.bib' for section 0
+[166] bibtex.pm:1462> INFO - LaTeX decoding ...
+[240] bibtex.pm:1281> INFO - Found BibTeX data source 'chapters/bibliography.bib'
+[299] Utils.pm:300> WARN - year field '12 November 1995' in entry 'Kit95' is not an integer - this will probably not sort properly.
+[340] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[340] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[341] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sk-SK'
+[355] bbl.pm:648> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[362] bbl.pm:751> INFO - Output to thesis.bbl
+[362] Biber.pm:110> INFO - WARNINGS: 1

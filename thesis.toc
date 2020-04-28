@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Vektory}{7}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Pojmi a definície}{8}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Pojmy a definície}{8}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Teoretické základy kvantových systémov}{10}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
@@ -80,18 +80,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Literatúra}{51}{section*.31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Zoznam príloh}{52}{chapter*.33}% 
+\contentsline {chapter}{Zoznam príloh}{53}{chapter*.33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Používateľská príručka}{53}{appendix.A}% 
+\contentsline {chapter}{\numberline {A}Používateľská príručka}{54}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Funkcia programu}{53}{section.A.1}% 
+\contentsline {section}{\numberline {A.1}Funkcia programu}{54}{section.A.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Systémové požiadavky}{53}{section.A.2}% 
+\contentsline {section}{\numberline {A.2}Systémové požiadavky}{54}{section.A.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Inštalácia programu}{53}{section.A.3}% 
+\contentsline {section}{\numberline {A.3}Inštalácia programu}{54}{section.A.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Spustenie programu}{54}{section.A.4}% 
+\contentsline {section}{\numberline {A.4}Spustenie programu}{55}{section.A.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Systémová príručka}{56}{appendix.B}% 
+\contentsline {chapter}{\numberline {B}Systémová príručka}{57}{appendix.B}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Popis algoritmu pravdepodobnostného modelu}{56}{section.B.1}% 
+\contentsline {section}{\numberline {B.1}Popis algoritmu pravdepodobnostného modelu}{57}{section.B.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Popis implementácie}{58}{section.B.2}% 

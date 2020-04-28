@@ -2136,10 +2136,25 @@
     <bcf:citekey order="5">Gra81</bcf:citekey>
     <bcf:citekey order="6">Tit06</bcf:citekey>
     <bcf:citekey order="7">Tit06</bcf:citekey>
-    <bcf:citekey order="8">Tit06</bcf:citekey>
-    <bcf:citekey order="9">Nie10</bcf:citekey>
-    <bcf:citekey order="10">Kay07</bcf:citekey>
-    <bcf:citekey order="11">Nie10</bcf:citekey>
+    <bcf:citekey order="8">Rich07</bcf:citekey>
+    <bcf:citekey order="9">Tit06</bcf:citekey>
+    <bcf:citekey order="10">Ber18</bcf:citekey>
+    <bcf:citekey order="11">Nie+00</bcf:citekey>
+    <bcf:citekey order="12">Ber18</bcf:citekey>
+    <bcf:citekey order="13">Ber18</bcf:citekey>
+    <bcf:citekey order="14">Hun03</bcf:citekey>
+    <bcf:citekey order="15">Nie10</bcf:citekey>
+    <bcf:citekey order="16">Schu95</bcf:citekey>
+    <bcf:citekey order="17">Kay07</bcf:citekey>
+    <bcf:citekey order="18">Nie+00</bcf:citekey>
+    <bcf:citekey order="19">Kit95</bcf:citekey>
+    <bcf:citekey order="20">IBM</bcf:citekey>
+    <bcf:citekey order="21">Wei02</bcf:citekey>
+    <bcf:citekey order="22">Nie+00</bcf:citekey>
+    <bcf:citekey order="23">Nie10</bcf:citekey>
+    <bcf:citekey order="24">Sim97</bcf:citekey>
+    <bcf:citekey order="25">Wat+01</bcf:citekey>
+    <bcf:citekey order="26">Wol+01</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

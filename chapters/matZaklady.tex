@@ -117,7 +117,7 @@ Operácie rozdielu a podielu sú ľahko odvoditeľné obnobným spôsobom.
 \subsection{Základné charakteristiky komplexných čísel}
 Nech \(\alpha\) je komplexné číslo \(\alpha = a + bi, \alpha \in \field{C}\).
 Potom hovoríme, že \(a,b\) sú zložky komplexného čísla \(\alpha\), pričom \(a\) je reálna a \(b\) je imaginárna zložka.
-Pri reprezentácii pomocou polárnych súradníc \(\alpha = \rho e^{i\varphi}\) je \(\rho\) nazývané amplitúda (veľkosť, norma) komplexného čísla a \(\varphi\) je fáza komplexného čísla. \\
+Pri reprezentácii pomocou polárnych súradníc \(\alpha = \rho e^{i\varphi}\) je \(\rho\) nazývané amplitúda (veľkosť, norma) komplexného čísla a \(\varphi\) je fáza komplexného čísla \cite{Rich07}. \\
 
 Pre komplexné číslo \(\alpha \in \field{C}\) je číslo \(\alpha^{\dag}\) (\(\overline{\alpha}\) alebo \(\alpha^{*}\)) nazývané združeným komplexným číslom (angl. conjugate of complex number) \cite{Tit06}, pričom ak \(\alpha = a + bi\), potom 
 \[\alpha^{\dag} = a - bi,\] 
@@ -132,7 +132,7 @@ Dôkaz:
 \section{Vektory}
 \label{vektory}
 
-Vektor rozmeru \(n\) je usporiadaný súbor prvkov.
+Vektor rozmeru \(n\) je usporiadaný súbor prvkov \cite{Ber18}.
 Vo všeobecnosti je možné vektor \(A\) označiť ako 
 \[A = \begin{pmatrix}
 		a_{1} \\
@@ -140,7 +140,7 @@ Vo všeobecnosti je možné vektor \(A\) označiť ako
 		\dots \\
 		a_{n}
      \end{pmatrix}\]
-No je žiadúce označovať vektory pomocou Diracovho (Bra-ket) zápisu.
+No je žiadúce označovať vektory pomocou Diracovho (Bra-ket) zápisu \cite{Nie+00}.
 Čiže vektory \(u = \binom{\alpha}{\beta}\) a \(v = \binom{\gamma}{\delta}\) je lepšie označiť ako 
 \[\Ket{\psi_1} = \binom{\alpha_1}{\beta_1}\]
 \[\Ket{\psi_2} = \binom{\alpha_2}{\beta_2}\]
@@ -154,11 +154,11 @@ je  bra-vektor, kde \( ( \alpha, \beta, \alpha^{\dag}, \beta^{\dag} \in \field{C
 \[\Ket{\psi^{\dag}} = \Bra{\psi}\]
 
 
-\section{Pojmi a definície}
+\section{Pojmy a definície}
 Vektor je \textbf{normalizovaný}, ak jeho norma (veľkosť) je rovná 1.
 \[\left\Vert \binom{\alpha}{\beta} \right\Vert = \sqrt{|\alpha|^2 + |\beta|^2}= 1\]
 
-Vektory \(\psi_1\) a \(\psi_2\) sú navzájom \textbf{ortogonálne}, ak ich skalárny súčin je rovný 0. Ortogonálnosť (angl. orthogonality) je v tomto ponímaní teda možné zameniť s kolmosťou.
+Vektory \(\psi_1\) a \(\psi_2\) sú navzájom \textbf{ortogonálne}, ak ich skalárny súčin je rovný 0 \cite{Ber18}. Ortogonálnosť (angl. orthogonality) je v tomto ponímaní teda možné zameniť s kolmosťou.
 
 Dva vektory sú \textbf{ortonormálne}, ak sú zároveň ortogonálne a normalizované.
 
@@ -173,11 +173,12 @@ Tieto vektory sú ortonormálne, pretože platí
 Pre \textbf{skalárny súčin} dvoch vektorov platí
 \[\Braket{\psi_1|\psi_2} = \Bra{\psi_1} . \Ket{\psi_2} = (\alpha_1^{\dag}\beta_1^{\dag}) . \binom{\alpha_2}{\beta_2} = \alpha_1^{\dag}\alpha_2 + \beta_1^{\dag}\beta_2.\]
 
-\textbf{Normu} vektora \(\Ket{\psi}\) pomocou skalárneho súčinu je možné vypočítať ako
+\textbf{Normu} vektora \cite{Ber18}  \(\Ket{\psi}\) pomocou skalárneho súčinu je možné vypočítať ako
 \[\Vert \Ket{\psi} \Vert = \sqrt{\Braket{\psi|\psi}},\]
 pretože platí \(\Braket{\psi|\psi} = \alpha^{\dag}\alpha + \beta^{\dag}\beta = |\alpha|^2 + |\beta|^2 = \Vert \Ket{\psi} \Vert^2\).
 
-Operácia \textbf{tenzorového súčinu} dvoch vektorov je definovaná ako
+Operácia \textbf{tenzorového súčinu} dvoch vektorov \cite{Hun03} je definovaná 
+ako
 \[
 \Ket{\psi_1} \otimes \Ket{\psi_2} = \Ket{\psi_1} . \Bra{\psi_2} = \binom{\alpha_1}{\beta_1} . (\alpha_2\beta_2) = 
 \begin{pmatrix}

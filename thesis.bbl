@@ -91,6 +91,109 @@
       \field{title}{Complex Numbers from A to...Z}
       \field{year}{2006}
     \endentry
+    \entry{Rich07}{book}{}
+      \name{author}{1}{}{%
+        {{hash=10e7989a383131abedb37b280e7d3849}{%
+           family={Richard\bibnamedelimb N.\bibnamedelimi Aufmann},
+           familyi={R\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Richard\bibnamedelimb D.\bibnamedelimi Nation},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           suffix={Vernon\bibnamedelimb C.\bibnamedelimi Barker},
+           suffixi={V\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{10e7989a383131abedb37b280e7d3849}
+      \strng{fullhash}{10e7989a383131abedb37b280e7d3849}
+      \strng{bibnamehash}{10e7989a383131abedb37b280e7d3849}
+      \strng{authorbibnamehash}{10e7989a383131abedb37b280e7d3849}
+      \strng{authornamehash}{10e7989a383131abedb37b280e7d3849}
+      \strng{authorfullhash}{10e7989a383131abedb37b280e7d3849}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{College Algebra and Trigonometry}
+      \field{year}{2007}
+    \endentry
+    \entry{Ber18}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c16bce1df61127ac3ec42de6190dfe6f}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{c16bce1df61127ac3ec42de6190dfe6f}
+      \strng{fullhash}{c16bce1df61127ac3ec42de6190dfe6f}
+      \strng{bibnamehash}{c16bce1df61127ac3ec42de6190dfe6f}
+      \strng{authorbibnamehash}{c16bce1df61127ac3ec42de6190dfe6f}
+      \strng{authornamehash}{c16bce1df61127ac3ec42de6190dfe6f}
+      \strng{authorfullhash}{c16bce1df61127ac3ec42de6190dfe6f}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scalar, Vector, And Matrix Mathematics: Theory, Facts, And Formulas}
+      \field{year}{2018}
+    \endentry
+    \entry{Nie+00}{book}{}
+      \name{author}{2}{}{%
+        {{hash=afe17482fc813e497188aee3b3783879}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=415ddff2f58b25977b1a2dedf18f4501}{%
+           family={Chuang},
+           familyi={C\bibinitperiod},
+           given={Isaac\bibnamedelima L.},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{fullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{bibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorbibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authornamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorfullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Computation and Quantum Information}
+      \field{year}{2000}
+    \endentry
+    \entry{Hun03}{book}{}
+      \name{author}{1}{}{%
+        {{hash=64a267974697fa7cd3a948e5fd9e1da8}{%
+           family={Hungerford},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima W.},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{64a267974697fa7cd3a948e5fd9e1da8}
+      \strng{fullhash}{64a267974697fa7cd3a948e5fd9e1da8}
+      \strng{bibnamehash}{64a267974697fa7cd3a948e5fd9e1da8}
+      \strng{authorbibnamehash}{64a267974697fa7cd3a948e5fd9e1da8}
+      \strng{authornamehash}{64a267974697fa7cd3a948e5fd9e1da8}
+      \strng{authorfullhash}{64a267974697fa7cd3a948e5fd9e1da8}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Algebra}
+      \field{year}{2003}
+    \endentry
     \entry{Nie10}{book}{}
       \name{author}{1}{}{%
         {{hash=a1b36ee271f3d7b01e25331617fc336f}{%
@@ -108,12 +211,34 @@
       \strng{authorbibnamehash}{a1b36ee271f3d7b01e25331617fc336f}
       \strng{authornamehash}{a1b36ee271f3d7b01e25331617fc336f}
       \strng{authorfullhash}{a1b36ee271f3d7b01e25331617fc336f}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum Computation and Quantum Information}
       \field{year}{2010}
+    \endentry
+    \entry{Schu95}{article}{}
+      \name{author}{1}{}{%
+        {{hash=707c95018141c08e984648e57845ce07}{%
+           family={Schumacher},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{707c95018141c08e984648e57845ce07}
+      \strng{fullhash}{707c95018141c08e984648e57845ce07}
+      \strng{bibnamehash}{707c95018141c08e984648e57845ce07}
+      \strng{authorbibnamehash}{707c95018141c08e984648e57845ce07}
+      \strng{authornamehash}{707c95018141c08e984648e57845ce07}
+      \strng{authorfullhash}{707c95018141c08e984648e57845ce07}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A.}
+      \field{title}{Quantum coding}
+      \field{year}{1995}
     \endentry
     \entry{Kay07}{book}{}
       \name{author}{1}{}{%
@@ -140,6 +265,145 @@
       \field{labeltitlesource}{title}
       \field{title}{An Introduction to Quantum Computing}
       \field{year}{2007}
+    \endentry
+    \entry{Kit95}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=34266a35eedbd87dd79c5e408127a5e5}{%
+           family={Kitaev},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi Yu.},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{fullhash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{bibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authorbibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authornamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authorfullhash}{34266a35eedbd87dd79c5e408127a5e5}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum measurements and the Abelian stabilizer problem}
+      \field{year}{12 November 1995}
+      \verb{eprint}
+      \verb quant-ph/9511026
+      \endverb
+    \endentry
+    \entry{IBM}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{title}{IBM Quantum Experience}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://quantum-computing.ibm.com/
+      \endverb
+      \verb{url}
+      \verb https://quantum-computing.ibm.com/
+      \endverb
+    \endentry
+    \entry{Wei02}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3ff9fe28dd4b3b6688bd17fbcc3632da}{%
+           family={Weinberg},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{3ff9fe28dd4b3b6688bd17fbcc3632da}
+      \strng{fullhash}{3ff9fe28dd4b3b6688bd17fbcc3632da}
+      \strng{bibnamehash}{3ff9fe28dd4b3b6688bd17fbcc3632da}
+      \strng{authorbibnamehash}{3ff9fe28dd4b3b6688bd17fbcc3632da}
+      \strng{authornamehash}{3ff9fe28dd4b3b6688bd17fbcc3632da}
+      \strng{authorfullhash}{3ff9fe28dd4b3b6688bd17fbcc3632da}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Quantum Theory of Fields}
+      \field{year}{2002}
+    \endentry
+    \entry{Sim97}{article}{}
+      \name{author}{1}{}{%
+        {{hash=122c78deb331f8c2a69b711e11db93ca}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{122c78deb331f8c2a69b711e11db93ca}
+      \strng{fullhash}{122c78deb331f8c2a69b711e11db93ca}
+      \strng{bibnamehash}{122c78deb331f8c2a69b711e11db93ca}
+      \strng{authorbibnamehash}{122c78deb331f8c2a69b711e11db93ca}
+      \strng{authornamehash}{122c78deb331f8c2a69b711e11db93ca}
+      \strng{authorfullhash}{122c78deb331f8c2a69b711e11db93ca}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Computing}
+      \field{note}{Earlier version in FOCS’94}
+      \field{number}{5}
+      \field{title}{On the power of quantum computation}
+      \field{volume}{26}
+      \field{year}{1997}
+      \field{pages}{1474\bibrangedash 1483}
+      \range{pages}{10}
+    \endentry
+    \entry{Wat+01}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=293768f7e4b6be4dbd1c7734383a8a73}{%
+           family={Watrous},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{293768f7e4b6be4dbd1c7734383a8a73}
+      \strng{fullhash}{293768f7e4b6be4dbd1c7734383a8a73}
+      \strng{bibnamehash}{293768f7e4b6be4dbd1c7734383a8a73}
+      \strng{authorbibnamehash}{293768f7e4b6be4dbd1c7734383a8a73}
+      \strng{authornamehash}{293768f7e4b6be4dbd1c7734383a8a73}
+      \strng{authorfullhash}{293768f7e4b6be4dbd1c7734383a8a73}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of 33rd ACM STOC}
+      \field{title}{Quantum algorithms for solvable groups}
+      \field{year}{2001}
+      \field{pages}{60\bibrangedash 67}
+      \range{pages}{8}
+    \endentry
+    \entry{Wol+01}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=4072fcdfa949758d3a860d7e08c1fa54}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Amsterdam}%
+      }
+      \strng{namehash}{4072fcdfa949758d3a860d7e08c1fa54}
+      \strng{fullhash}{4072fcdfa949758d3a860d7e08c1fa54}
+      \strng{bibnamehash}{4072fcdfa949758d3a860d7e08c1fa54}
+      \strng{authorbibnamehash}{4072fcdfa949758d3a860d7e08c1fa54}
+      \strng{authornamehash}{4072fcdfa949758d3a860d7e08c1fa54}
+      \strng{authorfullhash}{4072fcdfa949758d3a860d7e08c1fa54}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Computing and Communication Complexity}
+      \field{type}{phdthesis}
+      \field{year}{2001}
     \endentry
   \enddatalist
 \endrefsection

@@ -23,3 +23,208 @@ latexu.
 
 \section{Popis algoritmu pravdepodobnostného modelu}
 
+Algoritmus je založený na rekurzívnej aktivácií funkcie modelu nad obvodom.
+Každý level je postupne spracovaný pričom sa vytovrý nový strom stavov, hradlá
+daného levelu sú aplikované na listy priebežného stromu stavov kvantových bitov
+a tabuľka výsledkov je aktualizovaná, ak je level označený pre meranie.
+
+Tvorba nového stromu je závislá na hradlách, ktoré level obsahuje. Ak v leveli
+nastáva previazanie niektorých z bitov pomocou hradla CNOT, je nutné rozvetviť
+strom na dva podstromi. Tieto vetvy určujú možnosti, kde kontrólne bity sú
+v stavoch \(\ket{1}\) a teda nastane preklopenie cieľového bitu a možnosť
+kde preklopenie nenastane.
+
+\section{Popis implementácie}
+
+Ukladanie stavov kvantových bitov zabezpečujú dátové štruktúry
+\begin{code}
+type QBit = [[Complex Double]]
+type States = [QBit]
+type SubTrees = [StateTree]
+
+data StateTree = StateTree Double States SubTrees deriving Show
+\end{code}
+
+Kvantový bit nie je nič iné ako matica komplexných čísel a typ States je potom
+list týchto bitov. Strom stavov obsahuje 3 časti. Pravdepodobnosť vykonania,
+typu Double, list stavov koreňa tohto stromu a odkaz na potomkov. List stromu
+je teda takisto strom ale nemá žiadnych potomkov.
+
+Tabuľka výsledkov je dvojrozmerným poľom, ktoré obsahuje v riadkoch merania 
+v jednotlivých časových okamihoch. Stĺpce tejto tabuľky obsahujú štruktúru, 
+ktorá obaľuje pravdepodobnosť dosiahnutia daného stavu systému a list bitov 
+do ktorých systém kolabuje.
+\begin{code}
+data R = R Double [Int]
+    deriving (Show)
+type T = [R]
+type Ts = [T]
+\end{code}
+
+Pre jednoduchšiu prácu pravdepodobnostný model pracuje so štruktúrov, ktorá 
+zaobaľuje tieto entity.
+\begin{code}
+data RT = RT StateTree Ts
+    deriving (Show)
+\end{code}
+
+Posledným datovým typom, ktorý je nutné spomenúť je reprezenácia kvantového
+obvodu.
+\begin{code}
+data Element = X
+    | Y
+    | Z
+    | H
+    | S
+    | Sd
+    | T
+    | Td
+    | Ct   -- CNOT target bit
+    | Cc  -- CNOT control bit
+    | E   -- empty
+    deriving (Show, Eq)
+
+type LevelGates = [Element]
+data Level = Level LevelGates Bool deriving Show
+type Circuit = [Level]
+\end{code}
+
+Obvod je reprezentovaný ako list vertikálnych levelov. Každý level je zostavený
+z hradiel (typu LevelGates) a indikátora, ktorý označuje či má biť daný level
+meraný (typu Bool). Jednotlivé hradlá levelu sú typu Element a obsahujú
+základné kvantové hradlá, pričom Ct označuje cieľový bit hradla CNOT, Cc 
+označuje kontrólny bit hradla CNOT a E označuje absenciu hradla na danej
+pozícii. Ostané hradlá je prirodzene jasné odlíšiť.
+
+Nasleduje popis jednotlivých funkcií.
+
+\subsection*{processCircuit :: Circuit -> RT -> RT }
+\textbf{Vstup:} Na vstupe je kvantový obvod a tabuľka výsledkov.\\
+\textbf{Výstup:} Nová tabuľka výsledkov s pravdepodobnosťami meraní a stromom
+stavov kvantových bitov. \\
+\textbf{Popis:}
+Hlavná funkcia merania obvodu. Rekurzívne prechádza list levelov. Ak je 
+level meraný, aktualizuje tabuľku Ts. Takisto vyvolá aktiváciu hradiel z 
+levela na strome stavov.
+
+\subsection*{upTs :: Ts -> StateTree -> Ts}
+\textbf{Vstup:} Tabuľka výsledkov a strom stavov.\\
+\textbf{Výstup:} Nová tabuľka so skolabovanými stavmi.\\
+\textbf{Popis:} Funkcia vyvolá kolabovanie listov stromu stavov a zapíše 
+výsledok do tabuľky výsledkov.
+
+\subsection*{collapseR :: StateTree -> T}
+\textbf{Vstup:} Strom stavov.\\
+\textbf{Výstup:} Namerané výsledky z jedného časového okamihu.\\
+\textbf{Popis:} Funkcia skolabuje všetky kvantové bity v listoch stromu 
+stavov a vráti list týchto meraní.
+
+\subsection*{isLMeasured :: Level -> Bool}
+\textbf{Vstup:} Level.\\
+\textbf{Výstup:} Inikátor merania.\\
+\textbf{Popis:} Funkcia vráti True ak má byť level meraný, False inak.
+
+\subsection*{processLevel :: Level -> StateTree -> StateTree}
+\textbf{Vstup:} Level, ktorý sa má spracovať a strom stavov.\\
+\textbf{Výstup:} Nový strom stavov.\\
+\textbf{Popis:} Funkcia rekurzívne precháza stromom stavov až kím nedosiahne
+koncové listy. Pri listoch vyvolá funkciu na aktivovanie hradiel levelu na 
+daných bitoch. Nové stavy sú zapísané do nového stromu stavov kvantových bitov.
+
+\subsection*{calculateStateTrees ::  LevelGates -> States -> Double -> [StateTree]}
+\textbf{Vstup:} Hradlá levelu, ktorý sa aplikuje, Stavy bitov, ktoré hradlami
+prechádzajú a pravdepodobnosť nastatia tejto situácie.\\
+\textbf{Výstup:} Nové stromy stavov, ktoré budú pridané ako listy do hlavého
+stromu.\\
+\textbf{Popis:} Ak list hradiel obsahuje hradlo CNOT funkcia vyvolá tvorbu
+dvoch stromov pre 2 prípady, ktoré môžu nastať. V inom prípad funkcia zavolá
+aplikáciu hradiel na jednotlivé kvantové bity a nové stavy vráti v novom 
+podstome.
+
+\subsection*{applyCNot ::  LevelGates -> States -> Double -> [StateTree]}
+\textbf{Vstup:} Hradlá levelu, ktorý sa aplikuje, Stavy bitov, ktoré hradlami
+prechádzajú a pravdepodobnosť nastatia tejto situácie.\\
+\textbf{Výstup:} List s dvoma stromami stavov.\\
+\textbf{Popis:} Funkcia prepočíta pravdepodobnosť s akou kontrólne bity 
+kolabujú do stavu \(\ket{1}\). Ak je táto pravdepodobnosť nulová, je 
+vytvorený jediný podstrom a nie sú aplikované žiadne hradlá. V opačnom prípade
+sú vytvorené stromy dva, kde jeden aplikuje preklopenie cieľového bitu hradla
+CNOT a druhý nie. Vstupná pravdepodobnosť je využitá pri prepočte 
+pravdepodobnosti nastatia nových podstromov.
+
+\subsection*{cnPasP :: [Element] -> [QBit] -> Double}
+\textbf{Vstup:} Hradlá levelu a stavy bitov na ktorých sa dané hradlá 
+aplikujú.\\
+\textbf{Výstup:} Pravdepodobnosť.\\
+\textbf{Popis:} Funkcia prepočítava pravdepodobnosť s akou kontrólne bity 
+hradla CNOT kolabujú do stavu \(\ket{1}\).
+
+\subsection*{probCt1 :: Element -> QBit -> Double}
+\textbf{Vstup:} Hradlo a bit, ktorý daným hradlom prechádza.\\
+\textbf{Výstup:} Pravdepodobnosť bitu dosiahnutia stav \(\ket{1}\).\\
+\textbf{Popis:} Ak je na vstupe hradlo Cc (kontrólny bit hradla CNOT) funkcia
+vracia pravdepodobnosť daného bitu kolabovať do stavu \(\ket{1}\). Pre 
+akékoľvek iné hradlo, funkcia fracia -1. Funkcia sa používa pri prepočťe 
+cnPasP.
+
+\subsection*{applyGate :: Element -> QBit -> QBit}
+\textbf{Vstup:} Hradlo a bit, ktorý daným hradlom prechádza.\\
+\textbf{Výstup:} Nový stav po prechode hradlom.\\
+\textbf{Popis:} Funkcia vykonáva operáciu |* so správnymi hradlami. Slúži
+vpodstate na preklad z typu Element na typ [[Complex Double]].
+
+\subsection*{toBin :: Int -> [Int]}
+\textbf{Vstup:} Celé číslo v desiatkovej sústave.\\
+\textbf{Výstup:} List reprezentujúci binárne číslo.\\
+\textbf{Popis:} Funkcia slúži na prevod medzi desiatkovov a dvojkovov 
+sústavov.
+
+\subsection*{formatBin len n}
+\textbf{Vstup:} Požadovaná dĺžka. \\
+\textbf{Výstup:} Binárne číslo.\\
+\textbf{Popis:} Funkcia formátuje binárne číslo na správnu veľkosť. Pridáva
+nuly na začiatok, až kým číslo nemá správnu veľkosť.
+
+\subsection*{createResList :: Int -> [[Int]]}
+\textbf{Vstup:} Počet kvantových bitov v obvode.\\
+\textbf{Výstup:} Tabuľka možných výsledkov.\\
+\textbf{Popis:} Funkcia slúži na vytovenie všetkych možností n bitového 
+binárneho čísla. Vracia všetky možné prípady, ktoré by kolabovaním mohli
+nastať.
+
+\subsection*{collapseStates :: States -> T}
+\textbf{Vstup:} Stavy, ktoré majú byť kolabované.\\
+\textbf{Výstup:} Meranie v danom časovom úseku.\\
+\textbf{Popis:} Funkcia vytvorí list s výsledkami pre každú možnosť, ktorá
+môže nastať.
+
+\subsection*{createRList :: States -> [Int] -> R}
+\textbf{Vstup:} Stavy, ktoré majú byť kolabované a binárne číslo popisujúce
+skolabovaný stav.\\
+\textbf{Výstup:} Výsledok pre daný stav.\\
+\textbf{Popis:} Funkcia slúžiaca na konštrukciu výsledku pre daný stav.
+
+\subsection*{calculateProbs :: States -> [Int] -> [Double]}
+\textbf{Vstup:} Stavy, ktoré majú byť kolabované a binárne čáslo popisujúce
+skolabovaý stav.\\
+\textbf{Výstup:} List pravdepodobností.\\
+\textbf{Popis:} Funkcia zavolá prepočet pravdepodobnosti kolabovania do stavov
+\(\ket{0}\) alebo \(\ket{1}\) a vráti ich list.
+
+\subsection*{calcP :: QBit -> Int -> Double}
+\textbf{Vstup:} Stav kvantového bitu a požadovaný skolabovaný stav.\\
+\textbf{Výstup:} Pravdepodobnosť skolabovania do daného stavu.\\
+\textbf{Popis:} Vracia pravdepodobnosť, že daný kvantový bit skolabuje do 
+daného stavu 0 alebo 1.
+
+\subsection*{isRgt0 :: R -> Bool}
+\textbf{Vstup:} Výsledok.\\
+\textbf{Výstup:} Inikátor možnosti dosiahnutia daného výsledku.\\
+\textbf{Popis:} Funkcia vracia True ak pravdepodobnosť daného výsledku je 
+viac ako 0.
+
+\subsection*{mulR :: Double -> R -> R}
+\textbf{Vstup:} Násobiteľ a výsledok, ktorý má byť násobený.\\
+\textbf{Výstup:} Vynásobený výsledok.\\
+\textbf{Popis:} Vracia nový výsledok, kde pôvodná pravdepodobnosť je vynásobená
+vstupom.
