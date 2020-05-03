@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.17)  28 APR 2020 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.17)  3 MAY 2020 19:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1688,12 +1688,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--119
  []
 
 [3] [4]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-19.
- (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [5] [6] [7]
-(./thesis.toc [8
+<figures/thesisspec.png, id=215, 1659.19875pt x 2347.77126pt>
+File: figures/thesisspec.png Graphic file (type png)
+<use figures/thesisspec.png>
+Package pdftex.def Info: figures/thesisspec.png  used on input line 119.
+(pdftex.def)             Requested size: 1659.19472pt x 2347.76556pt.
+File: figures/thesisspec.png Graphic file (type png)
+<use figures/thesisspec.png>
+Package pdftex.def Info: figures/thesisspec.png  used on input line 119.
+(pdftex.def)             Requested size: 1659.19472pt x 2347.76556pt.
+File: figures/thesisspec.png Graphic file (type png)
+<use figures/thesisspec.png>
+Package pdftex.def Info: figures/thesisspec.png  used on input line 119.
+(pdftex.def)             Requested size: 1659.19472pt x 2347.76556pt.
+File: figures/thesisspec.png Graphic file (type png)
+<use figures/thesisspec.png>
+Package pdftex.def Info: figures/thesisspec.png  used on input line 119.
+(pdftex.def)             Requested size: 597.38705pt x 845.3045pt.
+File: figures/thesisspec.png Graphic file (type png)
+<use figures/thesisspec.png>
+Package pdftex.def Info: figures/thesisspec.png  used on input line 119.
+(pdftex.def)             Requested size: 597.38705pt x 845.3045pt.
+File: figures/thesisspec.png Graphic file (type png)
+<use figures/thesisspec.png>
+Package pdftex.def Info: figures/thesisspec.png  used on input line 119.
+(pdftex.def)             Requested size: 597.38705pt x 845.3045pt.
+File: figures/thesisspec.png Graphic file (type png)
+<use figures/thesisspec.png>
+Package pdftex.def Info: figures/thesisspec.png  used on input line 119.
+(pdftex.def)             Requested size: 597.38705pt x 845.3045pt.
+ [5 <./figures/thesisspec.png>] [6] [7] (./thesis.toc [8
 
 ])
 \tf@toc=\write10
@@ -1828,10 +1852,10 @@ an-to-vých vý-po£-tov a kvan-
 
  (./chapters/kvantSystem.tex
 Kapitola 4.
-<figures/ibm_qx_composer.png, id=482, 1194.4625pt x 462.72874pt>
+<figures/ibm_qx_composer.png, id=485, 1194.4625pt x 462.72874pt>
 File: figures/ibm_qx_composer.png Graphic file (type png)
 <use figures/ibm_qx_composer.png>
-Package pdftex.def Info: figures/ibm_qx_composer.png  used on input line 29.
+Package pdftex.def Info: figures/ibm_qx_composer.png  used on input line 30.
 (pdftex.def)             Requested size: 426.79134pt x 165.33954pt.
 \openout7 = `thesis.pyg'.
 
@@ -1846,7 +1870,13 @@ ut.pyg)...executed.
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
 thesis.out.pyg thesis.pyg)...executed.
 
- (./thesis.out.pyg) [14
+ (./thesis.out.pyg
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+.
+
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)) [14
 
 
 
@@ -1862,10 +1892,10 @@ LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
 (Font)              using `T1/cmtt/m/n' instead on input line 3.
 
 )
-<figures/ibm_qx_results.png, id=490, 1213.53375pt x 416.55624pt>
+<figures/ibm_qx_results.png, id=494, 1213.53375pt x 416.55624pt>
 File: figures/ibm_qx_results.png Graphic file (type png)
 <use figures/ibm_qx_results.png>
-Package pdftex.def Info: figures/ibm_qx_results.png  used on input line 65.
+Package pdftex.def Info: figures/ibm_qx_results.png  used on input line 66.
 (pdftex.def)             Requested size: 426.79134pt x 146.5024pt.
  [15 <./figures/ibm_qx_composer.png>] [16 <./figures/ibm_qx_results.png>]
 [17]) [18]
@@ -1873,7 +1903,7 @@ Package pdftex.def Info: figures/ibm_qx_results.png  used on input line 65.
 
  (./chapters/pravAnal.tex
 Kapitola 5.
-<figures/simpleCircuit2.png, id=516, 177.66376pt x 116.435pt>
+<figures/simpleCircuit2.png, id=526, 177.66376pt x 116.435pt>
 File: figures/simpleCircuit2.png Graphic file (type png)
 <use figures/simpleCircuit2.png>
 Package pdftex.def Info: figures/simpleCircuit2.png  used on input line 21.
@@ -1903,7 +1933,7 @@ thesis.out.pyg thesis.pyg)...executed.
 
 
 ])
-<figures/expr1_circuit.png, id=546, 216.81pt x 122.4575pt>
+<figures/expr1_circuit.png, id=556, 216.81pt x 122.4575pt>
 File: figures/expr1_circuit.png Graphic file (type png)
 <use figures/expr1_circuit.png>
 Package pdftex.def Info: figures/expr1_circuit.png  used on input line 48.
@@ -1928,15 +1958,15 @@ runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o
 thesis.out.pyg thesis.pyg)...executed.
 
  (./thesis.out.pyg) [27]
-<figures/expr1_qx_results.png, id=568, 1371.1225pt x 770.88pt>
+<figures/expr1_qx_results.png, id=578, 1371.1225pt x 770.88pt>
 File: figures/expr1_qx_results.png Graphic file (type png)
 <use figures/expr1_qx_results.png>
 Package pdftex.def Info: figures/expr1_qx_results.png  used on input line 227.
 (pdftex.def)             Requested size: 341.43436pt x 191.95496pt.
-<figures/expr2_circuit.png, id=570, 201.75375pt x 150.5625pt>
+<figures/expr2_circuit.png, id=580, 201.75375pt x 150.5625pt>
 File: figures/expr2_circuit.png Graphic file (type png)
 <use figures/expr2_circuit.png>
-Package pdftex.def Info: figures/expr2_circuit.png  used on input line 248.
+Package pdftex.def Info: figures/expr2_circuit.png  used on input line 249.
 (pdftex.def)             Requested size: 213.39566pt x 159.25085pt.
 \openout7 = `thesis.pyg'.
 
@@ -1952,15 +1982,15 @@ runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o
 thesis.out.pyg thesis.pyg)...executed.
 
  (./thesis.out.pyg [30] [31]) [32]
-<figures/expr2_qx_results.png, id=600, 1371.1225pt x 770.88pt>
+<figures/expr2_qx_results.png, id=610, 1371.1225pt x 770.88pt>
 File: figures/expr2_qx_results.png Graphic file (type png)
 <use figures/expr2_qx_results.png>
-Package pdftex.def Info: figures/expr2_qx_results.png  used on input line 501.
+Package pdftex.def Info: figures/expr2_qx_results.png  used on input line 502.
 (pdftex.def)             Requested size: 341.43436pt x 191.95496pt.
-<figures/expr3_circuit.png, id=603, 271.0125pt x 155.58125pt>
+<figures/expr3_circuit.png, id=613, 271.0125pt x 155.58125pt>
 File: figures/expr3_circuit.png Graphic file (type png)
 <use figures/expr3_circuit.png>
-Package pdftex.def Info: figures/expr3_circuit.png  used on input line 521.
+Package pdftex.def Info: figures/expr3_circuit.png  used on input line 522.
 (pdftex.def)             Requested size: 256.0774pt x 147.01317pt.
 \openout7 = `thesis.pyg'.
 
@@ -1969,7 +1999,7 @@ thesis.out.pyg thesis.pyg)...executed.
 
  (./thesis.out.pyg [33 <./figures/expr2_qx_results.png>]) [34 <./figures/expr3_
 circuit.png>]
-Overfull \hbox (1.46431pt too wide) in paragraph at lines 599--602
+Overfull \hbox (1.46431pt too wide) in paragraph at lines 600--603
 \T1/qpl/m/n/12 Ozna£me vy-jad-re-nie prav-de-po-dob-nosti do-sia-hnu-tia ne-ja-
 kého cel-ko-vého stavu ako
  []
@@ -1981,14 +2011,14 @@ runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o
 thesis.out.pyg thesis.pyg)...executed.
 
  (./thesis.out.pyg) [36]
-Overfull \hbox (56.76064pt too wide) in paragraph at lines 710--721
+Overfull \hbox (56.76064pt too wide) in paragraph at lines 711--722
  [][] 
  []
 
-<figures/expr3_qx_results.png, id=626, 1371.1225pt x 770.88pt>
+<figures/expr3_qx_results.png, id=636, 1371.1225pt x 770.88pt>
 File: figures/expr3_qx_results.png Graphic file (type png)
 <use figures/expr3_qx_results.png>
-Package pdftex.def Info: figures/expr3_qx_results.png  used on input line 736.
+Package pdftex.def Info: figures/expr3_qx_results.png  used on input line 737.
 (pdftex.def)             Requested size: 341.43436pt x 191.95496pt.
 ) [37] [38 <./figures/expr3_qx_results.png>]
 \openout2 = `chapters/pravModel.aux'.
@@ -2000,7 +2030,7 @@ Overfull \hbox (1.91231pt too wide) in paragraph at lines 3--3
 |[]\T1/qpl/b/n/24.88 Pravdepodobnostný mo-del kvan-to-
  []
 
-<figures/navrh.png, id=637, 181.67876pt x 241.90375pt>
+<figures/navrh.png, id=647, 181.67876pt x 241.90375pt>
 File: figures/navrh.png Graphic file (type png)
 <use figures/navrh.png>
 Package pdftex.def Info: figures/navrh.png  used on input line 11.
@@ -2027,7 +2057,7 @@ runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o
 thesis.out.pyg thesis.pyg)...executed.
 
  (./thesis.out.pyg)
-<figures/circuit3.png, id=645, 208.78pt x 111.41624pt>
+<figures/circuit3.png, id=655, 208.78pt x 111.41624pt>
 File: figures/circuit3.png Graphic file (type png)
 <use figures/circuit3.png>
 Package pdftex.def Info: figures/circuit3.png  used on input line 60.
@@ -2038,7 +2068,13 @@ Package pdftex.def Info: figures/circuit3.png  used on input line 60.
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
 thesis.out.pyg thesis.pyg)...executed.
 
- (./thesis.out.pyg)
+ (./thesis.out.pyg
+Overfull \hbox (10.75693pt too wide) in paragraph at lines 75--1
+[]\T1/qpl/m/n/12 Pravdepodobnostný mo-del si ucho-váva stavy v²et-kých kvan-to-
+vých bi-tov a v stro-
+ []
+
+)
 \openout7 = `thesis.pyg'.
 
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
@@ -2050,8 +2086,7 @@ thesis.out.pyg thesis.pyg)...executed.
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
 thesis.out.pyg thesis.pyg)...executed.
 
- (./thesis.out.pyg)
-[41]
+ (./thesis.out.pyg) [41]
 \openout7 = `thesis.pyg'.
 
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
@@ -2063,8 +2098,9 @@ thesis.out.pyg thesis.pyg)...executed.
 runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o 
 thesis.out.pyg thesis.pyg)...executed.
 
- (./thesis.out.pyg)
-<figures/ST.png, id=657, 310.15875pt x 292.09125pt>
+
+(./thesis.out.pyg)
+<figures/ST.png, id=667, 310.15875pt x 292.09125pt>
 File: figures/ST.png Graphic file (type png)
 <use figures/ST.png>
 Package pdftex.def Info: figures/ST.png  used on input line 143.
@@ -2072,10 +2108,9 @@ Package pdftex.def Info: figures/ST.png  used on input line 143.
  [42 <./figures/ST.png>]) [43]
 \openout2 = `chapters/kvanTel.aux'.
 
-
-(./chapters/kvanTel.tex
+ (./chapters/kvanTel.tex
 Kapitola 8.
-<figures/tel_c1.png, id=672, 242.9075pt x 170.6375pt>
+<figures/tel_c1.png, id=682, 242.9075pt x 170.6375pt>
 File: figures/tel_c1.png Graphic file (type png)
 <use figures/tel_c1.png>
 Package pdftex.def Info: figures/tel_c1.png  used on input line 35.
@@ -2085,12 +2120,12 @@ Package pdftex.def Info: figures/tel_c1.png  used on input line 35.
 
 
 ]
-<figures/tel_c2.png, id=680, 311.1625pt x 177.66376pt>
+<figures/tel_c2.png, id=690, 311.1625pt x 177.66376pt>
 File: figures/tel_c2.png Graphic file (type png)
 <use figures/tel_c2.png>
 Package pdftex.def Info: figures/tel_c2.png  used on input line 45.
 (pdftex.def)             Requested size: 213.39566pt x 121.8426pt.
-<figures/tel_qx_results.png, id=682, 1081.03876pt x 723.70375pt>
+<figures/tel_qx_results.png, id=692, 1081.03876pt x 723.70375pt>
 File: figures/tel_qx_results.png Graphic file (type png)
 <use figures/tel_qx_results.png>
 Package pdftex.def Info: figures/tel_qx_results.png  used on input line 68.
@@ -2107,7 +2142,7 @@ thesis.out.pyg thesis.pyg)...executed.
 
  (./chapters/vyhodnotenie.tex
 Kapitola 9.
-<figures/time_expr.png, id=701, 575.14874pt x 192.72pt>
+<figures/time_expr.png, id=712, 575.14874pt x 192.72pt>
 File: figures/time_expr.png Graphic file (type png)
 <use figures/time_expr.png>
 Package pdftex.def Info: figures/time_expr.png  used on input line 24.
@@ -2141,6 +2176,12 @@ No file thesis.acr.
 
  (./chapters/pprirucka.tex
 Dodatok A.
+
+Overfull \hbox (7.14635pt too wide) in paragraph at lines 26--31
+\T1/qpl/m/n/12 ²ta-lá-ciu ja-zyka Has-kell po-stu-pujte pod©a ná-vodu na ofi-ci
+ál-nej stránke []$\T1/cmtt/b/n/12 www . haskell .
+ []
+
 
 Overfull \hbox (11.65074pt too wide) in paragraph at lines 26--31
 \T1/cmtt/b/n/12 org$[]\T1/qpl/m/n/12 . Pre ope-ra£ný sys-tém li-nux po-u-ºite s
@@ -2239,9 +2280,9 @@ runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -o
 thesis.out.pyg thesis.pyg)...executed.
 
  (./thesis.out.pyg
-Overfull \hbox (4.53001pt too wide) in paragraph at lines 64--1
+Overfull \hbox (6.60603pt too wide) in paragraph at lines 64--1
 []\T1/qpl/m/n/12 Pre jed-no-duch-²iu prácu prav-de-po-dob-nostný mo-del pra-cuj
-e so ²truk-tú-rov, ktorá
+e so ²truk-tú-rou, ktorá
  []
 
 )
@@ -2262,7 +2303,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B1805F4264C22E9DB74D41B4F1AD6519;9291.
+(rerunfilecheck)             Checksum: ADA63B9D70E7582F3E909571B3DD310C;9181.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2278,13 +2319,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41843 strings out of 492167
- 764204 string characters out of 6131557
- 1404726 words of memory out of 5000000
- 45103 multiletter control sequences out of 15000+600000
+ 41857 strings out of 492167
+ 764445 string characters out of 6131557
+ 1404649 words of memory out of 5000000
+ 45110 multiletter control sequences out of 15000+600000
  55440 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,17n,81p,2022b,1988s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,18n,81p,2022b,1988s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/share/texmf-dist/fonts/enc
 /dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.
@@ -2304,10 +2345,10 @@ nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1
 lr.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (75 pages, 838647 bytes).
+Output written on thesis.pdf (75 pages, 942359 bytes).
 PDF statistics:
- 900 PDF objects out of 1000 (max. 8388607)
- 764 compressed objects within 8 object streams
- 181 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 911 PDF objects out of 1000 (max. 8388607)
+ 771 compressed objects within 8 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 484 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,11 +6,11 @@ Predstavme si situáciu, že chceme na diaľku komunikovať. Chceme poslať
 informáciu o stave kvantového bitu. Zaznamenať komplexné číslo úplne presne 
 na číslicovom počítači nejde, a teda nemožno poslať niekomu informáciu o 
 presnom stave. Takisto platí, že kvantové bity je nemožné kopírovať či
-klonovať. Spôsobom akým je možné riešiť tento problém je takzvaná kvantová
+klonovať. Spôsobom akým sa dá riešiť tento problém je takzvaná kvantová
 teleportácia \cite{Wat+01}.
 
 Medzi účastníkov komunikácie sa rozdelí dvojica previazaných bitov. Ak tieto
-kvantové bity nemeriame, zachovajú si svoj stav aj previazanie nehľadiac
+kvantové bity nemeriame, zachovajú si svoj stav aj previazanie, nehľadiac
 na fyzickú vzdialenosť medzi nimi. Teda je možné komunikovať aj na diaľku.
 
 Uveďme si všeobecne známy príklad na kvantovú teleportáciu. Povedzme, že 
@@ -20,11 +20,11 @@ pár previazaných kvantových bitov. Ak teraz chce Bob poslať bit Alici, jedin
 kontrolovaný kvantovým bitom, ktorý chce odoslať. Potom aplikuje Hadamardovo
 hradlo na odosielaný bit a pomeria obe bity. Alici odošle informáciu o
 stavoch, ktoré kolabovaním dostal. Alica z tejto informácie vie, ako má použiť
-hradlá X a Z, tak aby dosiahla rovnaký stav bitu, ktorý povodne vlastnil Bob.
+hradlá X a Z, tak aby dosiahla rovnaký stav bitu, ktorý pôvodne vlastnil Bob.
 
-Týmto spôsobom je možné informáciu poslať nakoľko sa jedná o celé čísla.
-Takisto nie je porušená veta o kopírovaní ani klonovaní kvantových bitov, 
-nakoľko Bob svoj bit stratil \cite{Wol+01}.
+Týmto spôsobom je možné informáciu poslať, pretože sa jedná o celé čísla.
+Tak isto nie je porušená veta o kopírovaní ani klonovaní kvantových bitov, 
+lebo Bob svoj bit stratil \cite{Wol+01}.
 
 Ukážme si to na kvantovom obvode. Vytvoríme previazaný pár kvantových bitov
 ako na obrázku \ref{tel_c1}. Povedzme, že bit \(q_1\) patrí Bobovi a \(q_2\)
@@ -58,7 +58,7 @@ meraní vie, že ak
 
 \subsection*{IBM Quantum Experience výsledky}
 Dokončime obvod. Povedzme, že posielame stav \(\ket{1}\), preto pridáme 
-hradlo \(X\) na začiatok obvodu a plikujeme na \(q_0\). Na koniec pridáme 
+hradlo \(X\) na začiatok obvodu a plikujeme na \(q_0\). Nakoniec pridáme 
 podmienené aplikácie hradiel \(Z\) a \(X\). IBM QX podporuje variantu hradla
 \(CNOT\), kde namiesto preklopenia \(X\) aplikujeme \(Z\). Výsledný obvod aj
 s meraniami je na obrázku \ref{tel_qx_results}.
@@ -87,8 +87,8 @@ let l1 = Level [E, H, E] True
     rt = RT st []
 \end{code}
    
-Bit \(q_0\) nastavýme na stav \(\ket{1}\), ostatné na \(\ket{0}\). V našom
-pravdepodobnostnom modeli nejestvuje možnosť podmienených aplikácií hradiel,
+Bit \(q_0\) nastavíme na stav \(\ket{1}\), ostatné na \(\ket{0}\). V našom
+pravdepodobnostnom modely nejestvuje možnosť podmienených aplikácií hradiel,
 tak si budeme musieť vystačiť s neúplnou teleportáciou.
 
 Fiktívne meranie je nastavené za každým levelom, výsledky meraní su v tabuľke
@@ -138,7 +138,7 @@ prípadoch výsledky po použití hradiel \(X\) a \(Z\) nebudú dávať správny
 výsledok. Je nutné podotknúť, že pravdepodobnostný model nepracuje až tak 
 na základe vstupných stavov kvantových bitov v obvode ako na základe
 matematikého modelu pravdepodobností dosiahnutia stavov \(\ket{0}\) a 
-\(\ket{1}\). Takisto je vidno, že niektoré možnosti sú nedosiahnuteľné.
+\(\ket{1}\). Tak isto je vidno, že niektoré možnosti sú nedosiahnuteľné.
 Teda výsledky pravdepodobnostného modelu sú narozdiel od IBM QX odvodzované od
 všeobecných stavov kvantových bitov \(\ket{\psi}\) a vstupné hodnoty stavov
-týchto bitov sú použité len na upravednie pravdepodobností do finálnej podoby.
+týchto bitov sú použité len na upravenie pravdepodobností do finálnej podoby.

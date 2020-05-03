@@ -21,8 +21,9 @@ zlepšuje používateľský zážitok.
 Vytáranie nového obvodu je veľmi intuitívne. Na obrázku \ref{ibm_qx_composer}
 je nástroj na to určený. Prednastavené hradlá je spôsobom ťahaj a pusť (angl.
 drag and drop) možné presúvať na plán kvantového obvodu. Po uložení je možné
-spustiť tento program. Na server sa odošle experiment, za predpokladu, že
-je obvod spúšťaný na simulátore, tak za krátku dobu sú vrátené výsledky.
+naštartovať tento program. Na server sa odošle experiment, za predpokladu, že
+je obvod vykonávaný na simulátore, tak za krátku dobu dostaneme vrátené 
+výsledky.
 
 \begin{figure} 
 	\centering 
@@ -42,7 +43,7 @@ qreg q[5];
 creg c[5];
 \end{code}
 
-Je nutné podotknúť, že kvantový bit \(\psi_0\) je v IBM QX reprezentovaný
+Je dôležité podotknúť, že kvantový bit \(\psi_0\) je v IBM QX reprezentovaný
 ako \(q[0]\), \(psi_1 = q[1]\) a tak ďalej. Pri meraní sa tieto bity zobrazia
 do príslušných c registrov:
 \begin{itemize}
@@ -67,7 +68,7 @@ measure q[0] -> c[0];
     \label{ibm_qx_results}
 \end{figure}
 
-Výsledky experimentov sa zobrazujú v stĺpcovom diagrame. Pričom stav systému
+Výsledky experimentov sa zobrazujú v stĺpcovom diagrame, pričom stav systému
 je zobrazovaný v klasických bitoch opačne ako v kvantových. Teda stav 
 n-bitového systému \(\psi = \Ket{\psi_0\psi_1\psi_2 \dots \psi_{n-1}}\) je
 meraný do klasického registra ako 
@@ -79,8 +80,8 @@ V našom prípade je
 1 & 0\\
 \end{pmatrix}
 \binom{1}{0} = \binom{0}{1}
-\]
-, čo je \(1\) s pravdepodobnosťou \(1\). Teda výsledok na obrázku 
+,\]
+čo je \(1\) s pravdepodobnosťou \(1\). Výsledok na obrázku 
 \ref{ibm_qx_results} zobrazuje, že kvantový systém dosiahne so \(100\%\) 
 pravdepodobnosťou stav \(00001\).
 
@@ -88,19 +89,18 @@ pravdepodobnosťou stav \(00001\).
 
 Pri výpočtoch je najviac využívaných týchto šesť stavov kvantových bitov 
 \cite{Wei02}:
-\begin{itemize}
-\item[] \(\Ket{0} = \binom{1}{0}\)
-\item[] \(\Ket{1} = \binom{0}{1}\)
-\item[] \(\Ket{+} = \frac{\Ket{0} + \Ket{1}}{\sqrt{2}}\)
-\item[] \(\Ket{-} = \frac{\Ket{0} - \Ket{1}}{\sqrt{2}}\)
-\item[] \(\Ket{\circlearrowright} = \frac{\Ket{0} - i\Ket{1}}{\sqrt{2}}\)
-\item[] \(\Ket{\circlearrowleft} = \frac{\Ket{0} - i\Ket{1}}{\sqrt{2}}\)
-\end{itemize}
-
+\begin{enumerate}
+\item \(\Ket{0} = \binom{1}{0}\),
+\item \(\Ket{1} = \binom{0}{1}\),
+\item \(\Ket{+} = \frac{\Ket{0} + \Ket{1}}{\sqrt{2}}\),
+\item \(\Ket{-} = \frac{\Ket{0} - \Ket{1}}{\sqrt{2}}\),
+\item \(\Ket{\circlearrowright} = \frac{\Ket{0} - i\Ket{1}}{\sqrt{2}}\),
+\item \(\Ket{\circlearrowleft} = \frac{\Ket{0} - i\Ket{1}}{\sqrt{2}}\).
+\end{enumerate}
 Zmena stavu kvantového bitu je možná pomocou hradiel. Existuje viacero
 hradiel, ktoré možno používať v kvantových systémoch. Aplikovaním hradiel
 na rôznych stavoch dosiahneme rôznu zmenu. Prehľad aplikácií základných 
-hradiel je v tabuľke \ref{hradla_vysl}.
+hradiel je v~tabuľke \ref{hradla_vysl}.
 
 \begin{table}
 \begin{tabular}{|c|c||c|c|c|c|c|c|}
@@ -165,7 +165,7 @@ aplikácií hradiel na tieto stavy.}
 
 \subsection{Operácie kvantových hradiel}
 \label{op_kvan_hradiel}
-Existuje veľké množstvo hradiel. No v našom pravdepodobnostnom modeli budeme
+Existuje veľké množstvo hradiel. No v našom pravdepodobnostnom modely budeme
 využívať osem základných hradiel, ktoré sú najviac využívané. V tejto časti
 ukážeme ako hradlá \(X, Y, Z, H, S, S^{\dag}, T\) a \(T^{\dag}\) menia stav
 kvantového bitu \cite{Nie+00}. Definujme bit \(\ket{\psi} = \binom{\alpha}{\beta}\), na 

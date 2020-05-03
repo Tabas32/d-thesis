@@ -14,7 +14,7 @@ Experience tento model môže realizovať unitárne operácie aj paralelne.
 \end{figure}
 
 
-Pri pohľade na jednoduchý konceptuálny model (obrázok \ref{navrh}) je zrejmé
+Pri pohľade na jednoduchý konceptuálny model (obrázok \ref{navrh}) je zrejmé,
 čo chceme dosiahnuť. Na vstupe je očakávaný kvantový obvod. Samotný program
 prebehne týmto obvodom ako interpreter a zároveň pomerá stavy na daných
 miestach v obvode. Nakoniec vypíše výstup v zrozumiteľnej podobe.
@@ -23,7 +23,7 @@ miestach v obvode. Nakoniec vypíše výstup v zrozumiteľnej podobe.
 
 Celý kvantový obvod je možné rozdeliť do vertikálnych blokov alebo levelov.
 Každý level obsahuje hradlá, ktorých počet je maximálne rovný počtu 
-kvantových bitov, s ktorými daný obvod pracuje. Ak v danom levely nechceme
+kvantových bitov, s~ktorými daný obvod pracuje. Ak v danom levely nechceme
 aplikovať žiadnu operáciu nad bitom, môžme definovať prázdny element.
 V obvode bude možné vyžiť osem základných hradiel, ktoré boli definované
 v časti \ref{op_kvan_hradiel} Operácie kvantových hradiel, a hradlo 
@@ -43,7 +43,7 @@ data Element = X
     | E
 \end{code}
 
-Čiže kvantový obvod môžeme definovať ako list levelov, pričom level je dátová
+Kvantový obvod môžeme definovať ako list levelov, pričom level je dátová
 štruktúra, ktorá obsahuje list hradiel. Okrem hradiel každý level bude
 obsahovať prepínač, ktorý signalizuje či má nastať fiktívne meranie po 
 aktivácií hradiel v leveli.
@@ -67,13 +67,13 @@ kvantového obvodu. Tak ako bolo spomenuté v Pravdepodobnostnej analýze
 (kapitola \ref{pravAnalL}) je nutné brať v úvahu previazané a nepreviazané
 kvantové bity. Previazanie je možné dosiahnuť hradlom CNOT (respektíve
 C\textsuperscript{n}NOT). Našim cieľom nie je vytvoriť dokonalý interpreter,
-z tohto dôvodu budeme využívať zjednodušené verzie týchto hradiel. Čo znamená,
+z tohto dôvodu budeme využívať zjednodušené verzie týchto hradiel, čo znamená,
 že ak kontrólne bity sú v stave \(\ket{1}\) tak cieľový kvantový bit bude 
 preklopený hradom \(X\). V inom prípade nenastane zmena v stavoch.
 
 
 Pravdepodobnostný model si uchováva stavy všetkých kvantových bitov a 
-v stromovej štruktúre. 
+v~stromovej štruktúre. 
 \begin{code}
 type QBit = [[Complex Double]]
 type States = [QBit]
@@ -173,9 +173,9 @@ finálneho stromu stavov. Pre prvý list pravdepodobnosť dosiahnutia stavu:
 1|^2 = 0.5\)
 \end{itemize}
 
-Pre druhý list obdobne platí to isté. Samozrejme treba započítať aj
-pravdepodobnosť vykonania podstromu. Čiže všetky tieto pravdepodobnosti
-kolabovania je nutné vynásobiť príslušnými hodnotami. Teda dostávame výsledky:
+Pre druhý list obdobne platí to isté. Samozrejme, treba započítať aj
+pravdepodobnosť vykonania podstromu. Preto všetky tieto pravdepodobnosti
+kolabovania musíme vynásobiť príslušnými hodnotami. Teda dostávame výsledky:
 \begin{itemize}
     \item \(\ket{00}\) dosiahneme s pravdepodobnosťou \(0.25\)
     \item \(\ket{01}\) dosiahneme s pravdepodobnosťou \(0.25\)

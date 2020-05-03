@@ -14,8 +14,8 @@ systému \cite{Nie10}. Pre príklad môžeme reprezentovať kvantový stav
 Skutočný kvantový počítač by tak mohol merať tieto stavy \cite{Sim97}
 . Pri meraní by 
 daný atóm skolaboval do jedného zo stavov \(\ket{0}\) alebo \(\ket{1}\).
-Pre kolabovanie samozrejme rovnako platí to, že do jednotlivých stavov by
-sa atóm dostal s pravdepodobnosťami \(|\alpha|^2\) respektíve \(|\beta|^2\).
+Pre kolabovanie, samozrejme, rovnako platí to, že do jednotlivých stavov by
+sa atóm dostal s pravdepodobnosťou \(|\alpha|^2\) respektíve \(|\beta|^2\).
 
 
 Pri každom fyzikálnom meraní nastáva určitá nepresnosť merania. Takisto 
@@ -30,7 +30,7 @@ stavy kvantových obvodov aj bez kolabovania jednotlivých kvantových bitov.
 \subsection{Experiment 1}
 Navrhnime kvantový obvod s dvoma bitmi. Označme ich \(\ket{\psi_0}\) a 
 \(\ket{\psi_1}\). V prvom kroku aplikujeme Hadamardovo hradlo na bit 
-\(\ket{\psi_0}\). Nasledovať budú dve \(CNOT\) hradlá, s opačnými kontrólnymi 
+\(\ket{\psi_0}\). Nasledovať budú dve \(CNOT\) hradlá s opačnými kontrólnymi 
 a cieľovými bitmi. V IBM QX je tento obvod reprezentovaný ako 
 \begin{code}
 qreg q[2];
@@ -40,7 +40,7 @@ h q[0];
 cx q[0],q[1];
 cx q[1],q[0];
 \end{code}
-Jeho grafické zobrazenie je na obrázku \ref{expr1_circuit}, aj s označenými
+Jeho grafické zobrazenie je na obrázku \ref{expr1_circuit} aj s označenými
 časovými úsekmi, v ktorých bude meraný stav systému. 
 
 \begin{figure} 
@@ -53,8 +53,8 @@ Jeho grafické zobrazenie je na obrázku \ref{expr1_circuit}, aj s označenými
 \subsection*{Teoretická analýza}
 Kvantové bity \(\ket{\psi_0}\) a \(\ket{\psi_2}\) sú definované ako 
 \[\ket{\psi_0} = \alpha_0\ket{0} + \beta_0\ket{1}\]
-\[\ket{\psi_1} = \alpha_1\ket{0} + \beta_1\ket{1}\]
-, a teda je zrejmé, že v čase \(t_1\) pre celkový stav \(\ket{\psi}\) platí 
+\[\ket{\psi_1} = \alpha_1\ket{0} + \beta_1\ket{1},\]
+a teda je zrejmé, že v čase \(t_1\) pre celkový stav \(\ket{\psi}\) platí 
 \[\ket{\psi} = \ket{\psi_0} \otimes \ket{\psi_1} = \alpha_0\alpha_1\ket{00} + \alpha_0\beta_1\ket{01} + \beta_0\alpha_1\ket{10} + \beta_0\beta_1\ket{11}\]
 
 Z čoho jasne vyplýva, že systém nadobudne stav
@@ -65,12 +65,12 @@ Z čoho jasne vyplýva, že systém nadobudne stav
         \item[] \(\ket{11}\) s pravdepodobnosťou \(| \beta_0\beta_1 |^2\) 
     \end{itemize}
 
-Po prechode Hadamardovim hradlom, v čase \(t_2\) kvantové bity zmenia svoj stav
+Po prechode Hadamardovim hradlom v čase \(t_2\) kvantové bity zmenia svoj stav
  na
 \[\ket{\psi_0} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{1}\]
-\[\ket{\psi_1} = \alpha_1\ket{0} + \beta_1\ket{1}\]
+\[\ket{\psi_1} = \alpha_1\ket{0} + \beta_1\ket{1},\]
 
-, a teda pre celkový stav \(\ket{\psi}\) bude platiť
+a teda pre celkový stav \(\ket{\psi}\) bude platiť
 \[\ket{\psi} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\alpha_1\ket{00} + \frac{\alpha_0 + \beta_0}{\sqrt{2}}\beta_1\ket{01} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\alpha_1\ket{10} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\beta_1\ket{11}\]
 
 Kvantový systém kolabuje v čase \(t_2\) do stavu
@@ -84,7 +84,7 @@ Kvantový systém kolabuje v čase \(t_2\) do stavu
 
 Zmena nastáva v čase \(t_3\), po prechode \(CNOT\) hradlom. Bit \(\ket{\psi_1}\)
 bude preklopený len v prípade, že \(\ket{\psi_0}\) kolabuje do stavu 
-\(\ket{1}\). A teda nastávajú dve možnosti. S pravdepodobnosťou 
+\(\ket{1}\). Čiže nastávajú dve možnosti. S pravdepodobnosťou 
 \(|\frac{\alpha_0 + \beta_0}{\sqrt{2}}|^2\), ktorú označíme ako \(P^{t3}_1\) sa 
 stavy kvantových bitov nezmenia
 \[\ket{\psi_0} = \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{1}\]
@@ -105,7 +105,7 @@ Platí, že systém v čase \(t_3\) môže kolabovať do stavu
 
 
 Poslendné meranie v tomto experimente je označené ako \(t_4\). Opäť nastáva
-aktivácia \(CNOT\) hradla, a teda podmienená zmena stavov kvantových bitov.
+aktivácia \(CNOT\) hradla, to jest podmienená zmena stavov kvantových bitov.
 V každom prípade bit \(\ket{\psi_1}\) ostane nezmenený. No už teraz vychádzame 
 z dvoch možností. Teda môžu nastať celkovo štyri prípady. V tabuľke 
 \ref{expr1_t4_states} sú všetky možné zmeny stavov \(\ket{\psi_0}\) a
@@ -167,7 +167,7 @@ let l1 = Level [E, E] True
     l3 = Level [Cc, Ct] True
     l4 = Level [Ct, Cc] True
 \end{code}
-Pre meranie aj v čase \(t_1\), čiže ešte pred aktiváciou akéhokoľvek hradla,  
+Pre meranie aj v čase \(t_1\), ešte pred aktiváciou akéhokoľvek hradla,  
 sme vložili jeden prázdny level navyše. Uložme tento obvod do spoločného listu
 a definujme aj stromové štruktúry pre stavy a výsledky.
 \begin{code}
@@ -176,7 +176,7 @@ st = StateTree 1 [q0, q0] []
 rt = RT st []
 \end{code}
 
-Teraz už len spustime pravdepodobnostný model a uložme výsledky.
+Teraz už len aktivujme pravdepodobnostný model a uložme výsledky.
 \begin{code}
 let resultRT = processCircuit c rt
 \end{code}
@@ -232,13 +232,14 @@ spodná hodnota určuje daný stav v tvare \(\psi_0\psi_1\).
 \end{figure}
 
 Porovnajme naše výsledky so simulátorom IBM Quantum Experience. V IBM QX
-bolo nutné vykonať štyri experimenty s rôznim časom merania, nakoľko tento
+bolo nutné vykonať štyri experimenty s rôznym časom merania, pretože tento
 simulátor nepodporuje fiktívne meranie. Dosiahnuté výsledky sú na obrázku
 \ref{expr1_qx_results}. Pripomeňme, že notácia dosiahnutých stavov v IBM QX
-je \(\psi_1\psi_0\), teda v opačnom poradí ako zápis v našej tabuľke. V 
-prvých dvoch merania sú výsledky totožné. Rozdiel nastáva pri prechode hradlom
+je \(\psi_1\psi_0\), to znamená, že sú v opačnom poradí ako zápis v našej 
+tabuľke. V 
+prvých dvoch meraniach sú výsledky totožné. Rozdiel nastáva pri prechode hradlom
 \(CNOT\). Pravdepodobnostný model, ktorý využívame, funguje na istom 
-matematickom aparáte. IBM QX je ale simulátor kantového počítača a teda môže 
+matematickom aparáte. IBM QX je ale simulátor kantového počítača, a preto môže 
 brať do úvahy iné fyzikálne vlastnosti kvatových bitov, ktoré môžu vysvetľovať
 rozdiel v našich výsledkoch.
 
@@ -345,7 +346,7 @@ nenastane žiadna zmena
 
 Toto rozdvojenie možných výsledkov sa nesie aj do merania \(t_4\), no zmena
 nastáva len v prvých dvoch kvantových bitoch a tie sú v oboch prípadoch 
-totožné. Nový stav týchto bitov teda je 
+totožné. Nový stav týchto bitov je 
 \[\ket{\psi_0} = \frac{\alpha_0 - \beta_0}{\sqrt{2}}\ket{0} + \frac{\alpha_0 + \beta_0}{\sqrt{2}}\ket{1}\]
 \[\ket{\psi_1} = \frac{\alpha_1 + \beta_1}{\sqrt{2}}\ket{0} - \frac{\alpha_1 - \beta_1}{\sqrt{2}}\ket{1}\]
 
@@ -487,7 +488,7 @@ Nakoľko na vstupe do systému sú kvantové bity v stave \(\ket{0}\) je jasné,
 meranie v čase \(t_1\) môže dosiahnúť len jediný výsledok, a to  \(000\).
 V čase \(t_2\) sa vďaka Hadamardovému hradlu bity \(\ket{\psi_0}\) a 
 \(\ket{\psi_1}\) dostanú do stavu \(\ket{+}\) a teda obe môžu s \(50\%\)-tnou
-šancou kolabovať do \(\ket{1}\) alebo \(\ket{0}\). Čomu naznačujú aj výsledky.
+šancou kolabovať do \(\ket{1}\) alebo \(\ket{0}\). Čo naznačujú aj výsledky.
 Pri prechode Tuffliho hradlom systém môže zmeniť stav len ak prvé dva bity sú 
 v stave \(\ket{1}\), a to môže nastať s \(25\%\)-tnou pravdepodobnosťou. Teda
 aj výsledky zohľadňujú to, že je oveľa nižšia šanca že bit \(\ket{\psi_2}\)
@@ -507,10 +508,10 @@ výsledok.
 
 Taktiež sme vykonali štyri merania v IBM QX, ktorých hodnoty sú zaznamenané
 na obrázku \ref{expr2_qx_results}. Pripomeňme, že stav merania je zobrazovaný
-v opačnom poradí ako v tabuľke \ref{expr2_results}. Teda kým u nás stav je 
+v opačnom poradí ako v tabuľke \ref{expr2_results}. Kým u nás stav je 
 v tvare \(c_0c_1c_2\), IBM QX využíva tvar \(c_2c_1c_0\). Ako sme očakávali, 
 prvé dve merania skončili s výsledkom totožným s našim. Meranie v časoch 
-\(t_3\) a \(t_4\) sa líšia. Predpokladom, pre rozdiel môže byť, že IBM QX 
+\(t_3\) a \(t_4\) sa líšia. Predpokladom pre rozdiel môže byť, že IBM QX 
 využíva pri simulácii fyzikálny model nejakej častice, no náš pravdepodobnostný
 model vychádza z matematickej reprezentácie kvantového bitu.
 
@@ -566,8 +567,8 @@ aplikáciou Hadamardovho hradla na \(\ket{\psi_1}\) dostaneme
     \item[] \(\ket{\psi_1} = \frac{\beta_1 + \alpha_1}{\sqrt{2}}\ket{0} + \frac{\beta_1 - \alpha_1}{\sqrt{2}}\ket{1}\) s pravdepodobnosťou  \(P^{t2}_2 = \frac{(\alpha_0 - \beta_0)^2}{2}\)
 \end{itemize} 
 
-Znovupreviazaním kvantových bitov v obvode narastá počet počet možných stavov
-geometricky. A teda v čase \(t_4\) už dostávame štyri možné výsledky s 
+Znovupreviazaním kvantových bitov v obvode narastá počet možných stavov
+geometricky. A preto v čase \(t_4\) už dostávame štyri možné výsledky s 
 pravdepodobnosťami:
 \begin{itemize}
     \item[] \(P^{t4}_1 = |\frac{\alpha_0 - \beta_0}{\sqrt{2}} \times \frac{\alpha_1 - \beta_1}{\sqrt{2}}|^2 \times P^{t2}_1 = \frac{(\alpha_0 - \beta_0)^2(\alpha_1-\beta_1)^2(\alpha_0+\beta_0)^2}{8}\)
@@ -676,7 +677,7 @@ let l1 = Level [H, E, E] True
 \end{code}
 
 Za povšimnutie stojí fakt, že hradlá \(CNOT\) a \(CCNOT\) sú implementované
-pomocou jednej funkcie. Takže aj v definícií obvodu nie je nutná špeciálna 
+pomocou jednej funkcie. Takže aj v definícií obvodu nie je potrebná špeciálna 
 štruktúra pre zabezpečenie týchto hradiel, ale kontrólne bity sú jednoducho
 označené ako \(Cc\) a cieľový bit ako \(Ct\).
 
@@ -727,7 +728,7 @@ daný stav systému.}
 
 Náš pravdepodobnostný model nesčítava pravdepodobnosti pri výskyte rovnakých 
 stavov a automaticky sa meranie formátuje do jedného riadku. Z toho dôvodu sme 
-naformátovali tabuľku tak aby boli všetky výsledky zobrazené.
+naformátovali tabuľku tak, aby boli všetky výsledky zobrazené.
 
 Výsledky z IBM Quantum Experience sú zobrazené na obrázku \ref{expr3_qx_results}
 

@@ -5,8 +5,8 @@
 \section{Funkcia programu}
 
 Program slúži na meranie kvantového obvodu. Do programu je nutné vložiť 
-definíciu kvanotvého obvodu aj s označenými časmi merania. Program vygeneruje
-latexové súbory pripravené na preklad pomocou laxeového prekladača. 
+definíciu kvantového obvodu aj s označenými časmi merania. Program vygeneruje
+latexové súbory pripravené na preklad pomocou latexového prekladača. 
 Vygenerované sú dva súbory
 \begin{enumerate}
     \item Strom zmien stavov kvantových bitov (zn. 1),
@@ -23,8 +23,8 @@ Pre spustenie programu je nutné mať nainštalované:
 
 \section{Inštalácia programu}
 
-Samotný program nie je nutné nijako inštalovať. Programové skripty sú v 
-adresáry program, pripravené na spustenie. Je ale nutné si pripraviť prostredie.
+Samotný program nie je potrebné nijako inštalovať. Programové skripty sú v 
+adresári program, pripravené na spustenie. Je ale nutné si pripraviť prostredie.
 Pre inštaláciu jazyka Haskell postupujte podľa návodu na oficiálnej 
 stránke \url{www.haskell.org}. Pre operačný systém linux použite svojho
 správcu balíkov a nainštalujte haskell-platform. Príklad pre Ubuntu:
@@ -41,12 +41,13 @@ pre Ubuntu:
 > sudo apt-get install texlive
 \end{code}
 
-Pre inštaláciu na Windows postupujte podľa pokynov na \url{http://www.tug.org/texlive/}. Alebo využite online nástroj Overleaf na \url{https://www.overleaf.com/}.
+Pre inštaláciu na Windows postupujte podľa pokynov na \url{http://www.tug.org/texlive/} 
+alebo využite online nástroj Overleaf na \url{https://www.overleaf.com/}.
 
 \section{Spustenie programu}
 
 Pre definovanie kvantového obvodu je nutné upraviť súbor QWriter.hs. Vo 
-funkcii main sú zakomentované štyry definície obvodov, ktoré boli použité 
+funkcii main sú zakomentované štyri definície obvodov, ktoré boli použité 
 v experimentoch diplomovej práce. Odkomentujte jeden alebo definujte nový
 obvod rovnakým spôsobom. 
 
@@ -86,7 +87,7 @@ RT st []
 \end{code}
 
 Po definovaní kvantového obvodu je možné spustiť meranie. Spustite interpreter
-jazyka haskell ghci v adresáry program.
+jazyka haskell ghci v adresári program.
 \begin{code}
 > ghci
 \end{code}
@@ -102,8 +103,8 @@ Nakoniec spustite funkciu main.
 \end{code}
 
 Program si vypýta názov súboru pre uloženie výsledkov. Odporúčame mať vytvorený
-samostatný adresár pre výsledky ale nie je to nevyhnutné. Povedzme, že chceme
-uložiť do adresára out, ktorý je v adresáry program. Zadáme názov súboru aj 
+samostatný adresár pre výsledky, ale nie je to nevyhnutné. Povedzme, že chceme
+uložiť do adresára out, ktorý je v adresári program. Zadáme názov súboru aj 
 s cestou k nemu. Prípona sa doplní samostatne.
 \begin{code}
 > out/vysledok
